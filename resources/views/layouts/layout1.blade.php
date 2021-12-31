@@ -30,6 +30,8 @@
         <link rel="stylesheet" href="{{ url('assets/css/responsive.css') }}">
 
         @yield('styles')
+
+        @yield('pre-scripts')
     </head>
 
     <body>
@@ -79,8 +81,7 @@
         </div>
         <!-- navbar area end -->
 
-        @section('content')
-        @show
+        @yield('content')
 
         <!-- footer area start -->
         <footer class="footer-area">

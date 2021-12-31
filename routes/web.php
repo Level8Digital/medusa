@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BuyController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,8 +33,17 @@ Route::get('/m-nas', function () {
 Route::get('/m-spy', function () {
     return view('m-spy');
 });
-Route::get('/buy-now', function () {
-    return view('buy-now');
+Route::get('/error', function () {
+    return view('error');
 });
-// Route::get('/', 'HomeController@index')->name('home');
-// Route::post('/import-xls', 'HomeController@importXls');
+
+Route::get('/terms-of-use', [BuyController::class, 'viewTerms']);
+Route::get('/buy-now', [BuyController::class, 'viewBuyNow']);
+Route::post('/proceed-to-payment', [BuyController::class, 'proceedToPayment']);
+Route::get('/checkout/{order}', [BuyController::class, 'viewCheckout'])->name('checkout');
+Route::post('/finalize-paypal', [BuyController::class, 'FinalizePayPal']);
+
+Route::get('/dashboard', [DashboardController::class, 'viewDashboard'])->middleware(['auth'])->name('dashboard');
+Route::get('/notify-access/{purchase}', [DashboardController::class, 'notifyAccess'])->middleware(['auth'])->name('notify-access');
+
+require __DIR__.'/auth.php';
