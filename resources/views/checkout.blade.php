@@ -44,7 +44,7 @@
                     </div>
                     <div class="single-contact-item-02">
                         <div class="icon">
-                            <i class="flaticon-padlock-2"></i>
+                            <i class="flaticon-paper-plane"></i>
                         </div>
                         <div class="content">
                             <p class="details">PayPal</p>
@@ -52,11 +52,11 @@
                     </div>
                     <div class="single-contact-item-02">
                         <div class="icon">
-                            <i class="flaticon-email"></i>
+                            <i class="flaticon-padlock-2"></i>
                         </div>
                         <div class="content">
-                            <p class="details">Interac E-Transfer</p>
-                            <p><em>Canadian customers only</em></p>
+                            <p class="details">Credit or Debit</p>
+                            <p><em>Via PayPal Secure Checkout</em></p>
                         </div>
                     </div>
                 </div>
@@ -77,11 +77,8 @@
                 <!-- Set up a container element for the button -->
                 <div id="paypal-button-container"></div>
                 <p class="margin-top-30 textcenter">
-                    <em>Only available to Canadian customers</em>
+                    <em>Credit and Debit payments are proccessed via PayPal. We save no payment information except your PayPal confirmation number.</em>
                 </p>
-                <div class="btn-wrapper">
-                    <a href="" class="btn-startup style-01 boxed-btn reverse-color" style="width:100%;">Interac E-Transfer</a>
-                </div>
             </div>
         </div>
     </div>

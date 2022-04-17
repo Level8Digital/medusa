@@ -30,6 +30,8 @@ class CreatePurchasesTable extends Migration
             $table->boolean('confirm_tv');
             $table->boolean('agree_terms');
             $table->boolean('is_paid');
+            $table->boolean('payment_issue')->default(false);
+            $table->float('paid_total')->default(0.0);
             $table->string('payment_type', 10);
             $table->string('paypal_id', 100)->nullable();
             $table->float('total');

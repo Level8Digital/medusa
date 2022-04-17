@@ -13,6 +13,10 @@ use App\Models\Purchase;
 
 class BuyController extends Controller
 {
+
+    /*
+    >> Shows the buy now view while adding the random math question and answr to the session
+    */
     public function viewBuyNow()
     {
         // Set up 'antibot' style 'captcha' for contact form
@@ -23,13 +27,17 @@ class BuyController extends Controller
   	    // Produce random numbers
   	    $numberOne = rand( 0, 6 );
   	    $numberTwo = rand( 0, 6 );
-  	    // Add to the session for usage later
+  	    // Add random math question and answer to the session for usage later
   	    session(['a12Ty9UkJ1!$%125Hgye' => 'What is ' . $numberConversion[$numberOne] .
   	    					' added to ' . $numberConversion[$numberTwo] . '?', 'QbX4176lUU/*&%rT#@' => $numberOne + $numberTwo]);
 
+        // Show view
         return view('buy-now');
     }
 
+    /*
+    >> Shows the standard view terms view
+    */
     public function viewTerms()
     {
 
@@ -37,8 +45,9 @@ class BuyController extends Controller
     }
 
     /*
-    >> 1. Select desired Tools
-    >> 2. Forward to terms page
+    >> Called by the buy now form
+    >>
+    >> Calculates the total due at checkout,adds the unpaid purchase to the db, and shows the checkout view
     */
     public function proceedToPayment(BuyForm $request)
     {
@@ -48,16 +57,26 @@ class BuyController extends Controller
             return back()->with('error', 'You have answered the math question incorrectly. Try again.')->withInput();
         }
 
+        // Helper for tool prices -- array prices could come from a db if needed
         $toolPrices = array('bro' => 15, 'pao' => 35, 'mnas' => 50, 'mspy' => 50);
+        // Helper for user selected tools -- user selected tools get flagged true
         $tools = array('bro' => false, 'pao' => false, 'mnas' => false, 'mspy' => false);
+
+        // How many tools the user is purchasing
         $numberOfPurchases = sizeof($request->tool);
+        // Price the the purchase
         $purchaseTotal = 0;
 
+        // Caclulate the purchase total and flag the correct tools
         foreach($request->tool as $tool){
+            // Price
             $purchaseTotal += $toolPrices[$tool];
+            // Selected tools
             $tools[$tool] = true;
         }
 
+        /* >> Calculate any potential discount
+        */
         // 10% discount
         if($numberOfPurchases == 2){
             $purchaseTotal /= 1.1;
@@ -70,9 +89,10 @@ class BuyController extends Controller
         if($numberOfPurchases == 4){
             $purchaseTotal /= 1.3;
         }
-
+        // Round final discounted total
         $finalTotal = round($purchaseTotal);
 
+        // Add all options the the purchase model for saving
         $purchase = new Purchase;
         $purchase->email = $request->email;
         $purchase->username = $request->username;
@@ -86,80 +106,87 @@ class BuyController extends Controller
         $purchase->is_paid = false;
         $purchase->total = $finalTotal;
 
-        // Save the preliminary purchase
+        // Save the preliminary purchase -- NOT YET PAID FOR!
   		if(! $purchase->save()){
   			// Return error is save didnt work
             return back()->with('error', 'Connection problem.');
   		}
 
+        // Return view for payment info
         return redirect()->route('checkout', [$purchase->id]);
 
-        //echo $finalTotal;
-        //print_r($purchase->toArray());
     }
 
     /*
-    >> 1. Recieve confirmation from PayPal
-    >> 2. Add purchase to database
-    >> 3. Give user confirmation
+    >> Shows the checkout / payment view for a specific purchase
+    >>
+    >> Once the purchase is paid for, this view is no longer available to the user
     */
     public function viewCheckout($order)
     {
+        // Retrieve the preliminary purchase
         $purchase = Purchase::findOrFail($order);
 
+        // Only show the checkout view if the purchase is unpaid
         if(! $purchase->is_paid){
-
+            // Show checkout view
             return view('checkout', $purchase->toArray());
 
         } else {
-
-            return view('error', ['msg' => 'It looks like this order was already paid for.']);
-
+            // Show error view if purchase is already paid
+            return view('error', ['msg' => 'Rest easy. It looks like this order was already paid for.']);
         }
-
     }
 
+    /*
+    >> Called by the PayPal JS callback in the checkout view when payment is successful
+    >>
+    >> Add the PayPal id to the purchase, adjusts flags, and sends confirmation email to user
+    */
     public function finalizePayPal(FinalizePayPal $request)
     {
+        // Retrieve the purchase
         $purchase = Purchase::findOrFail($request->purchase_id);
 
+        // Ensure that the payment amount matches the expected total - but continue on regardless
+        // Do not want the stop the proccess so the user does not try to pay again even on a descrepancy
         if($purchase->total != $request->payment_amount){
-            // Failed response
-	        return response()->json([
-	            'result' => 'error',
-	            'message' => 'Payment amount did not match expected amount.'
-	        ], 422);
+            // Flag an error is there is a descrepancy
+            $purchase->payment_issue = true;
         }
 
-        // Set proper values
+        // Update purchase values
         $purchase->paypal_id = $request->paypal_id;
         $purchase->payment_type = 'PayPal';
         $purchase->is_paid = true;
+        $purchase->paid_total = $request->payment_amount;
 
+        // Save the purchase
         if(! $purchase->save()){
   			// Return error is save didnt work
             return back()->with('error', 'Problem updating order status.');
   		}
 
+        // Determine what tools the user purchased
         $tools = array('bro' => $purchase->bro, 'pao' => $purchase->pao, 'mnas' => $purchase->mnas, 'mspy' => $purchase->mspy);
 
+        // Set up confirmation email properties
         $properties = [
   			'username' => $purchase->username,
   			'total' => $purchase->total,
   			'tools' => $tools,
             'order_number' => $purchase->id
         ];
-
+        // Users email address
         $toAddress = $purchase->email;
-
+        // Send the confirmation email
     	Mail::to($toAddress)->send(new OrderConfirmed($properties));
 
-        // Successful response
+        // Return response to PayPal JS callback
         return response()->json([
             'result' => 'success',
             'message' => 'Order was completed successfully.'
         ], 200);
-
     }
 
     // public function testEmail($id)

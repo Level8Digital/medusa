@@ -119,6 +119,10 @@
                                                 </td>
                                                 <td class="px-6 py-4 text-sm text-gray-500 text-center">
                                                     ${{ $purchase['total'] }}
+                                                    <!-- Only show if PayPal payment and expected total did not match -->
+                                                    @if($purchase['payment_issue'])
+                                                        ({{ $purchase['paid_total'] }})
+                                                    @endif
                                                 </td>
                                                 <td class="px-6 py-4 text-sm">
                                                     @if($purchase['is_paid'])

@@ -16,12 +16,4 @@ class Purchase extends Model
      */
     protected $table = 'purchases';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-      'id', 'email', 'username', 'bro', 'pao', 'mnas', 'mspy', 'payment_type', 'confirm_tv', 'agree_terms', 'total'
-    ];
 }
