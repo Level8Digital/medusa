@@ -32,20 +32,20 @@
         <div class="topbar-left">
           <button class="topbar-toggler">&#9776;</button>
           <a class="topbar-brand" href="index.html">
-            <img id="logo-default" class="logo-default" src="assets/img/logo-small.png" alt="logo">
-            <img id="logo-inverse" class="logo-inverse" src="assets/img/logo-light.png" alt="logo">
+            <img id="logo-default" class="logo-default" src="{{ url('assets/img/logo-small.png') }}" alt="logo">
+            <img id="logo-inverse" class="logo-inverse" src="{{ url('assets/img/logo-light.png') }}" alt="logo">
           </a>
         </div>
 
         <div class="topbar-right">
           <ul class="topbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Introduction</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-components">Components</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insight">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#section-intro">Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#section-features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="/components">Components</a></li>
+            <li class="nav-item"><a class="nav-link" href="/insights">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#section-pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
           </ul>
         </div>
       </div>
@@ -60,7 +60,7 @@
         <div class="row gap-y align-items-center">
           <div class="col-12 col-lg-2">
             <p class="text-center text-lg-left">
-              <a href="index.html"><img src="assets/img/logo-02.png" alt="logo"></a>
+              <a href="index.html"><img src="{{ url('assets/img/logo-02.png') }}" alt="logo"></a>
             </p>
           </div>
 

@@ -17,7 +17,7 @@ class BuyController extends Controller
     /*
     >> Shows the buy now view while adding the random math question and answr to the session
     */
-    public function viewBuyNow()
+    public function viewPurchase($access)
     {
         // Set up 'antibot' style 'captcha' for contact form
   	    $numberConversion = array(
@@ -31,8 +31,28 @@ class BuyController extends Controller
   	    session(['a12Ty9UkJ1!$%125Hgye' => 'What is ' . $numberConversion[$numberOne] .
   	    					' added to ' . $numberConversion[$numberTwo] . '?', 'QbX4176lUU/*&%rT#@' => $numberOne + $numberTwo]);
 
+        $description = '';
+        $price = 0;
+
+        if($access == 3)
+            $description = 'Three month access';
+            $price = 75;
+
+        if($access == 12)
+            $description = 'One year access';
+            $price = 125;
+
+        if($access == 'full')
+          $description = 'Lifetime access';
+          $price = 200;
+
+        $tax = $price * 0.05;
+
+        // Add access to session
+        session(['access' => $description, 'price' => $price, 'tax' => $tax, 'total' => $price + $tax]);
+
         // Show view
-        return view('buy-now');
+        return view('purchase');
     }
 
     /*

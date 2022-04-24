@@ -22,7 +22,7 @@
         <br><br>
 
         <div>
-          <a class="btn btn-lg btn-white w-200" href="#" data-scrollto="section-download">Purchase Now</a>
+          <a class="btn btn-lg btn-white w-200" href="#" data-scrollto="section-pricing">Purchase Now</a>
           <a class="btn btn-lg btn-outline btn-white w-200 ml-8 hidden-sm-down" href="#" data-scrollto="section-features">Features</a>
         </div>
 
@@ -44,20 +44,20 @@
   | Master your mind
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
-  <section class="section overflow-hidden bg-gray" id="section-intro">
+  <section class="section overflow-hidden" id="section-intro">
     <div class="container">
       <div class="row">
 
         <div class="col-12 col-md-6 text-center">
-          <img class="mr-40" src="assets/img/ipad-data.png" alt="..." data-aos="slide-up">
+          <img class="mr-40" src="{{ url('assets/img/ipad-data.png') }}" alt="..." data-aos="slide-up">
           <small><em>Real world results of the Olympus X-Fractal on a single ticker.</em></small>
         </div>
 
         <div class="col-12 col-md-6 align-self-center pb-70">
           <h3>Master Your Mind</h3>
           <p class="lead">
-            It’s time to stop overanalyzing your trades. The secret to success does not lay in predicting every market oscillation with technical analysis.
-            What you need is a proven and backtested strategy that puts you in a position to consistently earn more than you lose, and the self-discipline to execute your system flawlessly.
+            It’s time to stop overanalyzing your trades. The secret to success does not lay in predicting every market oscillation or learning new and exotic technical indicators.
+            What you need is a proven and backtested strategy that tips the odds in your favor and the self-discipline to execute your system consistently.
           </p>
 
           <br><br>
@@ -87,15 +87,15 @@
 
   <!--
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  | Quote
+  | Quote 1
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
-  <section class="section">
+  <section class="section section-inverse">
     <div class="container">
 
       <blockquote class="blockquote">
-        <p>The irony is, you will be afraid of random, inconsistent results, without realizing that your random, inconsistent approach is creating exactly what you are afraid of.</p>
-        <footer>Mark Douglas <cite title="Source Title">Trading In The Zone</cite></footer>
+        <p class="text-white">The irony is, you will be afraid of random, inconsistent results, without realizing that your random, inconsistent approach is creating exactly what you are afraid of.</p>
+        <footer class="text-white">Mark Douglas <cite title="Source Title">Trading In The Zone</cite></footer>
       </blockquote>
 
     </div>
@@ -106,18 +106,18 @@
   | Features
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
-  <section class="section section-inverse overflow-hidden" style="background-color: #818181" id="section-features">
+  <section class="section overflow-hidden" id="section-features">
     <div class="container">
 
       <div class="row">
         <div class="col-12 col-md-12 pb-70 align-self-center">
           <h2>Consistency Is Key</h2>
           <p class="lead">
-            Consistent success depends on more than a few winning trades. How can you find a viable system if you constantly change your trading rules, or have no rules at all? The Olympus Suite provides
+            Trading success depends on more than a few winning trades. How can you find a viable system if you constantly change your trading rules, or have no rules at all? The Olympus Suite provides
             you a rigid set of variables and is fully transparent, revealing the critical metrics that impact your long-term profitability. With a system in place, you will have
             the confidence to execute in a consistent manner.
           </p>
-          <hr class="w-50 ml-0">
+          <hr class="w-50 ml-0 dark-hr">
         </div>
 
         <div class="row gap-y suite-features">
@@ -125,7 +125,7 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="flexbox gap-items-4">
               <div>
-                <i class="fa fa-eye fs-25 pt-4 text-secondary"></i>
+                <i class="fa fa-eye fs-25 pt-4"></i>
               </div>
               <div>
                 <h5>Consistent Variables</h5>
@@ -136,7 +136,7 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="flexbox gap-items-4">
               <div>
-                <i class="fa fa-shield fs-25 pt-4 text-secondary"></i>
+                <i class="fa fa-shield fs-25 pt-4"></i>
               </div>
               <div>
                 <h5>Risk Management</h5>
@@ -147,7 +147,7 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="flexbox gap-items-4">
               <div>
-                <i class="fa fa-crosshairs fs-25 pt-4 text-secondary"></i>
+                <i class="fa fa-crosshairs fs-25 pt-4"></i>
               </div>
 
               <div>
@@ -159,7 +159,7 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="flexbox gap-items-4">
               <div>
-                <i class="fa fa-bullseye fs-25 pt-4 text-secondary"></i>
+                <i class="fa fa-bullseye fs-25 pt-4"></i>
               </div>
               <div>
                 <h5>Follow The Trend</h5>
@@ -170,7 +170,7 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="flexbox gap-items-4">
               <div>
-                <i class="fa fa-code fs-25 pt-4 text-secondary"></i>
+                <i class="fa fa-code fs-25 pt-4"></i>
               </div>
               <div>
                 <h5>Backtest Logic</h5>
@@ -181,7 +181,7 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="flexbox gap-items-4">
               <div>
-                <i class="fa fa-wrench fs-25 pt-4 text-secondary"></i>
+                <i class="fa fa-wrench fs-25 pt-4"></i>
               </div>
               <div>
                 <h5>Customization</h5>
@@ -200,24 +200,76 @@
 
   <!--
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  | Olympus Suite
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+
+  <section class="section text-center py-150" style="background-image: url(assets/img/greek-gods.jpg); background-size: cover;" data-overlay="8" id="section-components">
+    <div class="container">
+      <h5 class="fs-30 text-white fw-300 mb-30"><strong>Dive</strong> into the strategies that make up the Olympus Suite</h5>
+
+      <p class="text-white mb-30">
+        The Olympus Suite comes bundled with three strategies, giving you great value and plenty of options.
+      </p>
+
+      <div class="row gap-y">
+
+            <div class="col-12 col-lg-4">
+              <div class="card card-inverse">
+                <div class="card-block">
+                  <h5 class="card-title">X-Cloud</h5>
+                  <p class="card-text">A unique cloud that defines trend areas created by our real-time fractals.</p>
+                  <a class="fw-600 fs-12" href="{{ url('components') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4">
+              <div class="card card-inverse">
+                <div class="card-block">
+                  <h5 class="card-title">X-Fractal</h5>
+                  <p class="card-text">An aggressive approach to trading trend continuation and potential reversals.</p>
+                  <a class="fw-600 fs-12" href="{{ url('components') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4">
+              <div class="card card-inverse">
+                <div class="card-block">
+                  <h5 class="card-title">X-Band</h5>
+                  <p class="card-text">A smoothed band that uses moving average variations to define momentum.</p>
+                  <a class="fw-600 fs-12" href="{{ url('components') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+    </div>
+  </section>
+
+  <!--
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   | Articles / Blog
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
 
   <section class="section bg-gray" id="section-insight">
     <div class="container">
-      <h2 class="text-center">Trading Insight</h2>
+      <h2 class="text-center">Trading Insights</h2>
       <br><br>
 
       <div class="row gap-y">
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card card-bordered card-hover-shadow">
-            <a href="#"><img class="card-img-top" src="assets/img/blog-1.jpg" alt="Card image cap"></a>
+            <a href="#"><img class="card-img-top" src="{{ url('assets/img/probability-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">How to add new block to page builder</a></h4>
+              <h4 class="card-title"><a href="#">Pro Insights Part 1: Probability</a></h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-              <a class="fw-600 fs-12" href="#">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+              <a class="fw-600 fs-12" href="{{ url('probability-and-random-distribution') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
           </div>
         </div>
@@ -225,11 +277,11 @@
 
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card card-bordered card-hover-shadow">
-            <a href="#"><img class="card-img-top" src="assets/img/blog-2.jpg" alt="Card image cap"></a>
+            <a href="#"><img class="card-img-top" src="{{ url('assets/img/odds-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Create block with different styles</a></h4>
+              <h4 class="card-title"><a href="#">Pro Insights Part 2: Tipping The Odds</a></h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-              <a class="fw-600 fs-12" href="#">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+              <a class="fw-600 fs-12" href="{{ url('tipping-the-odds') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
           </div>
         </div>
@@ -237,11 +289,11 @@
 
         <div class="col-12 col-lg-4 hidden-md-down">
           <div class="card card-bordered card-hover-shadow">
-            <a href="#"><img class="card-img-top" src="assets/img/blog-3.jpg" alt="Card image cap"></a>
+            <a href="#"><img class="card-img-top" src="{{ url('assets/img/mind-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">How to update the template</a></h4>
+              <h4 class="card-title"><a href="#">Pro Insights Part 3: Shaping The Mind</a></h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-              <a class="fw-600 fs-12" href="#">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+              <a class="fw-600 fs-12" href="{{ url('shaping-the-mind') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
           </div>
         </div>
@@ -251,7 +303,7 @@
       <br><br>
       <div class="col-12 text-center">
         <br><br>
-        <a class="btn btn-lg btn-primary" href="#">Browse all articles</a>
+        <a class="btn btn-lg btn-primary" href="{{ url('insights') }}">Browse all articles</a>
       </div>
 
     </div>
@@ -274,37 +326,41 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 50</h2>
+            <h2 class="price"><span class="price-unit">$</span> 75</h2>
             <h6 class="plan-name">Three Month Access</h6>
             <p class="plan-description">Try it out, see for yourself</p>
             <br>
-            <a class="btn btn-white btn-round btn-outline w-200" href="#">Buy Now</a>
+            <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/3') }}">Buy Now</a>
           </div>
         </div>
 
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 150</h2>
+            <h2 class="price"><span class="price-unit">$</span> 200</h2>
             <h6 class="plan-name">Lifetime Access</h6>
             <p class="plan-description">Pay once, have fun forever</p>
             <br>
-            <a class="btn btn-white btn-round w-200" href="#">Buy Now</a>
+            <a class="btn btn-white btn-round w-200" href="{{ url('purchase/full') }}">Buy Now</a>
           </div>
         </div>
 
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 100</h2>
+            <h2 class="price"><span class="price-unit">$</span> 125</h2>
             <h6 class="plan-name">One Year Access</h6>
             <p class="plan-description">Get on the right path</p>
             <br>
-            <a class="btn btn-white btn-round btn-outline w-200" href="#">Buy Now</a>
+            <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/12') }}">Buy Now</a>
           </div>
         </div>
 
       </div>
+
+      <p class="text-center mt-50">
+        The Olympus Suite is designed to work exclusively with TradingView charts.
+      </p>
 
     </div>
   </section>
@@ -385,30 +441,6 @@
     </div>
   </section>
 
-  <!--
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  | Buy Now / Pricing
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  !-->
-  <section class="section section-inverse py-120" style="background-image: url(assets/img/greek-gods.jpg); background-size: cover;" data-overlay="4" id="section-find">
-    <div class="container">
 
-      <div class="section-dialog text-center" data-aos="zoom-in" data-aos-duration="1000">
-        <p><img src="assets/img/logo-light.png" alt="logo"></p>
-        <br>
-        <h2>Find Us</h2>
-        <p>Visit our TradingView profile or Instagram account to stay up to date with the latest from Medusa Money.</p>
-
-        <hr class="w-50">
-
-        <div class="text-center gap-multiline-items-2 my-30">
-          <a href="#"><img class="img-fadein" src="assets/img/badge-apple.png" alt="download on app store"></a>
-          <a href="#"><img class="img-fadein" src="assets/img/badge-google.png" alt="download on google play"></a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
 
 @endsection

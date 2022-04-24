@@ -26,7 +26,7 @@
   <body id="home">
 
     <!-- Topbar -->
-    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky">
+    <nav class="topbar topbar-expand-md topbar-sticky">
       <div class="container">
 
         <div class="topbar-left">
@@ -39,13 +39,13 @@
 
         <div class="topbar-right">
           <ul class="topbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Introduction</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-components">Components</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insight">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Components</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">FAQ</a></li>
           </ul>
         </div>
       </div>

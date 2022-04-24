@@ -32,12 +32,36 @@
   justify-content: normal;
 }
 
+.bg-medium-gray {
+  background-color: #f1f1f1;
+}
+
 a {
   color: #18206a;
 }
 
 a:hover {
   color: #1c7452;
+}
+
+.dark-hr {
+  border-top-color: rgb(83 83 83 / 50%);
+}
+
+#section-components a {
+  color: #fff;
+}
+
+#section-components a:hover {
+  color: #1c7452;
+}
+
+.section-pricing-2 {
+  padding-top: 0px;
+}
+
+.blog-img {
+  width: 65%;
 }
 
 .btn-primary {
@@ -51,6 +75,17 @@ a:hover {
     border-color: #aaa;
     color: #191919;
     box-shadow: none;
+}
+
+.btn-outline.btn-primary {
+    color: #1c7452;
+    background-color: transparent;
+    border-color: #1c7452;
+}
+
+.btn-outline.btn-primary:hover {
+    color: #fff;
+    background-color: #1c7452;
 }
 
 .btn-white {
