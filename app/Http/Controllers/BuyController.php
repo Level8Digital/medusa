@@ -34,25 +34,21 @@ class BuyController extends Controller
         $description = '';
         $price = 0;
 
-        if($access == 3)
+        if($access == 'three-month'){
             $description = 'Three month access';
             $price = 75;
-
-        if($access == 12)
+        } elseif($access == 'year'){
             $description = 'One year access';
             $price = 125;
-
-        if($access == 'full')
-          $description = 'Lifetime access';
-          $price = 200;
+        } elseif($access == 'lifetime'){
+            $description = 'Lifetime access';
+            $price = 200;
+        }
 
         $tax = $price * 0.05;
 
-        // Add access to session
-        session(['access' => $description, 'price' => $price, 'tax' => $tax, 'total' => $price + $tax]);
-
         // Show view
-        return view('purchase');
+        return view('purchase', ['access_desc' => $description, 'access' => $access, 'price' => $price, 'tax' => $tax, 'total' => $price + $tax]);
     }
 
     /*
@@ -69,67 +65,45 @@ class BuyController extends Controller
     >>
     >> Calculates the total due at checkout,adds the unpaid purchase to the db, and shows the checkout view
     */
-    public function proceedToPayment(BuyForm $request)
+    public function proceedToCheckout(BuyForm $request)
     {
         // Check for humanity
         if(session('QbX4176lUU/*&%rT#@') != $request->math_question){
     		// Return error is save didnt work
-            return back()->with('error', 'You have answered the math question incorrectly. Try again.')->withInput();
+            return back()->withErrors(['You have answered the math question incorrectly. Try again.'])->withInput();
         }
 
-        // Helper for tool prices -- array prices could come from a db if needed
-        $toolPrices = array('bro' => 15, 'pao' => 35, 'mnas' => 50, 'mspy' => 50);
-        // Helper for user selected tools -- user selected tools get flagged true
-        $tools = array('bro' => false, 'pao' => false, 'mnas' => false, 'mspy' => false);
+        // Cache the access
+        $access = $request->access;
 
-        // How many tools the user is purchasing
-        $numberOfPurchases = sizeof($request->tool);
-        // Price the the purchase
-        $purchaseTotal = 0;
+        // The cost
+        $price = 0.0;
 
-        // Caclulate the purchase total and flag the correct tools
-        foreach($request->tool as $tool){
-            // Price
-            $purchaseTotal += $toolPrices[$tool];
-            // Selected tools
-            $tools[$tool] = true;
+        // Determine the price
+        if($access == 'three-month'){
+            $price = 75;
+        } elseif($access == 'year'){
+            $price = 125;
+        } elseif($access == 'lifetime'){
+            $price = 200;
         }
-
-        /* >> Calculate any potential discount
-        */
-        // 10% discount
-        if($numberOfPurchases == 2){
-            $purchaseTotal /= 1.1;
-        }
-        // 20% discount
-        if($numberOfPurchases == 3){
-            $purchaseTotal /= 1.2;
-        }
-        // 30% discount
-        if($numberOfPurchases == 4){
-            $purchaseTotal /= 1.3;
-        }
-        // Round final discounted total
-        $finalTotal = round($purchaseTotal);
+        // Calculate and round final total with GST (tax)
+        $total = round($price * 1.05, 2);
 
         // Add all options the the purchase model for saving
         $purchase = new Purchase;
         $purchase->email = $request->email;
         $purchase->username = $request->username;
-        $purchase->bro = ($tools['bro'] == true) ? true :false;
-        $purchase->pao = ($tools['pao'] == true) ? true :false;
-        $purchase->mnas = ($tools['mnas'] == true) ? true :false;
-        $purchase->mspy = ($tools['mspy'] == true) ? true :false;
+        $purchase->access = $access;
         $purchase->confirm_tv = ($request->confirm_tv == 'on') ? true : false;
         $purchase->agree_terms = ($request->agree_terms == 'on') ? true : false;
-        $purchase->payment_type = 'Not Paid';
-        $purchase->is_paid = false;
-        $purchase->total = $finalTotal;
+        $purchase->total = $total;
 
         // Save the preliminary purchase -- NOT YET PAID FOR!
   		if(! $purchase->save()){
-  			// Return error is save didnt work
-            return back()->with('error', 'Connection problem.');
+  			   // Return error is save didnt work
+           return back()->withErrors(['Connection problem.'])->withInput();
+
   		}
 
         // Return view for payment info
@@ -149,12 +123,23 @@ class BuyController extends Controller
 
         // Only show the checkout view if the purchase is unpaid
         if(! $purchase->is_paid){
-            // Show checkout view
-            return view('checkout', $purchase->toArray());
+
+          $description = '';
+
+          if($purchase->access == 'three-month'){
+              $description = 'Three Month Access';
+          } elseif($purchase->access == 'year'){
+              $description = 'One Year Access';
+          } elseif($purchase->access == 'lifetime'){
+              $description = 'Lifetime Access';
+          }
+
+          // Show checkout view
+          return view('checkout', ['purchase' => $purchase->toArray(), 'access_desc' => $description ]);
 
         } else {
             // Show error view if purchase is already paid
-            return view('error', ['msg' => 'Rest easy. It looks like this order was already paid for.']);
+            return view('problem', ['msg' => 'It looks like this order was already paid for']);
         }
     }
 

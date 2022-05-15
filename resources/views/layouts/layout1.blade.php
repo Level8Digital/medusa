@@ -31,7 +31,7 @@
 
         <div class="topbar-left">
           <button class="topbar-toggler">&#9776;</button>
-          <a class="topbar-brand" href="index.html">
+          <a class="topbar-brand" href="/">
             <img id="logo-default" class="logo-default" src="assets/img/logo-small.png" alt="logo">
             <img id="logo-inverse" class="logo-inverse" src="assets/img/logo-light.png" alt="logo">
           </a>

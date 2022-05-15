@@ -94,8 +94,8 @@
     <div class="container">
 
       <blockquote class="blockquote">
-        <p class="text-white">The irony is, you will be afraid of random, inconsistent results, without realizing that your random, inconsistent approach is creating exactly what you are afraid of.</p>
-        <footer class="text-white">Mark Douglas <cite title="Source Title">Trading In The Zone</cite></footer>
+        <p class="text-white">Individual random events, such as market behavior patterns, have a consistent outcome over a set of events when the odds are tilted in one direction — like flipping a rigged coin.</p>
+        <footer class="text-white">Matthew Toro <cite title="Source Title">, Medusa Money Founder & President</cite></footer>
       </blockquote>
 
     </div>
@@ -209,44 +209,17 @@
       <h5 class="fs-30 text-white fw-300 mb-30"><strong>Dive</strong> into the strategies that make up the Olympus Suite</h5>
 
       <p class="text-white mb-30">
-        The Olympus Suite comes bundled with three strategies, giving you great value and plenty of options.
+        The Olympus Suite comes bundled with two different strategies allowing you to trade the way that suits you best.
       </p>
 
-      <div class="row gap-y">
+      <div class="row text-center">
+        <div class=col-12>
+          <p>
+            <a class="btn btn-lg btn-outline btn-white w-200" href="/components">Take A Look</a>
+          </p>
+        </div>
 
-            <div class="col-12 col-lg-4">
-              <div class="card card-inverse">
-                <div class="card-block">
-                  <h5 class="card-title">X-Cloud</h5>
-                  <p class="card-text">A unique cloud that defines trend areas created by our real-time fractals.</p>
-                  <a class="fw-600 fs-12" href="{{ url('components') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-12 col-lg-4">
-              <div class="card card-inverse">
-                <div class="card-block">
-                  <h5 class="card-title">X-Fractal</h5>
-                  <p class="card-text">An aggressive approach to trading trend continuation and potential reversals.</p>
-                  <a class="fw-600 fs-12" href="{{ url('components') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-12 col-lg-4">
-              <div class="card card-inverse">
-                <div class="card-block">
-                  <h5 class="card-title">X-Band</h5>
-                  <p class="card-text">A smoothed band that uses moving average variations to define momentum.</p>
-                  <a class="fw-600 fs-12" href="{{ url('components') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
+      </div>
     </div>
   </section>
 
@@ -330,7 +303,7 @@
             <h6 class="plan-name">Three Month Access</h6>
             <p class="plan-description">Try it out, see for yourself</p>
             <br>
-            <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/3') }}">Buy Now</a>
+            <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/three-month') }}">Buy Now</a>
           </div>
         </div>
 
@@ -340,8 +313,16 @@
             <h2 class="price"><span class="price-unit">$</span> 200</h2>
             <h6 class="plan-name">Lifetime Access</h6>
             <p class="plan-description">Pay once, have fun forever</p>
+            <!-- <ul class="price-list">
+              <li>
+                <small>Script updates</small>
+              </li>
+              <li>
+                <small></small>
+              </li>
+            </ul> -->
             <br>
-            <a class="btn btn-white btn-round w-200" href="{{ url('purchase/full') }}">Buy Now</a>
+            <a class="btn btn-white btn-round w-200" href="{{ url('purchase/lifetime') }}">Buy Now</a>
           </div>
         </div>
 
@@ -352,7 +333,7 @@
             <h6 class="plan-name">One Year Access</h6>
             <p class="plan-description">Get on the right path</p>
             <br>
-            <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/12') }}">Buy Now</a>
+            <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/year') }}">Buy Now</a>
           </div>
         </div>
 

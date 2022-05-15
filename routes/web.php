@@ -40,14 +40,14 @@ Route::get('/shaping-the-mind', function () {
     return view('insights/mind');
 });
 
-Route::get('/error', function () {
-    return view('error');
+Route::get('/problem', function () {
+    return view('problem');
 });
 
 Route::get('/terms-of-use', [BuyController::class, 'viewTerms']);
-Route::get('/purchase/{accesss}', [BuyController::class, 'viewPurchase']);
+Route::get('/purchase/{accesss}', [BuyController::class, 'viewPurchase'])->name('purchase');
 Route::get('/checkout/{order}', [BuyController::class, 'viewCheckout'])->name('checkout');
-Route::post('/proceed-to-payment', [BuyController::class, 'proceedToPayment']);
+Route::post('/proceed-to-checkout', [BuyController::class, 'proceedToCheckout']);
 Route::post('/finalize-paypal', [BuyController::class, 'FinalizePayPal']);
 
 Route::get('/dashboard', [DashboardController::class, 'viewDashboard'])->middleware(['auth'])->name('dashboard');
