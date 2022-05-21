@@ -30,7 +30,7 @@ class GrantAccess extends Mailable
      */
     public function build()
     {
-        $this->subject('Access Granted | medusamoney.com')
+        $this->subject('Access Granted | Medusa Money')
           ->replyTo(env('MAIL_FROM_ADDRESS'))
           ->view('access-granted');
 

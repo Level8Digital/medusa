@@ -1,28 +1,3 @@
-<!-- <h3 style="color:#004cff; line-height:13px;">
-    Your order #{{ $messageDetails['order_number'] }}xDfHYe has been recieved. You shold be able to access your tools on Trading View with user {{ $messageDetails['username'] }} within a few hours.
-    In the meantime, please see our <a href="{{ secure_url('videos'); }}">video page</a> to learn how to access and use your tools.
-</h3>
-
-<h3 style="color:#03060d; line-height:10px;">
-    Tools Purchased:
-</h3>
-
-@if($messageDetails['tools']['bro'])
-    <p>Bar Range Oscillator (BRO)</p>
-@endif
-
-@if($messageDetails['tools']['pao'])
-    <p>Price Action Oscillator (PAO)</p>
-@endif
-
-@if($messageDetails['tools']['mnas'])
-    <p>M-NAS</p>
-@endif
-
-@if($messageDetails['tools']['mspy'])
-    <p>M-SPY</p>
-@endif -->
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -317,7 +292,7 @@
   <tr>
     <td align="center" valign="top" width="100%" style="background-color: #f7f7f7;" class="content-padding">
       <center>
-        <table cellspacing="0" cellpadding="0" width="600" class="w320">
+        <table cellspacing="0" cellpadding="0" width="650" class="w320">
           <tr>
             <td class="header-lg">
               Thank you for your order!
@@ -325,8 +300,13 @@
           </tr>
           <tr>
             <td class="free-text">
-                Your order was recieved. You will be able to access your tools on Trading View with username '{{ $messageDetails['username'] }}' within a few hours.
-                In the meantime, please see our <a href="{{ secure_url('videos'); }}">video page</a> to learn how to access and use your tools.
+                <br /><br />
+                You will be able to access the Olympus Suite on TradingView with username '{{ $messageDetails['username'] }}' within a maximum of 24 hours, but usually sooner.
+                <br /><br />
+                While you wait, head over to our <a href="{{ secure_url('videos'); }}">Video</a> page to learn how to use and access your new trading system, and read our
+                <a href="{{ secure_url('insights'); }}">Insights Blog</a> to take your trading to the next level.
+                <br /><br />
+                You will recieve an email from us when your access has been granted.
             </td>
           </tr>
           <tr>
@@ -351,21 +331,7 @@
                             <tr>
                               <td class="mini-block">
                                 <span class="header-sm">Your Order</span><br />
-                                @if($messageDetails['tools']['bro'])
-                                    Bar Range Oscillator (BRO)<br/>
-                                @endif
-
-                                @if($messageDetails['tools']['pao'])
-                                    Price Action Oscillator (PAO)<br/>
-                                @endif
-
-                                @if($messageDetails['tools']['mnas'])
-                                    M-NAS<br/>
-                                @endif
-
-                                @if($messageDetails['tools']['mspy'])
-                                    M-SPY<br/>
-                                @endif
+                                The Olympus Suite | {{ $messageDetails['access'] }}
                               </td>
                             </tr>
                           </table>
@@ -380,10 +346,7 @@
                           <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate !important;">
                             <tr>
                               <td class="mini-block">
-                                <span class="header-sm">Date Ordered</span><br />
-                                 {{ date("Y/m/d") }}<br />
-                                <br />
-                                <span class="header-sm">Order</span> <br />
+                                <span class="header-sm">Order No.</span> <br />
                                 #{{ $messageDetails['order_number'] }}-{{ rand(1000,9000) }}
                               </td>
                             </tr>
@@ -406,7 +369,7 @@
         <table cellspacing="0" cellpadding="0" width="600" class="w320">
           <tr>
             <td style="padding: 25px 0 25px">
-              <strong>Medusa Money Ltd.</strong><br />
+              <strong>Medusa Software Ltd.</strong><br />
               <a href="https://www.medusamoney.com">www.medusamoney.com</a><br /><br />
             </td>
           </tr>

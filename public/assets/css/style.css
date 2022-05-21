@@ -48,6 +48,10 @@ a:hover {
   border-top-color: rgb(83 83 83 / 50%);
 }
 
+.dark-strong {
+  color: #494949;
+}
+
 .super-icon {
   font-size: 5rem;
 }

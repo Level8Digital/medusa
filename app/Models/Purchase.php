@@ -10,10 +10,10 @@ class Purchase extends Model
     use HasFactory;
 
     /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
+    * The table associated with the model.
+    *
+    * @var string
+    */
     protected $table = 'purchases';
 
 }

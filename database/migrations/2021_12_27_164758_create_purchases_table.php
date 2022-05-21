@@ -17,9 +17,10 @@ class CreatePurchasesTable extends Migration
             // First save
             $table->id();
             $table->timestamps();
+            $table->date('paid_at')->nullable();
             $table->string('email', 100);
             $table->string('username', 35);
-            $table->string('access', 10);
+            $table->string('access', 15);
             $table->boolean('access_granted')->default(false);
             $table->boolean('confirm_tv')->default(false);
             $table->boolean('agree_terms')->default(false);
@@ -30,6 +31,7 @@ class CreatePurchasesTable extends Migration
             $table->boolean('payment_issue')->default(false);
             $table->float('paid_total')->default(0.0);
             $table->string('paypal_id', 100)->default('Not-Paid');
+            $table->date('expires_at')->nullable();
             // Possible future updates
             $table->string('other1')->nullable();
             $table->boolean('other2')->nullable();

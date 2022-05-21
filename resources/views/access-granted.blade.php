@@ -1,34 +1,9 @@
-<!-- <h3 style="color:#004cff; line-height:13px;">
-    Your order #{{ $messageDetails['order_number'] }}xDfHYe has been recieved. You shold be able to access your tools on Trading View with user {{ $messageDetails['username'] }} within a few hours.
-    In the meantime, please see our <a href="{{ secure_url('videos'); }}">video page</a> to learn how to access and use your tools.
-</h3>
-
-<h3 style="color:#03060d; line-height:10px;">
-    Tools Purchased:
-</h3>
-
-@if($messageDetails['tools']['bro'])
-    <p>Bar Range Oscillator (BRO)</p>
-@endif
-
-@if($messageDetails['tools']['pao'])
-    <p>Price Action Oscillator (PAO)</p>
-@endif
-
-@if($messageDetails['tools']['mnas'])
-    <p>M-NAS</p>
-@endif
-
-@if($messageDetails['tools']['mspy'])
-    <p>M-SPY</p>
-@endif -->
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oxygen Invoice</title>
+  <title>Medusa Money Receipt</title>
 
   <style type="text/css">
     /* Take care of image borders and formatting, client hacks */
@@ -320,13 +295,13 @@
         <table cellspacing="0" cellpadding="0" width="600" class="w320">
           <tr>
             <td class="header-lg">
-                Your tools are now available on Trading View!
+                You Can Now Access The Olympus Suite Trading View!
             </td>
           </tr>
           <tr>
             <td class="free-text">
-                You can access your tools on Trading View with username '{{ $messageDetails['username'] }}'. Please see our <a href="{{ secure_url('videos'); }}">video page</a> to learn how to use your tools and
-                add them to your charts.
+                You can access your tools on TradingView with username '{{ $messageDetails['username'] }}'. Please see our <a href="{{ secure_url('videos'); }}">video page</a> to learn how to use the Olympus Suite and
+                add it to your charts.
             </td>
           </tr>
           <tr>
@@ -351,21 +326,7 @@
                             <tr>
                               <td class="mini-block">
                                 <span class="header-sm">Your Order</span><br />
-                                @if($messageDetails['tools']['bro'])
-                                    Bar Range Oscillator (BRO)<br/>
-                                @endif
-
-                                @if($messageDetails['tools']['pao'])
-                                    Price Action Oscillator (PAO)<br/>
-                                @endif
-
-                                @if($messageDetails['tools']['mnas'])
-                                    M-NAS<br/>
-                                @endif
-
-                                @if($messageDetails['tools']['mspy'])
-                                    M-SPY<br/>
-                                @endif
+                                The Olympus Suite
                               </td>
                             </tr>
                           </table>
@@ -406,7 +367,7 @@
         <table cellspacing="0" cellpadding="0" width="600" class="w320">
           <tr>
             <td style="padding: 25px 0 25px">
-              <strong>Medusa Money Ltd.</strong><br />
+              <strong>Medusa Software Ltd.</strong><br />
               <a href="https://www.medusamoney.com">www.medusamoney.com</a><br /><br />
             </td>
           </tr>

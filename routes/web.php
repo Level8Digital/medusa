@@ -30,6 +30,12 @@ Route::get('/components', function () {
 Route::get('/pricing', function () {
     return view('pricing');
 });
+Route::get('/problem', function () {
+    return view('problem');
+});
+Route::get('/terms-of-use', [BuyController::class, 'viewTerms']);
+
+// BLOG/INSIGHTS ROUTES
 Route::get('/probability-and-random-distribution', function () {
     return view('insights/probability');
 });
@@ -40,16 +46,14 @@ Route::get('/shaping-the-mind', function () {
     return view('insights/mind');
 });
 
-Route::get('/problem', function () {
-    return view('problem');
-});
-
-Route::get('/terms-of-use', [BuyController::class, 'viewTerms']);
+// SHOP/PURCHASE/CHECKOUT ROUTES
 Route::get('/purchase/{accesss}', [BuyController::class, 'viewPurchase'])->name('purchase');
-Route::get('/checkout/{order}', [BuyController::class, 'viewCheckout'])->name('checkout');
-Route::post('/proceed-to-checkout', [BuyController::class, 'proceedToCheckout']);
+Route::post('/start-purchase', [BuyController::class, 'startPurchase']);
+Route::get('/view-terms/{order}', [BuyController::class, 'viewTerms'])->name('view-terms');
+Route::post('/confirm-terms', [BuyController::class, 'confirmTerms']);
 Route::post('/finalize-paypal', [BuyController::class, 'FinalizePayPal']);
 
+// ADMIN DASHBOARD ROUTES
 Route::get('/dashboard', [DashboardController::class, 'viewDashboard'])->middleware(['auth'])->name('dashboard');
 Route::get('/notify-access/{purchase}', [DashboardController::class, 'notifyAccess'])->middleware(['auth'])->name('notify-access');
 

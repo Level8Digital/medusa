@@ -30,7 +30,7 @@ class OrderConfirmed extends Mailable
      */
     public function build()
     {
-        $this->subject('Order Confirmation | medusamoney.com')
+        $this->subject('Order Confirmation | Medusa Money')
           ->replyTo(env('MAIL_FROM_ADDRESS'))
           ->view('confirmation-email');
 

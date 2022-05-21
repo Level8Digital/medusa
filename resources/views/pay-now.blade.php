@@ -71,8 +71,13 @@
         <h2 class="lead-8"><strong>Thanks for your purchase</strong></h2>
         <hr class="dark-hr">
         <p class="lead-2">
-          The Olympus Suite will be available to your TradingView account within 24 hours. While you wait, head over to our video page to learn how to is your
-          new trading system, and check out our Insights blog to explore some important trading concepts. You will recieve an email from us when your access has been granted.
+          The Olympus Suite will be available to your TradingView account within a maximum of 24 hours, but usually sooner.
+        </p>
+        <p class="lead-2">
+          While you wait, head over to our Video page to learn how to use and access your new trading system, and check out our Insights Blog to take your trading to the next level.
+        </p>
+        <p class="lead-2">
+        <i class="fa fa-envelope"></i> <em>You will recieve an email from us when your access has been granted.</em>
         </p>
       </header>
       <p class="text-center">

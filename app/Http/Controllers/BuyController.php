@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\BuyForm;
-use App\Http\Requests\ConfirmBuyForm;
+use App\Http\Requests\PurchaseForm;
+use App\Http\Requests\TermsForm;
 use App\Http\Requests\FinalizePayPal;
 use Mail;
 
@@ -14,61 +14,91 @@ use App\Models\Purchase;
 class BuyController extends Controller
 {
 
-    /*
-    >> Shows the buy now view while adding the random math question and answr to the session
+    /**
+    * Shows the Purchase view while adding the random math question and answr to the session
+    * @var string $access - the requested access period to purchase
     */
     public function viewPurchase($access)
     {
-        // Set up 'antibot' style 'captcha' for contact form
+        // ------------------------------------------------------------------------------------------------------------------------
+        // Set up a few things before proceeding...
+
+        // Converts numbers to strings
   	    $numberConversion = array(
   	       0 => 'zero', 1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four', 5 => 'five',
   	       6 => 'six', 7 => 'seven', 8 =>'eight', 9 => 'nine', 10 => 'ten'
   	    );
+        // For decoding the math answer on the other size
+        $numberHash = array(
+  	       0 => 'bT0ZzjNyLj', 1 => '0yRh8DPpvZ', 2 => 'Ppr7rcoJ96', 3 => '84JEizZhJO', 4 => 'NgdJEq31SL', 5 => '0Yomhm4gGW',
+  	       6 => 'cLfsK0MdCv', 7 => 'yTAI0eOTl0', 8 =>'xHf0BGj2Eb', 9 => 'h90k6BEj2z', 10 => 'Y0vhkHmE8F', 11 => 'NLhTuZWPRG',
+           12 => 'QDy8tZhdll', 13 => 'Fw5Oa8GMrg', 14 => '1b1msj9IVv', 15 => 'zu5S2vQn92', 16 => '2R8Q9MzDYw', 17 => '07aT3Ls2Gr',
+           18 => 'OnDfGcMNln', 19 => 'bIQ03pAxPX', 20 => 'VBp8WtggWj'
+  	    );
   	    // Produce random numbers
-  	    $numberOne = rand( 0, 6 );
-  	    $numberTwo = rand( 0, 6 );
-  	    // Add random math question and answer to the session for usage later
-  	    session(['a12Ty9UkJ1!$%125Hgye' => 'What is ' . $numberConversion[$numberOne] .
-  	    					' added to ' . $numberConversion[$numberTwo] . '?', 'QbX4176lUU/*&%rT#@' => $numberOne + $numberTwo]);
+  	    $numberOne = rand(0, 6);
+  	    $numberTwo = rand(0, 6);
 
+  	    // Construct random math question
+  	    $mathQuestion = 'What is ' . $numberConversion[$numberOne] . ' added to ' . $numberConversion[$numberTwo] . '?';
+
+        // Determine random math answer in form of secret number hash
+        $mathAnswer = $numberHash[$numberOne + $numberTwo];
+
+        // Ensure the access period is an acceptable string
+        if($access != 'lifetime' && $access != 'year' && $access != 'three-month'){
+            // Show error view if the trading view account already has lifetime access
+            return view('problem', ['msg' => "We don't recognize this access period"]);
+        }
+
+        // ------------------------------------------------------------------------------------------------------------------------
+
+        // For returning - gets changed later
         $description = '';
         $price = 0;
 
-        if($access == 'three-month'){
-            $description = 'Three month access';
-            $price = 75;
-        } elseif($access == 'year'){
-            $description = 'One year access';
-            $price = 125;
-        } elseif($access == 'lifetime'){
+        // Determine the access period based on user selection
+        if($access == 'lifetime'){
             $description = 'Lifetime access';
             $price = 200;
         }
+        elseif($access == 'year'){
+            $description = 'One year access';
+            $price = 125;
+        }
+        elseif($access == 'three-month'){
+            $description = 'Three month access';
+            $price = 75;
+        }
 
+        // Calculate the tax amount
         $tax = $price * 0.05;
 
-        // Show view
-        return view('purchase', ['access_desc' => $description, 'access' => $access, 'price' => $price, 'tax' => $tax, 'total' => $price + $tax]);
+        // Show view with the required variables
+        return view('purchase', ['math_question' => $mathQuestion, 'math_answer' => $mathAnswer, 'access_desc' => $description, 'access' => $access, 'price' => $price,
+                    'tax' => $tax, 'total' => $price + $tax]);
     }
 
-    /*
-    >> Shows the standard view terms view
+    /**
+    * Called by the Purchase form/request
+    *
+    * Calculates the total due at checkout, adds the unpaid purchase to the db, and shows the agree to terms view
     */
-    public function viewTerms()
+    public function startPurchase(PurchaseForm $request)
     {
+        // ------------------------------------------------------------------------------------------------------------------------
+        // A few checks required before proceeding...
 
-        return view('terms');
-    }
+        // For determining math answer
+        $numberHash = array(
+  	       0 => 'bT0ZzjNyLj', 1 => '0yRh8DPpvZ', 2 => 'Ppr7rcoJ96', 3 => '84JEizZhJO', 4 => 'NgdJEq31SL', 5 => '0Yomhm4gGW',
+  	       6 => 'cLfsK0MdCv', 7 => 'yTAI0eOTl0', 8 =>'xHf0BGj2Eb', 9 => 'h90k6BEj2z', 10 => 'Y0vhkHmE8F', 11 => 'NLhTuZWPRG',
+           12 => 'QDy8tZhdll', 13 => 'Fw5Oa8GMrg', 14 => '1b1msj9IVv', 15 => 'zu5S2vQn92', 16 => '2R8Q9MzDYw', 17 => '07aT3Ls2Gr',
+           18 => 'OnDfGcMNln', 19 => 'bIQ03pAxPX', 20 => 'VBp8WtggWj'
+  	    );
 
-    /*
-    >> Called by the buy now form
-    >>
-    >> Calculates the total due at checkout,adds the unpaid purchase to the db, and shows the checkout view
-    */
-    public function proceedToCheckout(BuyForm $request)
-    {
         // Check for humanity
-        if(session('QbX4176lUU/*&%rT#@') != $request->math_question){
+        if($numberHash[$request->math_answer] != $request->random_token){
     		// Return error is save didnt work
             return back()->withErrors(['You have answered the math question incorrectly. Try again.'])->withInput();
         }
@@ -76,71 +106,146 @@ class BuyController extends Controller
         // Cache the access
         $access = $request->access;
 
+        // Ensure the access period is an acceptable string
+        if($access != 'lifetime' && $access != 'year' && $access != 'three-month'){
+            // Show error view if the trading view account already has lifetime access
+            return view('problem', ['msg' => "We don't recognize this access period"]);
+        }
+
+        // ------------------------------------------------------------------------------------------------------------------------
+        // Ensure user does not have active access...
+
+        // To determine if the TradingView account already have access
+        $existingPurchase = Purchase::where('username', $request->username)->first();
+        $now = date("Y-m-d", strtotime("now"));
+
+        // If the TradinvView username has an existing purchase
+        if($existingPurchase){
+            // If the purchase was already paid for
+            if($existingPurchase->is_paid){
+                // Create date objects for date comparison
+                $d1 = date_create($now);
+                $d2 = date_create($existingPurchase->expires_at);
+
+                // Compare dates to determine how much time left for access
+                $interval = date_diff($d1, $d2);
+                $timeLeft = $interval->days;
+
+                if($now < $existingPurchase->expires_at){
+                    // Show error view if the trading view account already has acccess, and indicate remaining amount of days
+                    return view('problem', ['msg' => 'It looks like this TradingView account still has access to the Olympus Suite for ' . $timeLeft . ' days. No need to pay again yet!']);
+                }
+            }
+        }
+
+        // ------------------------------------------------------------------------------------------------------------------------
+        // If everything checks out...
+
         // The cost
         $price = 0.0;
 
         // Determine the price
-        if($access == 'three-month'){
-            $price = 75;
-        } elseif($access == 'year'){
-            $price = 125;
-        } elseif($access == 'lifetime'){
+        if($access == 'lifetime'){
             $price = 200;
         }
+        elseif($access == 'year'){
+            $price = 125;
+        }
+        elseif($access == 'three-month'){
+            $price = 75;
+        }
+
         // Calculate and round final total with GST (tax)
         $total = round($price * 1.05, 2);
 
-        // Add all options the the purchase model for saving
+        // Create new purchase
         $purchase = new Purchase;
+
+        // // Add all options the the purchase model for saving
         $purchase->email = $request->email;
         $purchase->username = $request->username;
         $purchase->access = $access;
         $purchase->confirm_tv = ($request->confirm_tv == 'on') ? true : false;
-        $purchase->agree_terms = ($request->agree_terms == 'on') ? true : false;
         $purchase->total = $total;
 
         // Save the preliminary purchase -- NOT YET PAID FOR!
   		if(! $purchase->save()){
-  			   // Return error is save didnt work
-           return back()->withErrors(['Connection problem.'])->withInput();
-
+      		// Return error is save didnt work
+            return back()->withErrors(['Connection problem.'])->withInput();
   		}
 
-        // Return view for payment info
-        return redirect()->route('checkout', [$purchase->id]);
+        // Show the terms view
+        return redirect('/view-terms/' . $purchase->id);
 
     }
 
-    /*
-    >> Shows the checkout / payment view for a specific purchase
-    >>
-    >> Once the purchase is paid for, this view is no longer available to the user
+    /**
+    * Shows the terms of use page and requires user confirmation before proceeding to payment page
+    * @var int $purchase_id - the id of the purchase
+    *
+    * Once the purchase is paid for, this view is no longer available to the user
     */
-    public function viewCheckout($order)
+    public function viewTerms($purchase_id)
     {
         // Retrieve the preliminary purchase
-        $purchase = Purchase::findOrFail($order);
+        $purchase = Purchase::findOrFail($purchase_id);
 
         // Only show the checkout view if the purchase is unpaid
         if(! $purchase->is_paid){
 
-          $description = '';
-
-          if($purchase->access == 'three-month'){
-              $description = 'Three Month Access';
-          } elseif($purchase->access == 'year'){
-              $description = 'One Year Access';
-          } elseif($purchase->access == 'lifetime'){
-              $description = 'Lifetime Access';
-          }
-
-          // Show checkout view
-          return view('checkout', ['purchase' => $purchase->toArray(), 'access_desc' => $description ]);
+            // Show checkout view
+            return view('view-terms', ['purchase_id' => $purchase->id]);
 
         } else {
             // Show error view if purchase is already paid
             return view('problem', ['msg' => 'It looks like this order was already paid for']);
         }
+    }
+
+    /**
+    * Called by the View terms page / confirm terms form
+    *
+    * Toggles the agree terms boolean in the customers purchase and shows the Pay now view
+    */
+    public function confirmTerms(TermsForm $request)
+    {
+        // Retrieve the preliminary purchase
+        $purchase = Purchase::findOrFail($request->purchase_id);
+
+        // Only show the checkout view if the purchase is unpaid
+        if(! $purchase->is_paid){
+
+            // Toggle and confirm user has agreed to the terms/Disclaimer
+            $purchase->agree_terms = ($request->agree_terms == 'on') ? true : false;
+
+            // Save the preliminary purchase -- NOT YET PAID FOR!
+      		if(! $purchase->save()){
+          		// Return error is save didnt work
+                return back()->withErrors(['Connection problem.'])->withInput();
+      		}
+
+            // For the view
+            $description = '';
+
+            // Create user friendly string based on requested access period
+            if($purchase->access == 'lifetime'){
+                $description = 'Lifetime Access';
+            }
+            elseif($purchase->access == 'year'){
+                $description = 'One Year Access';
+            }
+            elseif($purchase->access == 'three-month'){
+                $description = 'Three Month Access';
+            }
+
+            // Show Pay now view
+            return view('pay-now', ['purchase' => $purchase->toArray(), 'access_desc' => $description ]);
+
+        } else {
+            // Show error view if purchase is already paid
+            return view('problem', ['msg' => 'It looks like this order was already paid for']);
+        }
+
     }
 
     /*
@@ -165,21 +270,39 @@ class BuyController extends Controller
         $purchase->payment_type = 'PayPal';
         $purchase->is_paid = true;
         $purchase->paid_total = $request->payment_amount;
+        $purchase->paid_at = date("Y-m-d", strtotime("now"));
+
+        // For confirmation email
+        $description = '';
+
+        // Define the expirary date for the access
+        if($purchase->access == 'lifetime'){
+            $purchase->expires_at = "4000-12-31";
+            $description = 'Lifetime Access';
+        }
+        elseif($purchase->access == 'year'){
+            $purchase->expires_at = date("Y-m-d", strtotime($purchase->paid_at . ' + 365 days'));
+            $description = 'One Year Access';
+        }
+        elseif($purchase->access == 'three-month'){
+            $purchase->expires_at = date("Y-m-d", strtotime($purchase->paid_at . ' + 93 days'));
+            $description = 'Three Month Access';
+        }
 
         // Save the purchase
         if(! $purchase->save()){
-  			// Return error is save didnt work
-            return back()->with('error', 'Problem updating order status.');
+            // Return response to PayPal JS callback
+            return response()->json([
+                'result' => 'error',
+                'message' => 'Problem paying for order.'
+            ], 500);
   		}
-
-        // Determine what tools the user purchased
-        $tools = array('bro' => $purchase->bro, 'pao' => $purchase->pao, 'mnas' => $purchase->mnas, 'mspy' => $purchase->mspy);
 
         // Set up confirmation email properties
         $properties = [
   			'username' => $purchase->username,
+            'access' => $description,
   			'total' => $purchase->total,
-  			'tools' => $tools,
             'order_number' => $purchase->id
         ];
         // Users email address
