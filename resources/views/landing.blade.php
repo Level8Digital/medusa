@@ -15,9 +15,9 @@
     <div class="row h-full">
       <div class="col-12 col-lg-6 align-self-center text-center text-lg-left">
 
-        <h1 class="display-4">Goodbye Guesswork</h1>
+        <h1 class="display-2">Goodbye Guesswork</h1>
         <br>
-        <p class="lead text-white">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands and say goodbye to the Underworld forever.</p>
+        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands and say goodbye to the Underworld forever.</p>
 
         <br><br>
 
@@ -47,12 +47,12 @@
   <section class="section overflow-hidden" id="section-intro">
     <div class="container">
       <header class="section-header">
-        <small>INTRODUCING</small>
+        <small>INTRODUCTION</small>
         <h2>Take Control</h2>
         <hr class="dark-hr">
         <p class="lead">
-          It’s time to stop overanalyzing your trades. The secret to success does not lay in predicting every market oscillation or learning new and exotic technical indicators.
-          What you need is a proven and backtested strategy that tips the odds in your favor and the self-discipline to execute your system consistently.
+          It’s time to stop overanalyzing your trades. The secret to trading does not lay in predicting every market oscillation or finding new and exotic markets to trade.
+          What you need is a proven and tested strategy that consistently puts you in a position to earn more than you lose and the self-discipline to execute consistently.
         </p>
       </header>
       <div class="row">
@@ -67,16 +67,16 @@
               <p><i class="fa fa-check-circle fs-50"></i></p>
               <h5>Embrace Probability</h5>
               <p>
-                To help you succeed, the Olympus Suite is packed with three simple and effective trading systems designed around pattern repetition, probability, and random distribution.
+                To help you succeed, the Olympus Suite comes with two simple and effective trading systems designed around pattern repetition and continuous probability.
               </p>
             </div>
           </div>
           <div class="row">
             <div class="col-12">
               <p><i class="fa fa-hdd-o fs-50"></i></p>
-              <h5>Embrace Data</h5>
+              <h5>Embrace Testing</h5>
               <p>
-                Beyond mere indicators, the Olympus Suite comes with backtesting logic, allowing you to verify past results and make decisions based on real data, not blind trust.
+                Beyond mere indicators, the Olympus Suite comes with backtest logic, allowing you to verify past results and make decisions based on data, not blind trust.
               </p>
             </div>
           </div>
@@ -94,7 +94,8 @@
     <div class="container">
 
       <blockquote class="blockquote">
-        <p class="text-white">We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves. </p>
+        <div class="quote-sign"></div>
+        <p class="text-white">All wrong-doing arises because of mind. If mind is transformed can wrong-doing remain?</p>
         <footer class="text-white"><cite title="Source Title">Buddha</cite></footer>
       </blockquote>
 
@@ -113,59 +114,15 @@
         <h2>Master Your Mind</h2>
         <hr class="dark-hr">
         <p class="lead">
-          Trading success depends on more than a few winning trades. How can you find a viable system if you constantly change your trading rules, or have no rules at all? The Olympus Suite provides
-          you a rigid set of variables and is fully transparent, revealing the critical metrics that impact your long-term profitability. With a system in place, you will have
-          the confidence to execute in a consistent manner.
+          Trading success is a product of your mindset as well as your approach. As counterintuitive as it sounds, the market does not determine your results,
+          and a few winning trades do not make a successful trader. Ask yourself this, how can you find a viable trading system if you constantly change your rules,
+          or have no rules at all?
+          <br /><br />
+          Enter the Olympus Suite.
         </p>
       </header>
 
       <div class="row gap-y suite-features">
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="flexbox gap-items-4">
-            <div>
-              <i class="fa fa-eye fs-30 pt-0"></i>
-            </div>
-            <div>
-              <h5>Consistent Variables</h5>
-              <p>Detach from emotions and momentary perception with rigid trading rules that guide your behavior.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="flexbox gap-items-4">
-            <div>
-              <i class="fa fa-shield fs-30 pt-0"></i>
-            </div>
-            <div>
-              <h5>Risk Management</h5>
-              <p>Built in risk calculations instantly display position size based on a recommended stop-loss price.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="flexbox gap-items-4">
-            <div>
-              <i class="fa fa-crosshairs fs-30 pt-0"></i>
-            </div>
-
-            <div>
-              <h5>Profit Targets</h5>
-              <p>Pre-calculated targets based on a ticker’s average candle size help you scale out of winning trades.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="flexbox gap-items-4">
-            <div>
-              <i class="fa fa-bullseye fs-30 pt-0"></i>
-            </div>
-            <div>
-              <h5>Follow The Trend</h5>
-              <p>Leave a portion of your position in the market with a trailing stop loss to capture extended moves.</p>
-            </div>
-          </div>
-        </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="flexbox gap-items-4">
             <div>
@@ -184,7 +141,52 @@
             </div>
             <div>
               <h5>Customization</h5>
-              <p>Tweak various strategy components with backtesting and keep up with changing market conditions.</p>
+              <p>Tweak various strategy components with backtest logic and keep up with changing market conditions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-shield fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Risk Management</h5>
+              <p>Built-in risk calculations instantly display position size based on a recommended stop-loss price.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-eye fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Consistent Variables</h5>
+              <p>Detach from emotions and momentary perception with rigid trading rules that guide your behavior.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-crosshairs fs-30 pt-0"></i>
+            </div>
+
+            <div>
+              <h5>Profit Targets</h5>
+              <p>Pre-calculated targets based on risk per share and position size help you scale out of winning trades.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-bullseye fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Follow The Trend</h5>
+              <p>Leave a portion of your position in the market with a trailing stop loss to capture extended moves.</p>
             </div>
           </div>
         </div>
@@ -207,30 +209,76 @@
     <div class="container">
       <header class="section-header">
         <small>TECHNICALS</small>
-        <h2>Trade Like A Pro</h2>
+        <h2>Find Clarity</h2>
         <hr class="dark-hr">
-        <p class="lead">Make sense of any market conditions with simple and effective visual guides that work.</p>
+        <p class="lead">Simple and effective visual guides that help you find clarity regardless of market conditions. Not to mention backtest logic that shows you what works, and what doesn't.</p>
       </header>
 
       <div class="row gap-y align-items-center mt-70">
-        <div class="col-md-6 ml-auto">
+        <div class="col-lg-6 ml-auto">
           <h4>Olympus Cloud</h4>
-          <p>Think the or organization same proposal to affected heard reclined in be it reassuring are attained opinion, by he neighbours even again. Is and by value and that like can could from world takes of great copy and delicacy compared he such that the in and with himself a the man, client totally least for him and have insidious than of him remedies. That his counter-productive clearly, wasn't day we hills parts he on every.</p>
+          <p>Our unique cloud is based on candle highs and lows and is not a function of moving average crossovers or crossunders like many other systems.
+            In addition, a lagging trend filter helps you gauge the longer-term momentum so you’re not trading against the wave.
+          </p>
+          <p class="mt-30">
+            <i class="fa fa-check"></i> Enter when the trend filter is positive and the cloud transitions bullish
+          </p>
+          <p>
+            <i class="fa fa-check"></i> A secondary signal occurs on the next pivot during a bullish trend and cloud environment
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Stack the Olympus Cloud on multiple timeframes to increase confluence and probability
+          </p>
+          <p>
+            <i class="fa fa-check"></i> The short signal occurs when the trend filter is negative and the cloud transitions bearish
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Works for high-frequency traders or those with a long-term outlook
+          </p>
         </div>
 
-        <div class="col-md-5 order-md-first">
-          <img class="rounded shadow-2" src="../assets/img/preview/header-image.jpg" alt="...">
+        <div class="col-lg-5 order-lg-first">
+          <img class="rounded shadow-2" src="{{ url('assets/img/olympus-cloud.jpg') }}" alt="...">
         </div>
       </div>
 
       <div class="row gap-y align-items-center mt-70">
         <div class="col-md-6 mr-auto">
           <h4>Olympus Pivot</h4>
-          <p>Think the or organization same proposal to affected heard reclined in be it reassuring are attained opinion, by he neighbours even again. Is and by value and that like can could from world takes of great copy and delicacy compared he such that the in and with himself a the man, client totally least for him and have insidious than of him remedies. That his counter-productive clearly, wasn't day we hills parts he on every.</p>
+          <p>
+            A pure price action approach based on our real-time fractals. The Olympus Pivot is an aggressive trend following and trend reversal strategy that is best suited
+            for big ETFs and blue-chip companies. An optional moving average filter is available to help guide your decisions.
+          </p>
+          <p class="mt-30">
+            <i class="fa fa-check"></i> Enter when a real-time fractal is set
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Stack the Olympus Pivot on multiple timeframes to increase confluence and probability
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Best suited for traders who focus on going long, not short
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Works for high-frequency traders or those with a long-term outlook
+          </p>
         </div>
 
         <div class="col-md-5">
-          <img class="rounded shadow-2" src="../assets/img/preview/header-video.jpg" alt="...">
+          <img class="rounded shadow-2" src="{{ url('assets/img/olympus-pivot.jpg') }}" alt="...">
+        </div>
+      </div>
+
+      <div class="row mt-70 pt-20 pb-10 pl-20 pr-20 section-inverse bg-teal-gray">
+        <div class="col-lg-12">
+          <p class="lead">
+          <i class="fa fa-info-circle fs-25"></i> Both systems feature our robust and customizable backtest logic that helps you manage risk, determine profit targets, and ensures stategy viability.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-70">
+        <div class="col-12 text-center">
+          <a class="btn btn-lg btn-primary" href="{{ url('videos') }}">View Videos</a>
         </div>
       </div>
 

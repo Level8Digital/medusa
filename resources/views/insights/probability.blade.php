@@ -4,6 +4,24 @@
 
 @section('content')
 
+<!-- Header -->
+<header class="header header-inverse bg-fixed" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="7">
+  <div class="container text-center">
+
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+
+        <h1>Trading Insights</h1>
+        <p class="fs-20 opacity-70">Articles designed to take your trading to the next level.</p>
+
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- END Header -->
+
 <!-- Main Content -->
 <main class="main-content">
 

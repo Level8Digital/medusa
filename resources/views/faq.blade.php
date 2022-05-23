@@ -9,7 +9,7 @@
 @section('content')
 
 <!-- Header -->
-<header class="header header-inverse bg-fixed" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="8">
+<header class="header header-inverse bg-fixed" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="7">
   <div class="container text-center">
 
     <div class="row">

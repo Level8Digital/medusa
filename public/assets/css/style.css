@@ -36,6 +36,14 @@
   background-color: #f1f1f1;
 }
 
+.bg-teal-gray{
+  background-color: #88918d;
+}
+
+#landing-lead{
+  font-size: 1.5rem;
+}
+
 .row{
   margin-left: 0px;
   margin-right: 0px;
@@ -78,12 +86,16 @@ a:hover {
 }
 
 .blockquote {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .blockquote footer {
   font-size: 1rem;
+}
+
+.blockquote .quote-sign::before {
+  opacity: 1;
 }
 
 #terms-header{
