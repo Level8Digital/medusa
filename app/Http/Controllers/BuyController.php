@@ -115,23 +115,26 @@ class BuyController extends Controller
         // ------------------------------------------------------------------------------------------------------------------------
         // Ensure user does not have active access...
 
-        // To determine if the TradingView account already have access
-        $existingPurchase = Purchase::where('username', $request->username)->first();
-        $now = date("Y-m-d", strtotime("now"));
+        // To determine if the TradingView account already have access, retrieve all possible paid for purchases with this username
+        $existingPurchases = Purchase::where(['username' => $request->username, 'is_paid' => true])->get();
 
-        // If the TradinvView username has an existing purchase
-        if($existingPurchase){
-            // If the purchase was already paid for
-            if($existingPurchase->is_paid){
+        // If there are existing purchases...
+        if($existingPurchases->isNotEmpty()){
+            // Create the now moment date
+            $now = date("Y-m-d", strtotime("now"));
+
+            // Iterate over each possible purchase to check if the access is still valid
+            foreach($existingPurchases as $purch){
                 // Create date objects for date comparison
                 $d1 = date_create($now);
-                $d2 = date_create($existingPurchase->expires_at);
+                $d2 = date_create($purch->expires_at);
 
                 // Compare dates to determine how much time left for access
                 $interval = date_diff($d1, $d2);
                 $timeLeft = $interval->days;
 
-                if($now < $existingPurchase->expires_at){
+                // If an existing purchase is still within the access period, do not proceed further and return a message to the user
+                if($now < $purch->expires_at){
                     // Show error view if the trading view account already has acccess, and indicate remaining amount of days
                     return view('problem', ['msg' => 'It looks like this TradingView account still has access to the Olympus Suite for ' . $timeLeft . ' days. No need to pay again yet!']);
                 }
@@ -248,10 +251,10 @@ class BuyController extends Controller
 
     }
 
-    /*
-    >> Called by the PayPal JS callback in the checkout view when payment is successful
-    >>
-    >> Add the PayPal id to the purchase, adjusts flags, and sends confirmation email to user
+    /**
+    * Called by the PayPal JS callback in the checkout view when payment is successful
+    *
+    * Add the PayPal id to the purchase, adjusts flags, and sends confirmation email to user
     */
     public function finalizePayPal(FinalizePayPal $request)
     {

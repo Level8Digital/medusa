@@ -26,7 +26,7 @@
   <body id="home">
 
     <!-- Topbar -->
-    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky">
+    <nav class="topbar topbar-inverse topbar-expand-md">
       <div class="container">
 
         <div class="topbar-left">
@@ -40,12 +40,13 @@
         <div class="topbar-right">
           <ul class="topbar-nav nav">
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-components">Components</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insight">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-technicals">Technicals</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-purchase">Purchase</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
           </ul>
         </div>
       </div>
@@ -60,40 +61,38 @@
         <div class="row gap-y align-items-center">
           <div class="col-12 col-lg-2">
             <p class="text-center text-lg-left">
-              <a href="index.html"><img src="assets/img/logo-02.png" alt="logo"></a>
+              <a href="{{ url('/') }}"><img id="footer-logo" src="{{ url('assets/img/logo-02.png') }}" alt="logo-2"></a>
             </p>
           </div>
 
-          <div class="col-12 col-lg-8">
-            <ul class="nav nav-primary nav-hero">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="block-feature.html">Features</a>
-              </li>
-              <li class="nav-item hidden-sm-down">
-                <a class="nav-link" href="page-pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item hidden-sm-down">
-                <a class="nav-link" href="page-contact.html">Contact</a>
-              </li>
+          <div class="col-12 col-lg-8 mt-30">
+            <ul id="footer-nav" class="nav nav-primary nav-hero">
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-technicals">Technicals</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-purchase">Purchase</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
             </ul>
           </div>
 
-          <div class="col-12 col-lg-2">
+          <div class="col-12 col-lg-2 mt-30">
             <div class="social text-center text-lg-right">
-              <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
-              <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
-              <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
-              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+              <a class="social-icon" href="https://www.tradingview.com/" target="_blank"><div id="trading-view-icon"></div></a>
+              <a class="social-icon" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a class="social-icon" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
         </div>
+        <hr />
+        <div id="footer-bottom">
+          <p>
+            <small>&copy; Copyright 2022 Medusa Software Ltd. | Your use of this site and our products is governed by our <a href="{{ url('terms-of-use') }}">Terms of Use & Disclaimer</a></small>
+          </p>
+        </div>
       </div>
+
     </footer>
     <!-- END Footer -->
 

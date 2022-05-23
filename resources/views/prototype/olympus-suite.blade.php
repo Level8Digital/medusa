@@ -1,4 +1,4 @@
-@extends('layouts.layout3')
+@extends('layouts.layout2')
 
 @section('title', 'Components')
 
@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2">
 
-        <h1>Components</h1>
+        <h1>The Olympus Suite</h1>
         <p class="fs-20 opacity-70">The Olympus Suite comes bundled with three premium strategies.</p>
 
       </div>

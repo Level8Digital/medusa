@@ -30,24 +30,10 @@
       <div class="container">
 
         <div class="topbar-left">
-          <button class="topbar-toggler">&#9776;</button>
           <a class="topbar-brand" href="/">
             <img id="logo-default" class="logo-default" src="{{ url('assets/img/logo-small.png') }}" alt="logo">
             <img id="logo-inverse" class="logo-inverse" src="{{ url('assets/img/logo-light.png') }}" alt="logo">
           </a>
-        </div>
-
-        <div class="topbar-right">
-          <ul class="topbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('olympus-suite') }}">Olympus Suite</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/insights') }}">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/faq') }}">FAQ</a></li>
-          </ul>
         </div>
       </div>
     </nav>
@@ -61,19 +47,19 @@
         <div class="row gap-y align-items-center">
           <div class="col-12 col-lg-2">
             <p class="text-center text-lg-left">
-              <a href="{{ url('/') }}"><img id="footer-logo" src="{{ url('assets/img/logo-02.png') }}" alt="logo-2"></a>
+              <a href="index.html"><img id="footer-logo" src="{{ url('assets/img/logo-02.png') }}" alt="logo-2"></a>
             </p>
           </div>
 
           <div class="col-12 col-lg-8 mt-30">
             <ul id="footer-nav" class="nav nav-primary nav-hero">
-              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('olympus-suite') }}">Olympus Suite</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/insights') }}">Insights</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/faq') }}">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-components">Olympus Suite</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Videos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insight">Insights</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
             </ul>
           </div>
 

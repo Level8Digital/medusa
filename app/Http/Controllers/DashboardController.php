@@ -10,61 +10,72 @@ use App\Mail\GrantAccess;
 
 class DashboardController extends Controller
 {
-    /*
-    >> Shows the dashboard view with all purchases
+    /**
+    * Shows the dashboard view with all purchases
     */
     public function viewDashboard()
     {
-        // Retrieve the purchases
-        $purchases = Purchase::orderBy('created_at')
-                        ->orderBy('is_paid')
-                        ->get();
+        // Retrieve all purchases to return to view
+        $purchases = Purchase::orderByDesc('is_paid')
+                    ->orderBy('paid_at')
+                    ->orderBy('access_granted')
+                    ->get();
 
         // Show view with data
         return view('dashboard', ['purchases' => $purchases->toArray()]);
     }
 
-    /*
-    >> Called by the dashboard view -- notify icon
-    >>
-    >> Emails the user corresponding to the purchase to notify that their access was granted and toggles flags
+    /**
+    * Called by the dashboard view's Notify icon
+    * @var int $purchase_id - The purchase identifier
+    *
+    * Emails the user to notify that their access was granted and toggles flags
     */
     public function notifyAccess($purchase_id)
     {
         // Retrieve the purchase
         $purchase = Purchase::findOrFail($purchase_id);
+
         // Toggle flag
         $purchase->access_granted = true;
 
         // Save the purchase
         if(! $purchase->save()){
   			// Return error is save didnt work
-            return back()->with('error', 'Problem updating access flag.');
+            return redirect('/dashboard')->with('error', 'Problem granting access to the user!');
   		}
 
-        // Determine the purchased tools
-        $tools = array('bro' => $purchase->bro, 'pao' => $purchase->pao, 'mnas' => $purchase->mnas, 'mspy' => $purchase->mspy);
+        // For the email
+        $description = '';
+
+        // Create user friendly string based on requested access period
+        if($purchase->access == 'lifetime'){
+            $description = 'Lifetime Access';
+        }
+        elseif($purchase->access == 'year'){
+            $description = 'One Year Access';
+        }
+        elseif($purchase->access == 'three-month'){
+            $description = 'Three Month Access';
+        }
 
         // Set up the email properties
         $properties = [
   			'username' => $purchase->username,
+            'access' => $description,
   			'total' => $purchase->total,
-  			'tools' => $tools,
             'order_number' => $purchase->id
         ];
+
         // User email address
         $toAddress = $purchase->email;
 
         // Send the email
     	Mail::to($toAddress)->send(new GrantAccess($properties));
 
-        // Retrieve all purchases to return to view
-        $purchases = Purchase::orderBy('created_at')
-                        ->orderBy('is_paid')
-                        ->get();
+        // Show the terms view
+        return redirect('/dashboard')->with('success', 'Access was granted to the user!');
 
-        // Show view with success message and data
-        return view('dashboard', ['success' => 'Access granted flag was toggled.', 'purchases' => $purchases->toArray()]);
     }
 
 }

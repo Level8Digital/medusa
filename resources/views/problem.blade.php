@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>Medusa Money — Oops, problem</title>
+    <title>Medusa Money — Problem!</title>
 
     <!-- Styles -->
     <link href="{{ url('assets/css/page.min.css') }}" rel="stylesheet">
@@ -24,8 +24,8 @@
     <main class="main-content text-center pb-lg-8">
       <div class="container">
 
-        <h1 class="display-1 text-muted mb-7">Oops, there was a problem</h1>
-        <p class="lead">{{ $msg ?? 'Appologies, please try again later' }}.</p>
+        <h1 class="display-1 text-muted mb-7">Oops, there was a problem!</h1>
+        <p class="lead">{{ $msg ?? 'Appologies, please try again later' }}</p>
         <br>
         <a class="btn btn-secondary w-150" href="/">Return Home</a>
 

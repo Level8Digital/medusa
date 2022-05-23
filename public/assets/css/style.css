@@ -36,6 +36,19 @@
   background-color: #f1f1f1;
 }
 
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.bg-gray small{
+  color: #474747;
+}
+
 a {
   color: #18206a;
 }
@@ -48,6 +61,10 @@ a:hover {
   border-top-color: rgb(83 83 83 / 50%);
 }
 
+.section-inverse hr, .header-inverse hr {
+  border-top-color: rgb(255 255 255 / 50%);
+}
+
 .dark-strong {
   color: #494949;
 }
@@ -58,6 +75,19 @@ a:hover {
 
 .large-icon {
   font-size: 2rem;
+}
+
+.blockquote {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.blockquote footer {
+  font-size: 1rem;
+}
+
+#terms-header{
+  padding: 100px 0 10px;
 }
 
 #section-components a {
@@ -80,12 +110,6 @@ a:hover {
 
 .blog-img {
   width: 65%;
-}
-
-#terms-modal {
-  max-width: 80%;
-  width: 80%;
-  margin-left: 10%;
 }
 
 .btn-primary {
@@ -126,14 +150,53 @@ a:hover {
 }
 
 #logo-inverse {
-  margin-top: 20px;
+  margin-top: 30px;
   max-height: 80px;
 }
 
+.site-footer{
+  padding: 0px;
+}
 
-.site-footer {
-  padding: 100px 0;
-  margin-top: 15px;
+#footer-nav .nav-item{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#footer-bottom{
+  margin-top: 50px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+#footer-bottom small{
+  color: #74787d;
+  font-size: 85%;
+}
+
+#footer-logo{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.social a{
+  opacity: 1;
+  font-size: 25px;
+}
+
+.social a.social-icon:hover{
+  color: #1c7452;
+}
+
+#trading-view-icon{
+  height: 20px;
+  width: 39px;
+  background: url('../img/tv-icon-small.png');
+  background-size: cover;
+  display: inline-block;
+}
+#trading-view-icon:hover{
+  background: url('../img/tv-icon-small-hover.png');
+  background-size: cover;
 }
 
 /* @media (min-width: 1200px) {
@@ -141,6 +204,10 @@ a:hover {
     width: 70%;
   } */
 
+@media screen and (max-width: 991px){
+  #footer-logo{
+    width: 25%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -150,5 +217,7 @@ a:hover {
     margin: 30px 0 100px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
+
+
 
 }

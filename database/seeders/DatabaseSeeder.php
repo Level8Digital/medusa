@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
      {
         $password = config('app.auth_pass');
          DB::table('users')->insert([
-           'name' => 'admin',
+           'name' => 'Admin',
            'email' => 'shanks.matt.10@gmail.com',
            'email_verified_at' => now(),
            'password' => Hash::make($password), // password

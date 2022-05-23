@@ -292,16 +292,18 @@
   <tr>
     <td align="center" valign="top" width="100%" style="background-color: #f7f7f7;" class="content-padding">
       <center>
-        <table cellspacing="0" cellpadding="0" width="600" class="w320">
+        <table cellspacing="0" cellpadding="0" width="650" class="w320">
           <tr>
             <td class="header-lg">
-                You Can Now Access The Olympus Suite Trading View!
+                You Can Now Access The Olympus Suite!
             </td>
           </tr>
           <tr>
             <td class="free-text">
-                You can access your tools on TradingView with username '{{ $messageDetails['username'] }}'. Please see our <a href="{{ secure_url('videos'); }}">video page</a> to learn how to use the Olympus Suite and
-                add it to your charts.
+              You can access the Olympus Suite on TradingView with username '{{ $messageDetails['username'] }}'!
+              <br /><br />
+              Head over to our <a href="{{ secure_url('videos'); }}">Video</a> page to learn how to use and access your new trading system, and read our
+              <a href="{{ secure_url('insights'); }}">Insights Blog</a> to take your trading to the next level.
             </td>
           </tr>
           <tr>
@@ -326,7 +328,7 @@
                             <tr>
                               <td class="mini-block">
                                 <span class="header-sm">Your Order</span><br />
-                                The Olympus Suite
+                                The Olympus Suite | {{ $messageDetails['access'] }}
                               </td>
                             </tr>
                           </table>
@@ -341,10 +343,7 @@
                           <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate !important;">
                             <tr>
                               <td class="mini-block">
-                                <span class="header-sm">Date Ordered</span><br />
-                                 {{ date("Y/m/d") }}<br />
-                                <br />
-                                <span class="header-sm">Order</span> <br />
+                                <span class="header-sm">Order No.</span> <br />
                                 #{{ $messageDetails['order_number'] }}-{{ rand(1000,9000) }}
                               </td>
                             </tr>

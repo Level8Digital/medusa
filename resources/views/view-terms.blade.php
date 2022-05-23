@@ -1,4 +1,4 @@
-@extends('layouts.layout3')
+@extends('layouts.layout4')
 
 @section('title', 'Terms & Disclaimer')
 
@@ -9,11 +9,11 @@
 @section('content')
 
 <!-- Header -->
-<header class="header header-inverse">
-  <div class="container">
+<header id="terms-header" class="header header-inverse">
+  <!-- <div class="container">
     <h1 class="display-4">Terms of Use & Disclaimer</h1>
     <p class="lead-2 mt-6">You must agree to our terms of use and disclaimer before proceeding.</p>
-  </div>
+  </div> -->
 </header>
 <!-- END Header -->
 
@@ -22,6 +22,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto">
+          <h1>Terms of Use & Disclaimer</h1>
+          <p class="lead-2 mt-6"><strong>You must agree to our Terms of Use and Disclaimer to use the Olympus Suite.</strong></p>
+
+          <hr class="dark-hr" />
 
           <h4>General Information</h4>
           <p>We collect the e-mail addresses of those who communicate with us via e-mail, aggregate information on what pages consumers access or visit, and information volunteered by the consumer (such as survey information and/or site registrations). The information we collect is used to improve the content of our Web pages and the quality of our service, and is not shared with or sold to other organizations for commercial purposes, except to provide products or services you’ve requested, when we have your permission, or under the following circumstances:</p>

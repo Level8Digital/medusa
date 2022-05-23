@@ -18,22 +18,31 @@ use App\Http\Controllers\DashboardController;
 Route::get('/', function () {
     return view('landing');
 });
-Route::get('/faq', function () {
-    return view('faq');
-});
 Route::get('/insights', function () {
     return view('insights');
 });
-Route::get('/components', function () {
-    return view('components');
+Route::get('/videos', function () {
+    return view('videos');
 });
-Route::get('/pricing', function () {
-    return view('pricing');
+Route::get('/faq', function () {
+    return view('faq');
 });
+Route::get('/terms-of-use', function () {
+    return view('terms');
+});
+// ERROR VIEW - CONTROLLER SENDS MESSAGE
 Route::get('/problem', function () {
     return view('problem');
 });
-Route::get('/terms-of-use', [BuyController::class, 'viewTerms']);
+
+// NOT IN USE
+
+// Route::get('/olympus-suite', function () {
+//     return view('olympus-suite');
+// });
+// Route::get('/pricing', function () {
+//     return view('pricing');
+// });
 
 // BLOG/INSIGHTS ROUTES
 Route::get('/probability-and-random-distribution', function () {

@@ -9,7 +9,7 @@
 @section('content')
 
 <!-- Landing -->
-<header class="header header-inverse h-fullscreen p-0 overflow-hidden" data-parallax="assets/img/bg-thunder.jpg">
+<header class="header header-inverse h-fullscreen p-0 overflow-hidden" data-parallax="assets/img/olympus-background.jpg">
   <div class="container">
 
     <div class="row h-full">
@@ -46,40 +46,40 @@
   !-->
   <section class="section overflow-hidden" id="section-intro">
     <div class="container">
+      <header class="section-header">
+        <small>INTRODUCING</small>
+        <h2>Take Control</h2>
+        <hr class="dark-hr">
+        <p class="lead">
+          It’s time to stop overanalyzing your trades. The secret to success does not lay in predicting every market oscillation or learning new and exotic technical indicators.
+          What you need is a proven and backtested strategy that tips the odds in your favor and the self-discipline to execute your system consistently.
+        </p>
+      </header>
       <div class="row">
-
-        <div class="col-12 col-md-6 text-center">
+        <div class="col-12 col-lg-6 text-center mt-10 mb-40">
           <img class="mr-40" src="{{ url('assets/img/ipad-data.png') }}" alt="..." data-aos="slide-up">
           <small><em>Real world results of the Olympus X-Fractal on a single ticker.</em></small>
         </div>
 
-        <div class="col-12 col-md-6 align-self-center pb-70">
-          <h3>Master Your Mind</h3>
-          <p class="lead">
-            It’s time to stop overanalyzing your trades. The secret to success does not lay in predicting every market oscillation or learning new and exotic technical indicators.
-            What you need is a proven and backtested strategy that tips the odds in your favor and the self-discipline to execute your system consistently.
-          </p>
-
-          <br><br>
-
-          <div class="flexbox flex-grow-all gap-items-3">
-            <div>
-              <p><i class="fa fa-check-circle text-success fs-30"></i></p>
+        <div class="col-12 col-lg-6 align-self-center pb-0">
+          <div class="row">
+            <div class="col-12">
+              <p><i class="fa fa-check-circle fs-50"></i></p>
               <h5>Embrace Probability</h5>
               <p>
                 To help you succeed, the Olympus Suite is packed with three simple and effective trading systems designed around pattern repetition, probability, and random distribution.
               </p>
             </div>
-
-            <div>
-              <p><i class="fa fa-hdd-o text-info fs-30"></i></p>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p><i class="fa fa-hdd-o fs-50"></i></p>
               <h5>Embrace Data</h5>
               <p>
                 Beyond mere indicators, the Olympus Suite comes with backtesting logic, allowing you to verify past results and make decisions based on real data, not blind trust.
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -94,8 +94,8 @@
     <div class="container">
 
       <blockquote class="blockquote">
-        <p class="text-white">Individual random events, such as market behavior patterns, have a consistent outcome over a set of events when the odds are tilted in one direction — like flipping a rigged coin.</p>
-        <footer class="text-white">Matthew Toro <cite title="Source Title">, Medusa Money Founder & President</cite></footer>
+        <p class="text-white">We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves. </p>
+        <footer class="text-white"><cite title="Source Title">Buddha</cite></footer>
       </blockquote>
 
     </div>
@@ -108,92 +108,91 @@
   !-->
   <section class="section overflow-hidden" id="section-features">
     <div class="container">
+      <header class="section-header">
+        <small>FEATURES</small>
+        <h2>Master Your Mind</h2>
+        <hr class="dark-hr">
+        <p class="lead">
+          Trading success depends on more than a few winning trades. How can you find a viable system if you constantly change your trading rules, or have no rules at all? The Olympus Suite provides
+          you a rigid set of variables and is fully transparent, revealing the critical metrics that impact your long-term profitability. With a system in place, you will have
+          the confidence to execute in a consistent manner.
+        </p>
+      </header>
 
-      <div class="row">
-        <div class="col-12 col-md-12 pb-70 align-self-center">
-          <h2>Consistency Is Key</h2>
-          <p class="lead">
-            Trading success depends on more than a few winning trades. How can you find a viable system if you constantly change your trading rules, or have no rules at all? The Olympus Suite provides
-            you a rigid set of variables and is fully transparent, revealing the critical metrics that impact your long-term profitability. With a system in place, you will have
-            the confidence to execute in a consistent manner.
-          </p>
-          <hr class="w-50 ml-0 dark-hr">
+      <div class="row gap-y suite-features">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-eye fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Consistent Variables</h5>
+              <p>Detach from emotions and momentary perception with rigid trading rules that guide your behavior.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-shield fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Risk Management</h5>
+              <p>Built in risk calculations instantly display position size based on a recommended stop-loss price.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-crosshairs fs-30 pt-0"></i>
+            </div>
+
+            <div>
+              <h5>Profit Targets</h5>
+              <p>Pre-calculated targets based on a ticker’s average candle size help you scale out of winning trades.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-bullseye fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Follow The Trend</h5>
+              <p>Leave a portion of your position in the market with a trailing stop loss to capture extended moves.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-code fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Backtest Logic</h5>
+              <p>Ensure you have confidence in your strategy by testing past performance on your favorite stocks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-wrench fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h5>Customization</h5>
+              <p>Tweak various strategy components with backtesting and keep up with changing market conditions.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="row gap-y suite-features">
-
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="flexbox gap-items-4">
-              <div>
-                <i class="fa fa-eye fs-25 pt-4"></i>
-              </div>
-              <div>
-                <h5>Consistent Variables</h5>
-                <p>Detach from emotions and momentary perception with rigid trading rules that guide your behavior.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="flexbox gap-items-4">
-              <div>
-                <i class="fa fa-shield fs-25 pt-4"></i>
-              </div>
-              <div>
-                <h5>Risk Management</h5>
-                <p>Built in risk calculations instantly display position size based on a recommended stop-loss price.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="flexbox gap-items-4">
-              <div>
-                <i class="fa fa-crosshairs fs-25 pt-4"></i>
-              </div>
-
-              <div>
-                <h5>Profit Targets</h5>
-                <p>Pre-calculated targets based on a ticker’s average candle size help you scale out of winning trades.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="flexbox gap-items-4">
-              <div>
-                <i class="fa fa-bullseye fs-25 pt-4"></i>
-              </div>
-              <div>
-                <h5>Follow The Trend</h5>
-                <p>Leave a portion of your position in the market with a trailing stop loss to capture extended moves.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="flexbox gap-items-4">
-              <div>
-                <i class="fa fa-code fs-25 pt-4"></i>
-              </div>
-              <div>
-                <h5>Backtest Logic</h5>
-                <p>Ensure you have confidence in your strategy by testing past performance on your favorite stocks.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="flexbox gap-items-4">
-              <div>
-                <i class="fa fa-wrench fs-25 pt-4"></i>
-              </div>
-              <div>
-                <h5>Customization</h5>
-                <p>Tweak various strategy components with backtesting and keep up with changing market conditions.</p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
 
       </div>
+
+
 
     </div>
   </section>
@@ -204,22 +203,37 @@
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
 
-  <section class="section text-center py-150" style="background-image: url(assets/img/greek-gods.jpg); background-size: cover;" data-overlay="8" id="section-components">
+  <section class="section bg-gray overflow-hidden" id="section-technicals">
     <div class="container">
-      <h5 class="fs-30 text-white fw-300 mb-30"><strong>Dive</strong> into the strategies that make up the Olympus Suite</h5>
+      <header class="section-header">
+        <small>TECHNICALS</small>
+        <h2>Trade Like A Pro</h2>
+        <hr class="dark-hr">
+        <p class="lead">Make sense of any market conditions with simple and effective visual guides that work.</p>
+      </header>
 
-      <p class="text-white mb-30">
-        The Olympus Suite comes bundled with two different strategies allowing you to trade the way that suits you best.
-      </p>
-
-      <div class="row text-center">
-        <div class=col-12>
-          <p>
-            <a class="btn btn-lg btn-outline btn-white w-200" href="/components">Take A Look</a>
-          </p>
+      <div class="row gap-y align-items-center mt-70">
+        <div class="col-md-6 ml-auto">
+          <h4>Olympus Cloud</h4>
+          <p>Think the or organization same proposal to affected heard reclined in be it reassuring are attained opinion, by he neighbours even again. Is and by value and that like can could from world takes of great copy and delicacy compared he such that the in and with himself a the man, client totally least for him and have insidious than of him remedies. That his counter-productive clearly, wasn't day we hills parts he on every.</p>
         </div>
 
+        <div class="col-md-5 order-md-first">
+          <img class="rounded shadow-2" src="../assets/img/preview/header-image.jpg" alt="...">
+        </div>
       </div>
+
+      <div class="row gap-y align-items-center mt-70">
+        <div class="col-md-6 mr-auto">
+          <h4>Olympus Pivot</h4>
+          <p>Think the or organization same proposal to affected heard reclined in be it reassuring are attained opinion, by he neighbours even again. Is and by value and that like can could from world takes of great copy and delicacy compared he such that the in and with himself a the man, client totally least for him and have insidious than of him remedies. That his counter-productive clearly, wasn't day we hills parts he on every.</p>
+        </div>
+
+        <div class="col-md-5">
+          <img class="rounded shadow-2" src="../assets/img/preview/header-video.jpg" alt="...">
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -229,10 +243,15 @@
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
 
-  <section class="section bg-gray" id="section-insight">
+  <section class="section" id="section-insight">
     <div class="container">
-      <h2 class="text-center">Trading Insights</h2>
-      <br><br>
+
+      <header class="section-header">
+        <small>LEARNING CENTER</small>
+        <h2>Trading Insights</h2>
+        <hr class="dark-hr">
+        <p class="lead">Develop your trading skills with articles designed to stimulate your mind.</p>
+      </header>
 
       <div class="row gap-y">
 
@@ -289,11 +308,12 @@
   !-->
   <section class="section section-inverse" style="background-color: #18206a" id="section-pricing">
     <div class="container">
-      <h2 class="text-center fs-35">Sharpen Your Blade</h2>
-      <p class="lead text-center">
-        Get the edge in your favor.
-      </p>
-      <br><br><br>
+      <header class="section-header">
+        <small>PURCHASE</small>
+        <h2>Sharpen Your Blade</h2>
+        <hr class="white-hr">
+        <p class="lead">Get the edge in your favor.</p>
+      </header>
 
       <div class="row gap-y">
 
@@ -356,7 +376,7 @@
       <header class="section-header">
         <small>Faq</small>
         <h2>Frequently Asked Questions</h2>
-        <hr>
+        <hr class="dark-hr"/>
         <p class="lead">Drop us an email if you couldn't find an answert to your question in the following list.</p>
       </header>
 
@@ -413,7 +433,7 @@
 
         <div class="col-12 col-md-6 col-lg-4">
           <h6 class="fw-400">Other questions?</h6>
-          <p>We're always available at support@domain.com</p>
+          <a class="btn btn-lg btn-primary" href="{{ url('faq') }}">More FAQ...</a>
         </div>
 
       </div>

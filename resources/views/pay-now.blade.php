@@ -1,4 +1,4 @@
-@extends('layouts.layout3')
+@extends('layouts.layout4')
 
 @section('title', 'Checkout')
 
@@ -22,6 +22,10 @@
 <main class="main-content">
   <section class="section" id="payment-area">
     <div class="container">
+
+      <div id="payment-error" class="alert alert-danger" style="display:none;">
+        <i class="fa fa-exclamation-triangle"></i> There was a problem processing the payment! <span id="error-msg"></span>
+      </div>
 
       <div class="row mt-50">
         <div class="col-lg-7 ">
@@ -128,19 +132,27 @@
                 console.log(transaction);
 
                 axios.post('/finalize-paypal', {
-                    purchase_id: purchaseId,
-                    paypal_id: transaction.id,
-                    payment_amount: parseFloat(transaction.amount.value)
+                  purchase_id: purchaseId,
+                  paypal_id: transaction.id,
+                  payment_amount: parseFloat(transaction.amount.value)
                 })
                 .then(function (response) {
-                    console.log(response);
+                  console.log(response);
 
-                    $('#payment-area').toggle("fast", function(){
-                        $('#success-area').toggle("fast");
-                    });
+                  // Hide the payment area and show the success area
+                  $('#payment-area').toggle("fast", function(){
+                      $('#success-area').toggle("slow");
+                  });
                 })
                 .catch(function (error) {
-                    console.log(error);
+                  // Log error - for debug
+                  console.log(error);
+
+                  $('#error-msg').text(error.message);
+
+                  // Show the error alert
+                  $('#payment-error').toggle("fast");
+
                 });
 
             });
