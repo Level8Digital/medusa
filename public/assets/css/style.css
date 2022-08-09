@@ -69,6 +69,10 @@ a:hover {
   border-top-color: rgb(83 83 83 / 50%);
 }
 
+.topbar-toggler {
+  line-height: 10;
+}
+
 .section-inverse hr, .header-inverse hr {
   border-top-color: rgb(255 255 255 / 50%);
 }
@@ -162,7 +166,7 @@ a:hover {
 }
 
 #logo-inverse {
-  margin-top: 30px;
+  margin-top: 10px;
   max-height: 80px;
 }
 
@@ -219,6 +223,10 @@ a:hover {
 @media screen and (max-width: 991px){
   #footer-logo{
     width: 25%;
+  }
+
+  .sm-mb-20{
+    margin-bottom: 20px;
   }
 }
 

@@ -17,7 +17,7 @@
 
         <h1 class="display-2">Goodbye Guesswork</h1>
         <br>
-        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands and say goodbye to the Underworld forever.</p>
+        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands, and say goodbye to the Underworld forever.</p>
 
         <br><br>
 
@@ -51,35 +51,37 @@
         <h2>Take Control</h2>
         <hr class="dark-hr">
         <p class="lead">
-          It’s time to stop overanalyzing your trades. The secret to trading does not lay in predicting every market oscillation or finding new and exotic markets to trade.
-          What you need is a proven and tested strategy that consistently puts you in a position to earn more than you lose and the self-discipline to execute consistently.
+          The secret to trading does not lay in predicting every price oscillation or finding new and exotic markets. The best traders are consistent and in control.
+          The Olympus Cloud allows you to adjust your strategy as market conditions shift and gives you the ability to backtest your changes with ease. When you’re
+          confident in your system, all you need is the mental framework to execute like a pro.
         </p>
       </header>
       <div class="row">
-        <div class="col-12 col-lg-6 text-center mt-10 mb-40">
+        <div class="col-12 col-lg-6 text-center mt-10 sm-mb-20">
           <img class="mr-40" src="{{ url('assets/img/ipad-data.png') }}" alt="..." data-aos="slide-up">
-          <small><em>Real world results of the Olympus X-Fractal on a single ticker.</em></small>
+          <small><em>Real world backtest results of the Olympus Cloud on a single ticker.</em></small>
         </div>
 
         <div class="col-12 col-lg-6 align-self-center pb-0">
           <div class="row">
+            <div class="row">
+              <div class="col-12">
+                <p><i class="fa fa-hdd-o fs-50"></i></p>
+                <h4>Embrace Testing</h4>
+                <p>
+                  Beyond a mere indicator, the Olympus Cloud comes with backtest logic, allowing you to verify past results and make decisions based on data, not blind trust.
+                </p>
+              </div>
+            </div>
             <div class="col-12">
               <p><i class="fa fa-check-circle fs-50"></i></p>
-              <h5>Embrace Probability</h5>
+              <h4>Embrace Probability</h4>
               <p>
-                To help you succeed, the Olympus Suite comes with two simple and effective trading systems designed around pattern repetition and continuous probability.
+                To help you succeed, the Olympus Cloud uses multiple time frames and price action to derive an effective trading system designed around pattern repetition.
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <p><i class="fa fa-hdd-o fs-50"></i></p>
-              <h5>Embrace Testing</h5>
-              <p>
-                Beyond mere indicators, the Olympus Suite comes with backtest logic, allowing you to verify past results and make decisions based on data, not blind trust.
-              </p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -95,7 +97,7 @@
 
       <blockquote class="blockquote">
         <div class="quote-sign"></div>
-        <p class="text-white">All wrong-doing arises because of mind. If mind is transformed can wrong-doing remain?</p>
+        <p class="text-white">It is better to conquer yourself than to win a thousand battles. Then the victory is yours. It cannot be taken from you, not by angels or by demons, heaven or hell.</p>
         <footer class="text-white"><cite title="Source Title">Buddha</cite></footer>
       </blockquote>
 
@@ -115,10 +117,8 @@
         <hr class="dark-hr">
         <p class="lead">
           Trading success is a product of your mindset as well as your approach. As counterintuitive as it sounds, the market does not determine your results,
-          and a few winning trades do not make a successful trader. Ask yourself this, how can you find a viable trading system if you constantly change your rules,
-          or have no rules at all?
-          <br /><br />
-          Enter the Olympus Suite.
+          and a few winning trades do not make a successful trader. To conquer your mind and develop the habits of a professional you require a consistent methodology
+          based on the fundamental concepts employed by top traders.
         </p>
       </header>
 
@@ -129,7 +129,7 @@
               <i class="fa fa-code fs-30 pt-0"></i>
             </div>
             <div>
-              <h5>Backtest Logic</h5>
+              <h4>Backtest Logic</h4>
               <p>Ensure you have confidence in your strategy by testing past performance on your favorite stocks.</p>
             </div>
           </div>
@@ -140,8 +140,8 @@
               <i class="fa fa-wrench fs-30 pt-0"></i>
             </div>
             <div>
-              <h5>Customization</h5>
-              <p>Tweak various strategy components with backtest logic and keep up with changing market conditions.</p>
+              <h4>Customization</h4>
+              <p>Tweak strategy components to keep up with changing market conditions and backtest the results.</p>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
               <i class="fa fa-shield fs-30 pt-0"></i>
             </div>
             <div>
-              <h5>Risk Management</h5>
+              <h4>Risk Management</h4>
               <p>Built-in risk calculations instantly display position size based on a recommended stop-loss price.</p>
             </div>
           </div>
@@ -162,7 +162,7 @@
               <i class="fa fa-eye fs-30 pt-0"></i>
             </div>
             <div>
-              <h5>Consistent Variables</h5>
+              <h4>Consistent Variables</h4>
               <p>Detach from emotions and momentary perception with rigid trading rules that guide your behavior.</p>
             </div>
           </div>
@@ -174,7 +174,7 @@
             </div>
 
             <div>
-              <h5>Profit Targets</h5>
+              <h4>Profit Targets</h4>
               <p>Pre-calculated targets based on risk per share and position size help you scale out of winning trades.</p>
             </div>
           </div>
@@ -185,7 +185,7 @@
               <i class="fa fa-bullseye fs-30 pt-0"></i>
             </div>
             <div>
-              <h5>Follow The Trend</h5>
+              <h4>Follow The Trend</h4>
               <p>Leave a portion of your position in the market with a trailing stop loss to capture extended moves.</p>
             </div>
           </div>
@@ -205,10 +205,10 @@
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
 
-  <section class="section bg-gray overflow-hidden" id="section-technicals">
+  <section class="section bg-gray overflow-hidden" id="section-overview">
     <div class="container">
       <header class="section-header">
-        <small>TECHNICALS</small>
+        <small>OVERVIEW</small>
         <h2>Find Clarity</h2>
         <hr class="dark-hr">
         <p class="lead">Simple and effective visual guides that help you find clarity regardless of market conditions. Not to mention backtest logic that shows you what works, and what doesn't.</p>
@@ -291,7 +291,7 @@
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
 
-  <section class="section" id="section-insight">
+  <section class="section" id="section-insights">
     <div class="container">
 
       <header class="section-header">
@@ -429,61 +429,70 @@
       </header>
 
 
-      <div class="row gap-y gap-3">
+      <div class="row">
+        <div class="col-12">
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">What is TheSaaS?</h6>
-          <p>It is a collection of layouts, design patterns, components, and guidelines for creating admin templates, SaaS startups, and complex dashboards.</p>
+          <div class="accordion accordion-connected accordion-arrow-right" id="accordion-1">
+            <div class="card">
+              <h4 class="card-title bg-gray">
+                <a data-toggle="collapse" href="#collapse-1-1">Is this a secure site for purchases?</a>
+              </h4>
+
+              <div id="collapse-1-1" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pl-20 pr-20">
+                  Absolutely! We work with top payment companies which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-2">How long are your contracts?</a>
+              </h4>
+
+              <div id="collapse-1-2" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pl-20 pr-20">
+                  Currently, we only offer monthly subscription. You can upgrade or cancel your monthly account at any time with no further obligation.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-3">Can I cancel my subscription?</a>
+              </h4>
+
+              <div id="collapse-1-3" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pl-20 pr-20">
+                  You can cancel your subscription anytime in your account. Once the subscription is cancelled, you will not be charged next month. You will continue to have access to your account until your current subscription expires.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-4">Can I request refund?</a>
+              </h4>
+
+              <div id="collapse-1-4" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pl-20 pr-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
+      </div>
 
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">How long does it take?</h6>
-          <p>It is a collection of layouts, design patterns, components, and guidelines for creating admin templates, SaaS startups, and complex dashboards.</p>
+      <div class="row mt-70 text-center">
+        <div class="col-12">
+          <a class="btn btn-lg btn-primary" href="{{ url('faq') }}">View More FAQ</a>
         </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">What payment services do you support?</h6>
-          <p>We accept all major credit cards.</p>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">Can I update my card details?</h6>
-          <p>Yes. Go to the billing section of your dashboard and update your payment information.</p>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">Can I cancel my subscription?</h6>
-          <p>You can cancel your subscription at any time. Cancelling your plan comes into effect the following month.</p>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">Can I get refund?</h6>
-          <p>Unfortunately, not at this time! Please try our free plan for a while to make sure Helpato is what you want.</p>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">What if I want to change plans?</h6>
-          <p>It's quick and easy to switch between our different pricing plans from your dashboard.</p>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">How long are your contracts?</h6>
-          <p>You can upgrade, downgrade, or cancel your monthly account at any time with no further obligation.</p>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <h6 class="fw-400">Other questions?</h6>
-          <a class="btn btn-lg btn-primary" href="{{ url('faq') }}">More FAQ...</a>
-        </div>
-
       </div>
 
 

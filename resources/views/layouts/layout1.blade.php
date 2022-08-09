@@ -26,13 +26,13 @@
   <body id="home">
 
     <!-- Topbar -->
-    <nav class="topbar topbar-inverse topbar-expand-md">
+    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky">
       <div class="container">
 
         <div class="topbar-left">
           <button class="topbar-toggler">&#9776;</button>
           <a class="topbar-brand" href="/">
-            <img id="logo-default" class="logo-default" src="assets/img/logo-small.png" alt="logo">
+            <img id="logo-default" class="logo-default" src="assets/img/logo-02.png" alt="logo">
             <img id="logo-inverse" class="logo-inverse" src="assets/img/logo-light.png" alt="logo">
           </a>
         </div>
@@ -42,11 +42,11 @@
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-technicals">Technicals</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-purchase">Purchase</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-overview">Overview</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insights">Insights</a></li>
+            <li class="nav-item"><a class="nav-link"href="#" data-scrollto="section-faq">FAQ</a></li>
           </ul>
         </div>
       </div>
