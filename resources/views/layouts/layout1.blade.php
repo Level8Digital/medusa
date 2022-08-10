@@ -67,13 +67,14 @@
 
           <div class="col-12 col-lg-8 mt-30">
             <ul id="footer-nav" class="nav nav-primary nav-hero">
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
               <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-technicals">Technicals</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-purchase">Purchase</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-overview">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insights">Insights</a></li>
+              <li class="nav-item"><a class="nav-link"href="#" data-scrollto="section-faq">FAQ</a></li>
             </ul>
           </div>
 

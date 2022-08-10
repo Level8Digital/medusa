@@ -141,7 +141,7 @@
             </div>
             <div>
               <h4>Customization</h4>
-              <p>Tweak strategy components to keep up with changing market conditions and backtest the results.</p>
+              <p>Tweak strategy components to keep up with changing market conditions and backtest your changes.</p>
             </div>
           </div>
         </div>
@@ -201,7 +201,7 @@
 
   <!--
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  | Olympus Suite
+  | Overview
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
 
@@ -211,67 +211,50 @@
         <small>OVERVIEW</small>
         <h2>Find Clarity</h2>
         <hr class="dark-hr">
-        <p class="lead">Simple and effective visual guides that help you find clarity regardless of market conditions. Not to mention backtest logic that shows you what works, and what doesn't.</p>
+        <p class="lead">The Olympus Cloud is a simple and effective visual guide that helps you find clarity regardless of market conditions. In addition, backtest
+          logic reveals which settings work, and which don't. The automated backtest functionality means you can continually improve your strategy by testing different
+          settings at defined milestones to keep up with market changes. If you find certain settings worked better over your last set of trades, use the new settings going forward.</p>
       </header>
 
-      <div class="row gap-y align-items-center mt-70">
+      <div class="row gap-y align-items-center mt-70 sm-mt-30">
         <div class="col-lg-6 ml-auto">
           <h4>Olympus Cloud</h4>
-          <p>Our unique cloud is based on candle highs and lows and is not a function of moving average crossovers or crossunders like many other systems.
-            In addition, a lagging trend filter helps you gauge the longer-term momentum so you’re not trading against the wave.
+          <p>Our unique cloud is based on candle highs and lows and does not use moving average crossovers or crossunders like many other indicators. To top it off, our
+            indicator features a higher time frame filter that helps you measure the longer-term momentum without changing your resolution.
           </p>
           <p class="mt-30">
-            <i class="fa fa-check"></i> Enter when the trend filter is positive and the cloud transitions bullish
+            <i class="fa fa-check"></i> Built-in backtest suite with customizable risk values, stop-loss locations, profit targets, and leverage settings
           </p>
           <p>
-            <i class="fa fa-check"></i> A secondary signal occurs on the next pivot during a bullish trend and cloud environment
+            <i class="fa fa-check"></i> Three long entries and three short entries
           </p>
           <p>
-            <i class="fa fa-check"></i> Stack the Olympus Cloud on multiple timeframes to increase confluence and probability
+            <i class="fa fa-check"></i> Entries are built on price action not abstracted indicator values
           </p>
           <p>
-            <i class="fa fa-check"></i> The short signal occurs when the trend filter is negative and the cloud transitions bearish
+            <i class="fa fa-check"></i> A higher time frame filter puts data from multiple resolutions on a single chart
           </p>
           <p>
-            <i class="fa fa-check"></i> Works for high-frequency traders or those with a long-term outlook
+            <i class="fa fa-check"></i> Stackable on multiple timeframes to increase confluence and probability
+          </p>
+          <p>
+            <i class="fa fa-check"></i> A convenient trade table automatically displays position size and profit targets based on your defined dollar risk value
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Works for higher-frequency traders or those with a long-term outlook
           </p>
         </div>
 
         <div class="col-lg-5 order-lg-first">
           <img class="rounded shadow-2" src="{{ url('assets/img/olympus-cloud.jpg') }}" alt="...">
+          <img class="rounded shadow-2 mt-20" src="{{ url('assets/img/olympus-cloud-backtest-suite.jpg') }}" alt="...">
         </div>
       </div>
 
-      <div class="row gap-y align-items-center mt-70">
-        <div class="col-md-6 mr-auto">
-          <h4>Olympus Pivot</h4>
-          <p>
-            A pure price action approach based on our real-time fractals. The Olympus Pivot is an aggressive trend following and trend reversal strategy that is best suited
-            for big ETFs and blue-chip companies. An optional moving average filter is available to help guide your decisions.
-          </p>
-          <p class="mt-30">
-            <i class="fa fa-check"></i> Enter when a real-time fractal is set
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Stack the Olympus Pivot on multiple timeframes to increase confluence and probability
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Best suited for traders who focus on going long, not short
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Works for high-frequency traders or those with a long-term outlook
-          </p>
-        </div>
-
-        <div class="col-md-5">
-          <img class="rounded shadow-2" src="{{ url('assets/img/olympus-pivot.jpg') }}" alt="...">
-        </div>
-      </div>
-
-      <div class="row mt-70 pt-20 pb-10 pl-20 pr-20 section-inverse bg-teal-gray">
+      <div class="row mt-70 pt-20 pb-10 pl-20 pr-20 section-inverse bg-teal-gray text-center">
         <div class="col-lg-12">
           <p class="lead">
-          <i class="fa fa-info-circle fs-25"></i> Both systems feature our robust and customizable backtest logic that helps you manage risk, determine profit targets, and ensures stategy viability.
+          <i class="fa fa-info-circle fs-25 pd-5"></i> When you purchase the Olympus Cloud you will receive a PDF with more detailed information on entry signals.
           </p>
         </div>
       </div>
@@ -307,7 +290,7 @@
           <div class="card card-bordered card-hover-shadow">
             <a href="#"><img class="card-img-top" src="{{ url('assets/img/probability-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Pro Insights Part 1: Probability</a></h4>
+              <h4 class="card-title"><a href="#">Trading Insights #1: Probability</a></h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
               <a class="fw-600 fs-12" href="{{ url('probability-and-random-distribution') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
@@ -319,7 +302,7 @@
           <div class="card card-bordered card-hover-shadow">
             <a href="#"><img class="card-img-top" src="{{ url('assets/img/odds-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Pro Insights Part 2: Tipping The Odds</a></h4>
+              <h4 class="card-title"><a href="#">Trading Insights #2: Proper Technical Analysis</a></h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
               <a class="fw-600 fs-12" href="{{ url('tipping-the-odds') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
@@ -331,7 +314,7 @@
           <div class="card card-bordered card-hover-shadow">
             <a href="#"><img class="card-img-top" src="{{ url('assets/img/mind-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Pro Insights Part 3: Shaping The Mind</a></h4>
+              <h4 class="card-title"><a href="#">Trading Insights #3: Shaping The Mind</a></h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
               <a class="fw-600 fs-12" href="{{ url('shaping-the-mind') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
@@ -367,7 +350,7 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 75</h2>
+            <h2 class="price"><span class="price-unit">$</span> 50</h2>
             <h6 class="plan-name">Three Month Access</h6>
             <p class="plan-description">Try it out, see for yourself</p>
             <br>
@@ -399,7 +382,7 @@
           <div class="pricing-2">
             <h2 class="price"><span class="price-unit">$</span> 125</h2>
             <h6 class="plan-name">One Year Access</h6>
-            <p class="plan-description">Get on the right path</p>
+            <p class="plan-description">Give it a good go</p>
             <br>
             <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/year') }}">Buy Now</a>
           </div>
@@ -408,7 +391,7 @@
       </div>
 
       <p class="text-center mt-50">
-        The Olympus Suite is designed to work exclusively with TradingView charts.
+        <i class="fa fa-info-circle fs-25 pd-5"></i> The Olympus Cloud is only compatible with TradingView charts. Returning customers recieve a discount at the point of sale.
       </p>
 
     </div>
@@ -425,7 +408,7 @@
         <small>Faq</small>
         <h2>Frequently Asked Questions</h2>
         <hr class="dark-hr"/>
-        <p class="lead">Drop us an email if you couldn't find an answert to your question in the following list.</p>
+        <p class="lead">Before you dive in, we highly recommend you look over these common questions and concerns.</p>
       </header>
 
 
@@ -435,11 +418,11 @@
           <div class="accordion accordion-connected accordion-arrow-right" id="accordion-1">
             <div class="card">
               <h4 class="card-title bg-gray">
-                <a data-toggle="collapse" href="#collapse-1-1">Is this a secure site for purchases?</a>
+                <a data-toggle="collapse" href="#collapse-1-1">Do you offer a free trial period?</a>
               </h4>
 
               <div id="collapse-1-1" class="collapse" data-parent="#accordion-1">
-                <div class="card-body pl-20 pr-20">
+                <div class="card-body pd-20">
                   Absolutely! We work with top payment companies which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.
                 </div>
               </div>
@@ -448,11 +431,11 @@
 
             <div class="card">
               <h4 class="card-title">
-                <a class="collapsed" data-toggle="collapse" href="#collapse-1-2">How long are your contracts?</a>
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-2">Do you offer a warranty or refunds?</a>
               </h4>
 
               <div id="collapse-1-2" class="collapse" data-parent="#accordion-1">
-                <div class="card-body pl-20 pr-20">
+                <div class="card-body pd-20">
                   Currently, we only offer monthly subscription. You can upgrade or cancel your monthly account at any time with no further obligation.
                 </div>
               </div>
@@ -461,11 +444,11 @@
 
             <div class="card">
               <h4 class="card-title">
-                <a class="collapsed" data-toggle="collapse" href="#collapse-1-3">Can I cancel my subscription?</a>
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-3">Is the Olympus Cloud a subscription service?</a>
               </h4>
 
               <div id="collapse-1-3" class="collapse" data-parent="#accordion-1">
-                <div class="card-body pl-20 pr-20">
+                <div class="card-body pd-20">
                   You can cancel your subscription anytime in your account. Once the subscription is cancelled, you will not be charged next month. You will continue to have access to your account until your current subscription expires.
                 </div>
               </div>
@@ -474,11 +457,107 @@
 
             <div class="card">
               <h4 class="card-title">
-                <a class="collapsed" data-toggle="collapse" href="#collapse-1-4">Can I request refund?</a>
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-4">How do I use the Olympus Cloud?</a>
               </h4>
 
               <div id="collapse-1-4" class="collapse" data-parent="#accordion-1">
-                <div class="card-body pl-20 pr-20">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-5">Do I need a TradingView account to use the Olympus Cloud?</a>
+              </h4>
+
+              <div id="collapse-1-5" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-6">Will I always make winning trades?</a>
+              </h4>
+
+              <div id="collapse-1-6" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-7">What is the trade success rate?</a>
+              </h4>
+
+              <div id="collapse-1-7" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-8">What time frames work best?</a>
+              </h4>
+
+              <div id="collapse-1-8" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-9">What stocks should I trade with the Olympus Cloud?</a>
+              </h4>
+
+              <div id="collapse-1-9" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-10">Does the Olympus Cloud work on forex pairs?</a>
+              </h4>
+
+              <div id="collapse-1-10" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-11">Does the Olympus Cloud work on crypto?</a>
+              </h4>
+
+              <div id="collapse-1-11" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
+                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4 class="card-title">
+                <a class="collapsed" data-toggle="collapse" href="#collapse-1-12">How do I contact you?</a>
+              </h4>
+
+              <div id="collapse-1-12" class="collapse" data-parent="#accordion-1">
+                <div class="card-body pd-20">
                   Unfortunately, not. We do not issue full or partial refunds for any reason.
                 </div>
               </div>
@@ -486,12 +565,6 @@
 
           </div>
 
-        </div>
-      </div>
-
-      <div class="row mt-70 text-center">
-        <div class="col-12">
-          <a class="btn btn-lg btn-primary" href="{{ url('faq') }}">View More FAQ</a>
         </div>
       </div>
 
