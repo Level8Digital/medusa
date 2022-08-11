@@ -350,7 +350,8 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 50</h2>
+            <h2 class="price"><span class="price-unit">$</span> 55</h2>
+            <small class="mb-20">CAD</small>
             <h6 class="plan-name">Three Month Access</h6>
             <p class="plan-description">Try it out, see for yourself</p>
             <br>
@@ -361,7 +362,8 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 200</h2>
+            <h2 class="price"><span class="price-unit">$</span> 250</h2>
+            <small class="mb-20">CAD</small>
             <h6 class="plan-name">Lifetime Access</h6>
             <p class="plan-description">Pay once, have fun forever</p>
             <!-- <ul class="price-list">
@@ -380,7 +382,8 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 125</h2>
+            <h2 class="price"><span class="price-unit">$</span> 150</h2>
+            <small class="mb-20">CAD</small>
             <h6 class="plan-name">One Year Access</h6>
             <p class="plan-description">Give it a good go</p>
             <br>
@@ -423,7 +426,16 @@
 
               <div id="collapse-1-1" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Absolutely! We work with top payment companies which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.
+                  <p>
+                    We do not offer free trial periods for the Olympus Cloud. We deliver a quality product that took time and testing to develop and do not
+                    wish to see our efforts reverse engineered for free. In addition, we cover the Olympus Cloud thoroughly in our YouTube introductory series
+                    so you can have confidence in your purchase.
+                  </p>
+                  <p>
+                    The three-month plan is available for a reasonable fee, so if you have doubts, it’s a good place to start. Those who purchase the three-month plan
+                     get a 15% discount if they wish to upgrade after their subscription has expired. If you buy a three-month plan and then upgrade to a lifetime plan,
+                     you are paying about $20 for the initial three months after the 15% discount is factored into the lifetime plan.
+                  </p>
                 </div>
               </div>
             </div>
@@ -436,7 +448,10 @@
 
               <div id="collapse-1-2" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Currently, we only offer monthly subscription. You can upgrade or cancel your monthly account at any time with no further obligation.
+                  <p>
+                    We offer no warranty, guarantees, or refunds of any kind. Our Terms of Use and Disclaimer govern your use of this website and our products.
+                    Please refer <a href="{{ url('terms-of-use') }}">here</a> for more information.
+                  </p>
                 </div>
               </div>
             </div>
@@ -449,7 +464,16 @@
 
               <div id="collapse-1-3" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  You can cancel your subscription anytime in your account. Once the subscription is cancelled, you will not be charged next month. You will continue to have access to your account until your current subscription expires.
+                  <p>
+                    Yes and no. Unlike many other trading services, the Olympus Cloud is available as a one-time purchase if you buy a lifetime plan.
+                    If you buy a three-month or one-year plan and wish to continue using the product you will have to purchase a new plan. However, we offer
+                    return customers a discount at the point of sale.
+                  </p>
+                  <p>
+                    Those who purchased a three-month plan receive a 15% discount on future extensions, and those who purchased a one-year plan receive a 25% discount
+                     on future extensions. These discounts do not stack and are always applied to the posted base price for the selected subscription period. For example,
+                     if you are purchasing your third three-month plan, your discount is 15%, not 30%, and the discount is applied to the posted price for the three-month plan.
+                  </p>
                 </div>
               </div>
             </div>
@@ -462,7 +486,10 @@
 
               <div id="collapse-1-4" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    Please refer to our video collection for all you need to know about adding the Olympus Cloud to your TradingView chart and for recommended usage instructions.
+                    Videos are available on our <a href="">YouTube channel</a> or our <a href="{{ url('videos') }}">website</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -474,7 +501,10 @@
 
               <div id="collapse-1-5" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    Yes. The Olympus Cloud was scripted solely for the TradingView platform. We are not affiliated with TradingView in any way. In the future,
+                    we may provide our services for other platforms.
+                  </p>
                 </div>
               </div>
             </div>
@@ -486,7 +516,11 @@
 
               <div id="collapse-1-6" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    Absolutely not! The idea of winning every trade is impossible and goes against the key principles employed by professional traders. It is possible to
+                    have stretches when you have a 100% success rate, but this is merely a snapshot of one period in time. Losses are inevitable in any trading regime.
+                    Check out our Trading Insights Series in our <a href="{{ url('insights') }}">blog</a> to learn more about how professionals approach the art of trading.
+                  </p>
                 </div>
               </div>
             </div>
@@ -498,7 +532,19 @@
 
               <div id="collapse-1-7" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    There are many factors that affect your win rate with the Olympus Cloud because it’s a customizable indicator and backtest suite. Depending on the security traded,
+                    the time resolution employed, the settings you select, and the date range tested over, the Olympus Cloud can generate a win rate of 45% - 78% over a set of twenty
+                    or more trades — more than enough to produce a net profit when combined with good risk and profit management.
+                  </p>
+                  <p>
+                    Our backtest logic means you can verify the win rate on any security before you start trading. The stated win rates are only estimations based on what we have
+                    experienced in the past and we do not guarantee a win rate on any security. You may experience different results.
+                  </p>
+                  <p>
+                    With any strategy, taking profits quickly results in a high win rate, but the net profit is not necessarily optimal. View our insights article titled
+                    Accuracy & Profitability for more on this concept.
+                  </p>
                 </div>
               </div>
             </div>
@@ -510,7 +556,14 @@
 
               <div id="collapse-1-8" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    In our experience, the optimal time frame is different depending on the security and the sector. Generally, the 15m, the 30m, and the 1hr time frames work well on
+                    most securities. If you wish to use a time frame closer than 15m, such as 5m or 3m, you will get the best results by stacking the Olympus Cloud with a higher time frame, like the 1D.
+                  </p>
+                  <p>
+                    For example, if the 1D chart has a bull cloud, you can then zoom into the 5m chart. If the 5m higher time frame filter is positive, you can try to take trades in the bullish direction
+                    when an entry signal occurs. Part 6 in our introductory video series on the Olympus Cloud shows you how this process works.
+                  </p>
                 </div>
               </div>
             </div>
@@ -522,7 +575,24 @@
 
               <div id="collapse-1-9" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    There are various ways of determining what stocks to trade and the Olympus Cloud is compatible with all types of stocks, ETFs, and futures. Many online influencers
+                    emphasize trading “hotlists” found each morning via screening programs. While this can prove successful for some people, it often turns into a form of trade chasing
+                    and frustration, and can even degrade into a way of gambling and attempts to get rich quickly.
+                  </p>
+                  <p>
+                    We live by the mantra, as said by Buddha, “Patience is key. Remember: A jug fills drop by drop.” If you struggle to turn consistent profits trading, it’s best to slow
+                    down and keep it simple. Focus on one or two big stocks or ETFs. These stocks have a significant number of market makers, meaning they have high liquidity
+                    (money flowing in and out) and tend to follow certain patterns due to a consistent array of market participants. Even on such stocks, making a profit is not guaranteed,
+                    but as you narrow your focus you will change your mindset and begin to develop a trader’s mentality.
+                  </p>
+                  <p>
+                    While it sounds counterintuitive, it is more important you create a consistent mindset and trading regime than it is you get a few big winning trades. When you achieve
+                    consistency, you can trade with any amount of capital, including very large accounts, and produce money over and over again.
+                  </p>
+                  <p>
+                    A few of our favorite high liquidity large-cap stocks and ETFs include QQQ, SPY, SOXX, TAN, AAPL, AMZN, MSFT, NVDA, TSLA, and AMD.
+                  </p>
                 </div>
               </div>
             </div>
@@ -534,7 +604,10 @@
 
               <div id="collapse-1-10" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    We did not design the Olympus Cloud for forex, but the indicator can be added to forex charts without a problem. Due to the customizable nature of the Olympus Cloud and
+                    the built-in backtesting suite, it’s possible you can create settings that work in an acceptable manner, but we have not done testing on forex pairs.
+                  </p>
                 </div>
               </div>
             </div>
@@ -546,7 +619,10 @@
 
               <div id="collapse-1-11" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    Yes. When trading crypto, the optimal time frame tends to shift. For example, a 15m resolution on stocks is more like a 1hr resolution on crypto. A 1hr time frame on stocks is
+                    more like a 4hr time frame on crypto. Daily resolutions are equal. You can change the indicator settings and run the backtest suite to determine what works best for you.
+                  </p>
                 </div>
               </div>
             </div>
@@ -558,7 +634,9 @@
 
               <div id="collapse-1-12" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
-                  Unfortunately, not. We do not issue full or partial refunds for any reason.
+                  <p>
+                    You can send additional questions to <em>info@medusamoney.com.</em>
+                  </p>
                 </div>
               </div>
             </div>

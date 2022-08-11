@@ -113,7 +113,7 @@
             <div class="col-md-12 mt-20">
               <label class="form-control">
                   <input type="checkbox" name="confirm_tv" />
-                  I realize I need a TradingView account to use the Olympus Suite
+                  I realize I need a TradingView account to use the Olympus Cloud
               </label>
               @error('confirm_tv')
                   <div class="alert alert-danger">{{ $message }}</div>

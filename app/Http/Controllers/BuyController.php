@@ -60,15 +60,80 @@ class BuyController extends Controller
         // Determine the access period based on user selection
         if($access == 'lifetime'){
             $description = 'Lifetime access';
-            $price = 200;
+            $price = 250;
         }
         elseif($access == 'year'){
             $description = 'One year access';
-            $price = 125;
+            $price = 150;
         }
         elseif($access == 'three-month'){
             $description = 'Three month access';
-            $price = 75;
+            $price = 55;
+        }
+
+        // Calculate the tax amount
+        $tax = $price * 0.05;
+
+        // Show view with the required variables
+        return view('purchase', ['math_question' => $mathQuestion, 'math_answer' => $mathAnswer, 'access_desc' => $description, 'access' => $access, 'price' => $price,
+                    'tax' => $tax, 'total' => $price + $tax]);
+    }
+
+    /**
+    * Shows the Purchase view while adding the random math question and answr to the session
+    * @var string $access - the requested access period to purchase
+    */
+    public function addReferralCode($access)
+    {
+        // ------------------------------------------------------------------------------------------------------------------------
+        // Set up a few things before proceeding...
+
+        // Converts numbers to strings
+  	    $numberConversion = array(
+  	       0 => 'zero', 1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four', 5 => 'five',
+  	       6 => 'six', 7 => 'seven', 8 =>'eight', 9 => 'nine', 10 => 'ten'
+  	    );
+        // For decoding the math answer on the other size
+        $numberHash = array(
+  	       0 => 'bT0ZzjNyLj', 1 => '0yRh8DPpvZ', 2 => 'Ppr7rcoJ96', 3 => '84JEizZhJO', 4 => 'NgdJEq31SL', 5 => '0Yomhm4gGW',
+  	       6 => 'cLfsK0MdCv', 7 => 'yTAI0eOTl0', 8 =>'xHf0BGj2Eb', 9 => 'h90k6BEj2z', 10 => 'Y0vhkHmE8F', 11 => 'NLhTuZWPRG',
+           12 => 'QDy8tZhdll', 13 => 'Fw5Oa8GMrg', 14 => '1b1msj9IVv', 15 => 'zu5S2vQn92', 16 => '2R8Q9MzDYw', 17 => '07aT3Ls2Gr',
+           18 => 'OnDfGcMNln', 19 => 'bIQ03pAxPX', 20 => 'VBp8WtggWj'
+  	    );
+  	    // Produce random numbers
+  	    $numberOne = rand(0, 6);
+  	    $numberTwo = rand(0, 6);
+
+  	    // Construct random math question
+  	    $mathQuestion = 'What is ' . $numberConversion[$numberOne] . ' added to ' . $numberConversion[$numberTwo] . '?';
+
+        // Determine random math answer in form of secret number hash
+        $mathAnswer = $numberHash[$numberOne + $numberTwo];
+
+        // Ensure the access period is an acceptable string
+        if($access != 'lifetime' && $access != 'year' && $access != 'three-month'){
+            // Show error view if the trading view account already has lifetime access
+            return view('problem', ['msg' => "We don't recognize this access period"]);
+        }
+
+        // ------------------------------------------------------------------------------------------------------------------------
+
+        // For returning - gets changed later
+        $description = '';
+        $price = 0;
+
+        // Determine the access period based on user selection
+        if($access == 'lifetime'){
+            $description = 'Lifetime access';
+            $price = 250;
+        }
+        elseif($access == 'year'){
+            $description = 'One year access';
+            $price = 150;
+        }
+        elseif($access == 'three-month'){
+            $description = 'Three month access';
+            $price = 55;
         }
 
         // Calculate the tax amount
@@ -116,7 +181,9 @@ class BuyController extends Controller
         // Ensure user does not have active access...
 
         // To determine if the TradingView account already have access, retrieve all possible paid for purchases with this username
-        $existingPurchases = Purchase::where(['username' => $request->username, 'is_paid' => true])->get();
+        $existingPurchases = Purchase::orderByDesc('expires_at')
+                            ->where(['username' => $request->username, 'is_paid' => true])
+                            ->get();
 
         // If there are existing purchases...
         if($existingPurchases->isNotEmpty()){
@@ -139,6 +206,10 @@ class BuyController extends Controller
                     return view('problem', ['msg' => 'It looks like this TradingView account still has access to the Olympus Suite for ' . $timeLeft . ' days. No need to pay again yet!']);
                 }
             }
+
+            return print_r($existingPurchases->toArray());
+
+
         }
 
         // ------------------------------------------------------------------------------------------------------------------------
@@ -149,13 +220,13 @@ class BuyController extends Controller
 
         // Determine the price
         if($access == 'lifetime'){
-            $price = 200;
+            $price = 250;
         }
         elseif($access == 'year'){
-            $price = 125;
+            $price = 150;
         }
         elseif($access == 'three-month'){
-            $price = 75;
+            $price = 55;
         }
 
         // Calculate and round final total with GST (tax)
@@ -240,6 +311,8 @@ class BuyController extends Controller
             elseif($purchase->access == 'three-month'){
                 $description = 'Three Month Access';
             }
+
+
 
             // Show Pay now view
             return view('pay-now', ['purchase' => $purchase->toArray(), 'access_desc' => $description ]);

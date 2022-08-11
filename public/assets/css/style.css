@@ -110,6 +110,11 @@ a:hover {
   opacity: 1;
 }
 
+.pricing-2 .price {
+  line-height: 1 !important;
+  margin-bottom: 0 !important;
+}
+
 #terms-header{
   padding: 100px 0 10px;
 }
