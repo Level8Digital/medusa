@@ -25,6 +25,9 @@ class CreatePurchasesTable extends Migration
             $table->boolean('confirm_tv')->default(false);
             $table->boolean('agree_terms')->default(false);
             $table->float('total');
+            $table->boolean('discount_applied')->default(false);
+            $table->integer('discount_amount')->default(0);
+            $table->string('referral_code')->default('None');
             // Second save
             $table->string('payment_type', 10)->default('Not-Paid');
             $table->boolean('is_paid')->default(false);

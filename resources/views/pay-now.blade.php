@@ -31,7 +31,13 @@
         <div class="col-lg-7 ">
           <div class="cart-price">
               <h5><i class="fa fa-shopping-cart"></i> Your {{ $access_desc }} <small> - {{ $purchase['email'] }} | {{ $purchase['username'] }}</small></h5>
+              @if($purchase['discount_applied'] and $purchase['referral_code'] == 'None')
+                <h6 class="teal-font"><i class="fa fa-trophy"></i> Since you're a return customer a {{ $purchase['discount_amount'] }}% discount was applied to your purchase!</h6>
+              @endif
 
+              @if($purchase['discount_applied'] and $purchase['referral_code'] != 'None')
+                <h6 class="teal-font"><i class="fa fa-trophy"></i> Since you used a referral code a {{ $purchase['discount_amount'] }}% discount was applied to your purchase!</h6>
+              @endif
             <hr>
 
             <div class="flexbox">

@@ -89,6 +89,14 @@ a:hover {
   color: #494949;
 }
 
+.teal-font{
+  color: #0fc08e !important;
+}
+
+.purple-font{
+  color: #250fc0 !important;
+}
+
 .super-icon {
   font-size: 5rem;
 }

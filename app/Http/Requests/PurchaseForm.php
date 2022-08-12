@@ -29,6 +29,7 @@ class PurchaseForm extends FormRequest
             'access' => 'required|string|max:15',
             'email' => 'required|email|confirmed|max:100',
             'username' => 'required|string|confirmed|max:35',
+            'referral' => 'nullable|string|max:50',
             'math_answer' => 'required|numeric|max:20',
             'confirm_tv' => 'required'
         ];

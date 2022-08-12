@@ -24,7 +24,7 @@
       <!--
       ^^^^^^^ FORM ^^^^^^^
       -->
-      <form class="row gap-y" action="/start-purchase" method="post">
+      <form class="row gap-y" action="/start-purchase" method="post" autocomplete="off">
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
         <input type="hidden" name="access" value="{{ $access }}" />
         <input type="hidden" name="random_token" value="{{ $math_answer }}" />
@@ -72,7 +72,7 @@
 
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                     <input type="text" name="email" placeholder="Email Address" class="form-control" value="{{ old('email') }}">
                     @error('email')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="email">Confirm Email</label>
+                    <label for="email">Confirm Email *</label>
                     <input type="text" name="email_confirmation" placeholder="Confirm Email" class="form-control" value="{{ old('email_confirmed') }}">
                     @error('email_confirmed')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -90,7 +90,7 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="username">TradingView Username </label>
+                    <label for="username">TradingView Username *</label>
                     <input type="text" name="username" placeholder="TradingView Username" class="form-control" value="{{ old('username') }}">
                     @error('username')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -99,9 +99,18 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="username_confirmed">Confirm TradingView</label>
+                    <label for="username_confirmed">Confirm TradingView *</label>
                     <input type="text" name="username_confirmation" placeholder="Confirm TradingView" class="form-control" value="{{ old('username_confirmed') }}">
                     @error('username_confirmed')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="username">Referral Code <small>(Optional)</small> </label>
+                    <input type="text" name="referral" placeholder="Referral Code" class="form-control" value="{{ old('referral') }}">
+                    @error('referral')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
@@ -122,7 +131,7 @@
 
             <div class="col-md-6 mt-20">
                 <div class="form-group">
-                    <label for="math_question">* Verify Your Humanity</label>
+                    <label for="math_question">Verify Your Humanity *</label>
                     <input type="text" name="math_answer" class="form-control" placeholder="{{ $math_question }}">
                     @error('math_question')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -139,7 +148,7 @@
             <div class="flexbox">
               <div>
                 <p><strong>Subtotal:</strong></p>
-                <p><strong>Tax (GST - 5%):</strong></p>
+                <p><strong>Sales Tax (GST):</strong></p>
               </div>
 
               <div style="text-align: right;">
@@ -158,6 +167,12 @@
               <div>
                 <p class="fw-600">${{ $total }} <small>CAD</small></p>
               </div>
+            </div>
+
+            <div class="flexbox mt-10">
+              <p>
+                <small class="purple-font"><i class="fa fa-info-circle pd-5 "></i> If you're using a referral code or you're a return customer we will apply a discount before you complete your checkout.</small>
+              </p>
             </div>
           </div>
 
