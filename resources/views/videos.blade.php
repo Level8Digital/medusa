@@ -27,53 +27,47 @@
 <!-- Main container -->
 <main class="main-content">
   <section class="section">
-    <div class="container">
+    <div class="container mb-30">
       <header class="section-header">
         <small>VIDEO COLLECTION</small>
         <hr>
       </header>
 
-      <section class="section overflow-hidden">
-        <div class="container">
-          <div class="row gap-y align-items-center">
+      <div class="container">
+        <header class="section-header">
+          <h2>Explore</h2>
+        </header>
 
-            <div class="col-md-4 mx-auto text-center text-md-left">
-              <h3>We made it easy peasy</h3>
-              <p>Fresh fellow even the whole is work outcome them. They original on mountains, drew the support time. The of to graduate. Into to is the to she at return understand every in there transmitting you've he the was and in finger.</p>
-              <br>
-              <a class="btn btn-lg btn-outline-info" href="https://www.youtube.com/watch?v=ah4pcPbRi2M" data-provide="lightbox"><i class="fa fa-play mr-4"></i> Watch a video</a>
-            </div>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
 
-
-            <div class="col-md-6">
-              <img class="rounded aos-init aos-animate" src="{{ url('assets/img/thumb/9.jpg') }}" alt="..." data-aos="fade-left">
+            <div class="video-btn-wrapper aos-init aos-animate" data-aos="fade-up">
+              <img class="shadow-2 rounded-lg" src="../assets/img/thumb/9.jpg" alt="watch a video">
+              <a class="btn btn-circle btn-xl btn-info" href="https://www.youtube.com/watch?v=ah4pcPbRi2M" data-provide="lightbox"><i class="fa fa-play"></i></a>
             </div>
 
           </div>
         </div>
-      </section>
+      </div>
 
-      <hr class="hr-dark" />
+      <hr class="hr-dark mt-70 mb-70" />
 
-      <section class="section overflow-hidden">
-        <div class="container">
-          <div class="row gap-y align-items-center">
+      <div class="container">
+        <header class="section-header">
+          <h2>Explore</h2>
+        </header>
 
-            <div class="col-md-4 mx-auto text-center text-md-left">
-              <h3>We made it easy peasy</h3>
-              <p>Fresh fellow even the whole is work outcome them. They original on mountains, drew the support time. The of to graduate. Into to is the to she at return understand every in there transmitting you've he the was and in finger.</p>
-              <br>
-              <a class="btn btn-lg btn-outline-info" href="https://www.youtube.com/watch?v=ah4pcPbRi2M" data-provide="lightbox"><i class="fa fa-play mr-4"></i> Watch a video</a>
-            </div>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
 
-
-            <div class="col-md-6">
-              <img class="rounded aos-init aos-animate" src="{{ url('assets/img/thumb/9.jpg') }}" alt="..." data-aos="fade-left">
+            <div class="video-btn-wrapper aos-init aos-animate" data-aos="fade-up">
+              <img class="shadow-2 rounded-lg" src="../assets/img/thumb/9.jpg" alt="watch a video">
+              <a class="btn btn-circle btn-xl btn-info" href="https://www.youtube.com/watch?v=ah4pcPbRi2M" data-provide="lightbox"><i class="fa fa-play"></i></a>
             </div>
 
           </div>
         </div>
-      </section>
+      </div>
 
     </div>
   </section>

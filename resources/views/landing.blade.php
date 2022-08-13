@@ -261,13 +261,34 @@
 
       <div class="row mt-70">
         <div class="col-12 text-center">
-          <a class="btn btn-lg btn-primary" href="{{ url('videos') }}">View Videos</a>
+          <a class="btn btn-lg btn-primary" href="https://www.youtube.com" target="_blank">View YouTube Channel</a>
         </div>
       </div>
 
     </div>
   </section>
 
+  <!--
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  | INTRO VIDEO
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+
+  <section class="section section-inverse bg-img" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="1">
+    <div class="container">
+      <header class="section-header">
+        <h2>Watch Video</h2>
+        <hr>
+        <p class="lead">Get a feel for the Olympus Cloud with this quick introduction video.</p>
+      </header>
+
+
+      <div class="text-center mb-60">
+        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=ah4pcPbRi2M" data-provide="lightbox"><i class="fa fa-play"></i></a>
+      </div>
+
+    </div>
+  </section>
   <!--
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   | Articles / Blog

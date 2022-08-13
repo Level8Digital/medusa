@@ -53,13 +53,13 @@
 
           <div class="col-12 col-lg-8 mt-30">
             <ul id="footer-nav" class="nav nav-primary nav-hero">
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-components">Olympus Suite</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Videos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insight">Insights</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-overview') }}">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-insights') }}">Insights</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
             </ul>
           </div>
 

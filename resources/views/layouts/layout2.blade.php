@@ -36,17 +36,15 @@
             <img id="logo-inverse" class="logo-inverse" src="{{ url('assets/img/logo-light.png') }}" alt="logo">
           </a>
         </div>
-
         <div class="topbar-right">
           <ul class="topbar-nav nav">
             <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('olympus-suite') }}">Olympus Suite</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-overview') }}">Overview</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/insights') }}">Insights</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/faq') }}">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-insights') }}">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
           </ul>
         </div>
       </div>
@@ -67,13 +65,13 @@
 
           <div class="col-12 col-lg-8 mt-30">
             <ul id="footer-nav" class="nav nav-primary nav-hero">
+              <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('olympus-suite') }}">Olympus Suite</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-overview') }}">Overview</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('videos') }}">Videos</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/insights') }}">Insights</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/faq') }}">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-insights') }}">Insights</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
             </ul>
           </div>
 

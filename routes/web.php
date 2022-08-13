@@ -48,10 +48,10 @@ Route::get('/problem', function () {
 Route::get('/probability-and-random-distribution', function () {
     return view('insights/probability');
 });
-Route::get('/tipping-the-odds', function () {
-    return view('insights/odds');
+Route::get('/real-technical-analysis', function () {
+    return view('insights/real-ta');
 });
-Route::get('/shaping-the-mind', function () {
+Route::get('/mastering-your-mind', function () {
     return view('insights/mind');
 });
 
