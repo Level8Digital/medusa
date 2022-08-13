@@ -52,7 +52,7 @@
         <hr class="dark-hr">
         <p class="lead">
           The secret to trading does not lay in predicting every price oscillation or finding new and exotic markets. The best traders are consistent and in control.
-          The Olympus Cloud allows you to adjust your strategy as market conditions shift and gives you the ability to backtest your changes with ease. When you’re
+          The Olympus Cloud allows you to adjust your strategy as market conditions shift and gives you the ability to backtest with click of a button. When you’re
           confident in your system, all you need is the mental framework to execute like a pro.
         </p>
       </header>
@@ -241,7 +241,7 @@
             <i class="fa fa-check"></i> A convenient trade table automatically displays position size and profit targets based on your defined dollar risk value
           </p>
           <p>
-            <i class="fa fa-check"></i> Works for higher-frequency traders or those with a long-term outlook
+            <i class="fa fa-check"></i> Works for high-frequency traders or those with a long-term outlook
           </p>
         </div>
 
@@ -311,8 +311,8 @@
           <div class="card card-bordered card-hover-shadow">
             <a href="#"><img class="card-img-top" src="{{ url('assets/img/probability-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Trading Insights #1: Probability</a></h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+              <h4 class="card-title"><a href="#">Trading Insights #1: Probability & Random Distribution</a></h4>
+              <p class="card-text">Probability combined with random distribution is an important and often overlooked concept when it comes to trading. While rooted in data science and statistics, you need not be a data scientist to understand enough to aid your trading endeavors.</p>
               <a class="fw-600 fs-12" href="{{ url('probability-and-random-distribution') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
           </div>
@@ -323,8 +323,8 @@
           <div class="card card-bordered card-hover-shadow">
             <a href="#"><img class="card-img-top" src="{{ url('assets/img/odds-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Trading Insights #2: Proper Technical Analysis</a></h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+              <h4 class="card-title"><a href="#">Trading Insights #2: Real Technical Analysis</a></h4>
+              <p class="card-text">If you’re an aspiring trader, then you’re probably familiar enough with technical analysis to muster up a definition of some kind. Despite the widespread familiarity with the concept, technical analysis is often misrepresented.</p>
               <a class="fw-600 fs-12" href="{{ url('tipping-the-odds') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
           </div>
@@ -335,8 +335,8 @@
           <div class="card card-bordered card-hover-shadow">
             <a href="#"><img class="card-img-top" src="{{ url('assets/img/mind-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Trading Insights #3: Shaping The Mind</a></h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+              <h4 class="card-title"><a href="#">Trading Insights #3: Mastering Your Mind</a></h4>
+              <p class="card-text">Your mind is the most powerful piece of the puzzle when it comes to your trading success. Without developing the mentality of a pro trader, you will never achieve the results you desire. When it comes to mastering your mind, we can think of no one better to draw influence from than Buddha.</p>
               <a class="fw-600 fs-12" href="{{ url('shaping-the-mind') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
           </div>
@@ -373,7 +373,7 @@
           <div class="pricing-2">
             <h2 class="price"><span class="price-unit">$</span> 55</h2>
             <small class="mb-20">CAD</small>
-            <h6 class="plan-name">Three Month Access</h6>
+            <h6 class="plan-name">Three-Month Access</h6>
             <p class="plan-description">Try it out, see for yourself</p>
             <br>
             <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/three-month') }}">Buy Now</a>
@@ -405,7 +405,7 @@
           <div class="pricing-2">
             <h2 class="price"><span class="price-unit">$</span> 150</h2>
             <small class="mb-20">CAD</small>
-            <h6 class="plan-name">One Year Access</h6>
+            <h6 class="plan-name">One-Year Access</h6>
             <p class="plan-description">Give it a good go</p>
             <br>
             <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/year') }}">Buy Now</a>
@@ -432,7 +432,7 @@
         <small>Faq</small>
         <h2>Frequently Asked Questions</h2>
         <hr class="dark-hr"/>
-        <p class="lead">Before you dive in, we highly recommend you look over these common questions and concerns.</p>
+        <p class="lead">Before you dive in we highly recommend you look over these common questions and concerns.</p>
       </header>
 
 
@@ -491,8 +491,7 @@
                     return customers a discount at the point of sale.
                   </p>
                   <p>
-                    Those who purchased a three-month plan receive a 15% discount on future extensions, and those who purchased a one-year plan receive a 25% discount
-                     on future extensions. These discounts do not stack and are always applied to the posted base price for the selected subscription period. For example,
+                    Those who purchased a three-month or one-year plan receive a 15% discount on future extensions. These discounts do not stack and are always applied to the posted base price for the selected subscription period. For example,
                      if you are purchasing your third three-month plan, your discount is 15%, not 30%, and the discount is applied to the posted price for the three-month plan.
                   </p>
                 </div>
@@ -509,7 +508,7 @@
                 <div class="card-body pd-20">
                   <p>
                     Please refer to our video collection for all you need to know about adding the Olympus Cloud to your TradingView chart and for recommended usage instructions.
-                    Videos are available on our <a href="">YouTube channel</a> or our <a href="{{ url('videos') }}">website</a>
+                    Videos are available on our <a href="">YouTube channel.</a></a>
                   </p>
                 </div>
               </div>
@@ -609,7 +608,7 @@
                   </p>
                   <p>
                     While it sounds counterintuitive, it is more important you create a consistent mindset and trading regime than it is you get a few big winning trades. When you achieve
-                    consistency, you can trade with any amount of capital, including very large accounts, and produce money over and over again.
+                    consistency, you can trade with any amount of capital, including very large amounts, and produce money over and over again.
                   </p>
                   <p>
                     A few of our favorite high liquidity large-cap stocks and ETFs include QQQ, SPY, SOXX, TAN, AAPL, AMZN, MSFT, NVDA, TSLA, and AMD.

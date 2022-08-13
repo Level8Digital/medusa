@@ -39,7 +39,7 @@
       </div>
 
       <div class="text-center my-8">
-        <img class="rounded-md blog-img" src="{{ url('assets/img/probability.jpg') }}" alt="...">
+        <img class="rounded-md blog-img" src="{{ url('assets/img/probability-opt.jpg') }}" alt="...">
       </div>
 
       <div class="row">

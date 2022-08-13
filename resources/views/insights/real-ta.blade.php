@@ -33,11 +33,11 @@
 
       <div class="text-center mt-8">
         <h2><em>Trading Insights Part 2:</em> Real Technical Analysis</h2>
-        <p>April 23, 2022 in <a href="{{ url('insights') }}">Insights</a></p>
+        <p>April 24, 2022 in <a href="{{ url('insights') }}">Insights</a></p>
       </div>
 
       <div class="text-center my-8">
-        <img class="rounded-md blog-img" src="{{ url('assets/img/odds.jpg') }}" alt="...">
+        <img class="rounded-md blog-img" src="{{ url('assets/img/odds-opt.jpg') }}" alt="...">
       </div>
 
       <div class="row">

@@ -43,7 +43,7 @@
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-overview') }}">Overview</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-insights') }}">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
           </ul>
         </div>
@@ -70,7 +70,7 @@
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-overview') }}">Overview</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-insights') }}">Insights</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
             </ul>
           </div>

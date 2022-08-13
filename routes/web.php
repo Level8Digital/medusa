@@ -54,6 +54,12 @@ Route::get('/real-technical-analysis', function () {
 Route::get('/mastering-your-mind', function () {
     return view('insights/mind');
 });
+Route::get('/accuracy-and-profitability', function () {
+    return view('insights/accuracy');
+});
+Route::get('/trading-signals-versus-results', function () {
+    return view('insights/signals-results');
+});
 
 // SHOP/PURCHASE/CHECKOUT ROUTES
 Route::get('/purchase/{accesss}', [BuyController::class, 'viewPurchase'])->name('purchase');
