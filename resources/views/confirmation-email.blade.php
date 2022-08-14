@@ -301,12 +301,12 @@
           <tr>
             <td class="free-text">
                 <br /><br />
-                You will be able to access the Olympus Suite on TradingView with username '{{ $messageDetails['username'] }}' within a maximum of 24 hours, but usually sooner.
+                You will be able to access the Olympus Cloud on TradingView with username '{{ $messageDetails['username'] }}' within a maximum of 24 hours, but usually sooner.
                 <br /><br />
-                While you wait, head over to our <a href="{{ secure_url('videos'); }}">Video</a> page to learn how to use and access your new trading system, and read our
+                While you wait, head over to our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA">YouTube Channel</a> to learn how to use and access the Olympus Cloud, and read our
                 <a href="{{ secure_url('insights'); }}">Insights Blog</a> to take your trading to the next level.
                 <br /><br />
-                You will recieve an email from us when your access has been granted.
+                You will recieve an email from us when your access has been granted with instructions on how to add the Olympus Cloud to your chart.
             </td>
           </tr>
           <tr>

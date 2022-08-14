@@ -201,6 +201,28 @@
 
   <!--
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  | INTRO VIDEO
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+
+  <section class="section section-inverse bg-img" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="1">
+    <div class="container">
+      <header class="section-header">
+        <h2>Watch Video</h2>
+        <hr>
+        <p class="lead">Get a feel for the Olympus Cloud with this quick introduction video.</p>
+      </header>
+
+
+      <div class="text-center mb-60">
+        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=yBx5GAtyyiE" data-provide="lightbox"><i class="fa fa-play"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!--
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   | Overview
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
@@ -261,34 +283,13 @@
 
       <div class="row mt-70">
         <div class="col-12 text-center">
-          <a class="btn btn-lg btn-primary" href="https://www.youtube.com" target="_blank">View YouTube Channel</a>
+          <a class="btn btn-lg btn-primary" href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" target="_blank">View YouTube Channel</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!--
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  | INTRO VIDEO
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  !-->
-
-  <section class="section section-inverse bg-img" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="1">
-    <div class="container">
-      <header class="section-header">
-        <h2>Watch Video</h2>
-        <hr>
-        <p class="lead">Get a feel for the Olympus Cloud with this quick introduction video.</p>
-      </header>
-
-
-      <div class="text-center mb-60">
-        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=ah4pcPbRi2M" data-provide="lightbox"><i class="fa fa-play"></i></a>
-      </div>
-
-    </div>
-  </section>
   <!--
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   | Articles / Blog
@@ -415,7 +416,7 @@
       </div>
 
       <p class="text-center mt-50">
-        <i class="fa fa-info-circle fs-25 pd-5"></i> The Olympus Cloud is only compatible with TradingView charts. Returning customers recieve a discount at the point of sale.
+        <i class="fa fa-info-circle fs-25 pd-5"></i> The Olympus Cloud is only compatible with TradingView charts. Return customers recieve a discount at the point of sale.
       </p>
 
     </div>
@@ -471,7 +472,7 @@
                 <div class="card-body pd-20">
                   <p>
                     We offer no warranty, guarantees, or refunds of any kind. Our Terms of Use and Disclaimer govern your use of this website and our products.
-                    Please refer <a href="{{ url('terms-of-use') }}">here</a> for more information.
+                    Please refer <a href="{{ url('terms-of-use') }}" class="teal-link">here</a> for more information.
                   </p>
                 </div>
               </div>
@@ -508,7 +509,7 @@
                 <div class="card-body pd-20">
                   <p>
                     Please refer to our video collection for all you need to know about adding the Olympus Cloud to your TradingView chart and for recommended usage instructions.
-                    Videos are available on our <a href="">YouTube channel.</a></a>
+                    Videos are available on our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" class="teal-link" target="_blank">YouTube channel.</a>
                   </p>
                 </div>
               </div>
@@ -539,7 +540,7 @@
                   <p>
                     Absolutely not! The idea of winning every trade is impossible and goes against the key principles employed by professional traders. It is possible to
                     have stretches when you have a 100% success rate, but this is merely a snapshot of one period in time. Losses are inevitable in any trading regime.
-                    Check out our Trading Insights Series in our <a href="{{ url('insights') }}">blog</a> to learn more about how professionals approach the art of trading.
+                    Check out our Trading Insights Series in our <a href="{{ url('insights') }}" class="teal-link" >Insights Blog</a> to learn more about how professionals approach the art of trading.
                   </p>
                 </div>
               </div>
@@ -563,7 +564,7 @@
                   </p>
                   <p>
                     With any strategy, taking profits quickly results in a high win rate, but the net profit is not necessarily optimal. View our insights article titled
-                    Accuracy & Profitability for more on this concept.
+                    <a href="{{ url('accuracy-and-profitability') }}" class="teal-link" target="_blank">Accuracy & Profitability</a> for more on this concept.
                   </p>
                 </div>
               </div>
@@ -582,7 +583,7 @@
                   </p>
                   <p>
                     For example, if the 1D chart has a bull cloud, you can then zoom into the 5m chart. If the 5m higher time frame filter is positive, you can try to take trades in the bullish direction
-                    when an entry signal occurs. Part 6 in our introductory video series on the Olympus Cloud shows you how this process works.
+                    when an entry signal occurs. Part 6 in our introductory video series on our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" class="teal-link" target="_blank">YouTube channel</a> shows you how this process works.
                   </p>
                 </div>
               </div>
@@ -647,7 +648,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <!-- <div class="card">
               <h4 class="card-title">
                 <a class="collapsed" data-toggle="collapse" href="#collapse-1-12">How do I contact you?</a>
               </h4>
@@ -655,11 +656,11 @@
               <div id="collapse-1-12" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
                   <p>
-                    You can send additional questions to <em>info@medusamoney.com.</em>
+                    You can send additional questions to <em class="teal-font">info@medusamoney.com.</em>
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
 

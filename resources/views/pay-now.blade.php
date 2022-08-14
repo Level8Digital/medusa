@@ -5,7 +5,7 @@
 @section('styles')
 
 @section('pre-scripts')
-    <script src="https://www.paypal.com/sdk/js?client-id=AbQ8yNRjtqO6ZxkP7UahAA-5ZuPxbsMFQhKDoV7I3_he9L1nONBGmn9VbX4xdV6bK_zCq4KuEuhKqQO9&currency=CAD"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AcGJCGMAUE2IN1HN4-lUT-QDOCiNnGH56VUGIMPJ9xU3EF7XkDxNvyZ8pOZiiTXSjZl7pPsJpZUatKQa&currency=CAD"></script>
 @endsection
 
 @section('content')
@@ -18,88 +18,89 @@
   </div>
 </header>
 <!-- END Header -->
+@if(! $purchase['is_paid'])
+  <main class="main-content">
+    <section class="section" id="payment-area">
+      <div class="container">
 
-<main class="main-content">
-  <section class="section" id="payment-area">
-    <div class="container">
+        <div id="payment-error" class="alert alert-danger" style="display:none;">
+          <i class="fa fa-exclamation-triangle"></i> There was a problem processing the payment! <span id="error-msg"></span>
+        </div>
 
-      <div id="payment-error" class="alert alert-danger" style="display:none;">
-        <i class="fa fa-exclamation-triangle"></i> There was a problem processing the payment! <span id="error-msg"></span>
-      </div>
+        <div class="row mt-50">
+          <div class="col-lg-7 ">
+            <div class="cart-price">
+                <h5><i class="fa fa-shopping-cart"></i> Your {{ $access_desc }} <small> - {{ $purchase['email'] }} | {{ $purchase['username'] }}</small></h5>
+                @if($purchase['discount_applied'] and $purchase['referral_code'] == 'None')
+                  <h6 class="teal-font"><i class="fa fa-trophy"></i> Since you're a return customer a {{ $purchase['discount_amount'] }}% discount was applied to your purchase!</h6>
+                @endif
 
-      <div class="row mt-50">
-        <div class="col-lg-7 ">
-          <div class="cart-price">
-              <h5><i class="fa fa-shopping-cart"></i> Your {{ $access_desc }} <small> - {{ $purchase['email'] }} | {{ $purchase['username'] }}</small></h5>
-              @if($purchase['discount_applied'] and $purchase['referral_code'] == 'None')
-                <h6 class="teal-font"><i class="fa fa-trophy"></i> Since you're a return customer a {{ $purchase['discount_amount'] }}% discount was applied to your purchase!</h6>
-              @endif
+                @if($purchase['discount_applied'] and $purchase['referral_code'] != 'None')
+                  <h6 class="teal-font"><i class="fa fa-trophy"></i> Since you used a referral code a {{ $purchase['discount_amount'] }}% discount was applied to your purchase!</h6>
+                @endif
+              <hr>
 
-              @if($purchase['discount_applied'] and $purchase['referral_code'] != 'None')
-                <h6 class="teal-font"><i class="fa fa-trophy"></i> Since you used a referral code a {{ $purchase['discount_amount'] }}% discount was applied to your purchase!</h6>
-              @endif
-            <hr>
+              <div class="flexbox">
+                <div>
+                  <h5><strong>Total:</strong></h5>
+                </div>
 
-            <div class="flexbox">
-              <div>
-                <h5><strong>Total:</strong></h5>
-              </div>
-
-              <div>
-                <h5 class="fw-600">${{ $purchase['total'] }} <small>CAD</small></h5>
+                <div>
+                  <h5 class="fw-600">${{ $purchase['total'] }} <small>CAD</small></h5>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-5 mt-30">
+            <div id="paypal-button-container"></div>
+          </div>
         </div>
 
-        <div class="col-lg-5 mt-30">
-          <div id="paypal-button-container"></div>
+        <div class="row mt-20 text-center">
+          <div class="col-12">
+            <p>
+              <i class="fa fa-credit-card"></i> Credit and Debit payments are processed via PayPal. We save no payment information except your PayPal confirmation number.
+            </p>
+          </div>
         </div>
+
+
+
+
+
       </div>
+    </section>
 
-      <div class="row mt-20 text-center">
-        <div class="col-12">
-          <p>
-            <i class="fa fa-credit-card"></i> Credit and Debit payments are proccessed via PayPal. We save no payment information except your PayPal confirmation number.
+    <section class="section bg-repeat" data-overlay-light="5" id="success-area" style="display:none;">
+      <div class="container">
+        <header class="section-header">
+          <small>Welcome to the Olympus Suite</small>
+          <br>
+          <i class="fa fa-check-circle-o super-icon"></i>
+          <h2 class="lead-8"><strong>Thanks for your purchase</strong></h2>
+          <hr class="dark-hr">
+          <p class="lead-2">
+            The Olympus Cloud will be available to your TradingView account within 24 hours, but usually sooner.
           </p>
-        </div>
+          <p class="lead-2">
+            While you wait, head over to our YouTube channel to learn how to use and access the Olympus Cloud, and check out our Insights Blog to take your trading to the next level.
+          </p>
+          <p class="lead-2">
+          <i class="fa fa-envelope"></i> <em>You will recieve an email from us when your access has been granted with instructions on how to add the Olympus Cloud to your chart.</em>
+          </p>
+        </header>
+        <p class="text-center">
+          <a class="btn btn-lg btn-primary w-250" href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA">YouTube Channel</a><br>
+        </p>
+        <p class="text-center">
+          <a class="btn btn-lg btn-primary w-250" href="{{ url('insights') }}">Insights Blog</a><br>
+        </p>
       </div>
+    </section>
 
-
-
-
-
-    </div>
-  </section>
-
-  <section class="section bg-repeat" data-overlay-light="5" id="success-area" style="display:none;">
-    <div class="container">
-      <header class="section-header">
-        <small>Welcome to the Olympus Suite</small>
-        <br>
-        <i class="fa fa-check-circle-o super-icon"></i>
-        <h2 class="lead-8"><strong>Thanks for your purchase</strong></h2>
-        <hr class="dark-hr">
-        <p class="lead-2">
-          The Olympus Suite will be available to your TradingView account within a maximum of 24 hours, but usually sooner.
-        </p>
-        <p class="lead-2">
-          While you wait, head over to our Video page to learn how to use and access your new trading system, and check out our Insights Blog to take your trading to the next level.
-        </p>
-        <p class="lead-2">
-        <i class="fa fa-envelope"></i> <em>You will recieve an email from us when your access has been granted.</em>
-        </p>
-      </header>
-      <p class="text-center">
-        <a class="btn btn-lg btn-primary w-250" href="/videos">Videos</a><br>
-      </p>
-      <p class="text-center">
-        <a class="btn btn-lg btn-primary w-250" href="/insights">Insights</a><br>
-      </p>
-    </div>
-  </section>
-
-</main>
+  </main>
+@endif
 
 @endsection
 
@@ -108,6 +109,11 @@
 <script src="{{ url('assets/js/axios.min.js') }}"></script>
 
 <script>
+
+  if(!!window.performance && window.performance.navigation.type == 2){
+    window.location.reload();
+  }
+
     var purchaseId = {{ $purchase['id'] }}
 
     paypal.Buttons({
@@ -145,10 +151,11 @@
                 .then(function (response) {
                   console.log(response);
 
+                  $(location).prop('href', '{{ url("transaction-complete") }}');
                   // Hide the payment area and show the success area
-                  $('#payment-area').toggle("fast", function(){
-                      $('#success-area').toggle("slow");
-                  });
+                  // $('#payment-area').toggle("fast", function(){
+                  //     $('#success-area').toggle("slow");
+                  // });
                 })
                 .catch(function (error) {
                   // Log error - for debug

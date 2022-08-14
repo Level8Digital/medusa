@@ -40,7 +40,7 @@
                 </td>
 
                 <td style="width: auto">
-                  <h5>Olympus Suite</h5>
+                  <h5>Olympus Cloud</h5>
                   <p>{{ $access_desc }}</p>
                 </td>
 

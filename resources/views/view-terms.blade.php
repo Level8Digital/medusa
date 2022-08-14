@@ -6,7 +6,7 @@
 
 @endsection
 
-@section('Content')
+@section('content')
 
 <!-- Header -->
 <header id="terms-header" class="header header-inverse">
@@ -17,7 +17,7 @@
 </header>
 <!-- END Header -->
 
-<main class="main-Content">
+<main class="main-content">
   <section class="section">
     <div class="container">
       <div class="row">
@@ -198,7 +198,7 @@
             @enderror
           </div>
         </div>
-        <div class="row justify-Content-center mt-50">
+        <div class="row justify-content-center mt-50">
           <div class="col-4 ">
             <button class="btn btn-block btn-primary" type="submit">Go to Payment <i class="ti-angle-right fs-9"></i></button>
           </div>

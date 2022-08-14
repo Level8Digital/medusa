@@ -60,13 +60,20 @@ Route::get('/accuracy-and-profitability', function () {
 Route::get('/trading-signals-versus-results', function () {
     return view('insights/signals-results');
 });
+Route::get('/transaction-complete', function () {
+    return view('transaction-complete');
+});
 
 // SHOP/PURCHASE/CHECKOUT ROUTES
 Route::get('/purchase/{accesss}', [BuyController::class, 'viewPurchase'])->name('purchase');
 Route::post('/start-purchase', [BuyController::class, 'startPurchase']);
 Route::get('/view-terms/{order}', [BuyController::class, 'viewTerms'])->name('view-terms');
-Route::post('/confirm-terms', [BuyController::class, 'confirmTerms']);
+
 Route::post('/finalize-paypal', [BuyController::class, 'FinalizePayPal']);
+
+Route::group(['middleware' => 'prevent-back-history'],function(){
+  Route::post('/confirm-terms', [BuyController::class, 'confirmTerms']);
+});
 
 // ADMIN DASHBOARD ROUTES
 Route::get('/dashboard', [DashboardController::class, 'viewDashboard'])->middleware(['auth'])->name('dashboard');

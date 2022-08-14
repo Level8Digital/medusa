@@ -46,7 +46,7 @@ class BuyController extends Controller
         $mathAnswer = $numberHash[$numberOne + $numberTwo];
 
         // Ensure the access period is an acceptable string
-        if($access != 'lifetime' && $access != 'year' && $access != 'three-month'){
+        if($access != 'lifetime' && $access != 'year' && $access != 'three-month' && $access != 'mdsa-dbg'){
             // Show error view if the trading view account already has lifetime access
             return view('problem', ['msg' => "We don't recognize this access period"]);
         }
@@ -70,6 +70,11 @@ class BuyController extends Controller
             $description = 'Three month access';
             $price = 55;
         }
+        elseif($access == 'mdsa-dbg'){
+            $description = 'Debug. No access';
+            $price = 1;
+        }
+
 
         // Calculate the tax amount
         $tax = $price * 0.05;
@@ -107,7 +112,7 @@ class BuyController extends Controller
         $access = $request->access;
 
         // Ensure the access period is an acceptable string
-        if($access != 'lifetime' && $access != 'year' && $access != 'three-month'){
+        if($access != 'lifetime' && $access != 'year' && $access != 'three-month' && $access != 'mdsa-dbg'){
             // Show error view if the trading view account already has lifetime access
             return view('problem', ['msg' => "We don't recognize this access period"]);
         }
@@ -216,6 +221,9 @@ class BuyController extends Controller
         elseif($access == 'three-month'){
             $price = 55;
         }
+        elseif($access == 'mdsa-dbg'){
+            $price = 1;
+        }
 
         // If the user gets a return customer discount
         if($returnDiscount or $referralDiscount){
@@ -316,8 +324,9 @@ class BuyController extends Controller
             elseif($purchase->access == 'three-month'){
                 $description = 'Three Month Access';
             }
-
-
+            elseif($purchase->access == 'mdsa-dbg'){
+                $description = 'Debug';
+            }
 
             // Show Pay now view
             return view('pay-now', ['purchase' => $purchase->toArray(), 'access_desc' => $description ]);
@@ -369,6 +378,11 @@ class BuyController extends Controller
             $purchase->expires_at = date("Y-m-d", strtotime($purchase->paid_at . ' + 93 days'));
             $description = 'Three Month Access';
         }
+        elseif($purchase->access == 'mdsa-dbg'){
+            $purchase->expires_at = now();
+            $description = 'Debug';
+        }
+
 
         // Save the purchase
         if(! $purchase->save()){

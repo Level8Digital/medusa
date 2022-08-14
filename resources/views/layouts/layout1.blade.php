@@ -78,8 +78,8 @@
 
           <div class="col-12 col-lg-2 mt-30">
             <div class="social text-center text-lg-right">
-              <a class="social-icon" href="https://www.tradingview.com/" target="_blank"><div id="trading-view-icon"></div></a>
-              <a class="social-icon" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a class="social-icon" href="https://www.tradingview.com/u/MedusaMoneyOfficial/" target="_blank"><div id="trading-view-icon"></div></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" target="_blank"><i class="fa fa-youtube"></i></a>
               <a class="social-icon" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
             </div>
           </div>

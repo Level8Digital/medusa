@@ -44,6 +44,10 @@
   background-color: #153329;
 }
 
+.teal-link{
+  color: #20a27d !important;
+}
+
 #landing-lead{
   font-size: 1.5rem;
 }
@@ -94,7 +98,7 @@ a:hover {
 }
 
 .teal-font{
-  color: #0fc08e !important;
+  color: #20a27d !important;
 }
 
 .purple-font{
