@@ -295,15 +295,18 @@
         <table cellspacing="0" cellpadding="0" width="650" class="w320">
           <tr>
             <td class="header-lg">
-                You Can Now Access The Olympus Suite!
+                You Can Now Access The Olympus Cloud!
             </td>
           </tr>
           <tr>
             <td class="free-text">
-              You can access the Olympus Suite on TradingView with username '{{ $messageDetails['username'] }}'!
+              You can now access the Olympus Cloud on TradingView with username '{{ $messageDetails['username'] }}'!
               <br /><br />
-              Head over to our <a href="{{ secure_url('videos'); }}">Video</a> page to learn how to use and access your new trading system, and read our
-              <a href="{{ secure_url('insights'); }}">Insights Blog</a> to take your trading to the next level.
+              To add the Olympus Cloud to your chart visit this <a href="https://www.tradingview.com/script/soWuOTjz-Olympus-Cloud-v3-0/" style="color: #20a27d;">link</a> and click the 'Add to favorite indicators' button. After you've done this,
+              you can open a chart and click the Indicators button in the top right corner and select the 'Favorites' tab, where you should see the Olympus Cloud.
+              <br /><br />
+              If you have not already, head over to our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" style="color: #20a27d;">YouTube Channel</a> to learn how to use the Olympus Cloud and read our
+              <a href="{{ secure_url('insights'); }}" style="color: #20a27d;">Insights Blog</a> to take your trading to the next level.
             </td>
           </tr>
           <tr>
@@ -328,7 +331,7 @@
                             <tr>
                               <td class="mini-block">
                                 <span class="header-sm">Your Order</span><br />
-                                The Olympus Suite | {{ $messageDetails['access'] }}
+                                The Olympus Cloud | {{ $messageDetails['access'] }}
                               </td>
                             </tr>
                           </table>

@@ -5,7 +5,7 @@
 @section('styles')
 
 @section('pre-scripts')
-    <script src="https://www.paypal.com/sdk/js?client-id=AcGJCGMAUE2IN1HN4-lUT-QDOCiNnGH56VUGIMPJ9xU3EF7XkDxNvyZ8pOZiiTXSjZl7pPsJpZUatKQa&currency=CAD"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AQlDs7Av65mh1TvkvoenByNmDCBgkh2XK3zT8CJVf-olJnK8uOWFOoRR5qXy8sffZM_e_LXGATg2drGj&currency=CAD"></script>
 @endsection
 
 @section('content')

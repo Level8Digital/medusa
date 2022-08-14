@@ -32,7 +32,8 @@
             and check out our <a class="teal-link" href="{{ url('insights') }}">Insights Blog</a> to take your trading to the next level.
           </p>
           <p class="lead-2">
-          <i class="fa fa-envelope"></i> <em>You will recieve an email from us when your access has been granted with instructions on how to add the Olympus Cloud to your chart.</em>
+          <i class="fa fa-envelope"></i> <em>You will recieve an email from us when your access has been granted with instructions on how to add the Olympus Cloud to your chart. Be sure to check your other email folders, such as promotions or spam
+          just in case our email gets lost in the shuffle.</em>
           </p>
         </header>
       </div>
