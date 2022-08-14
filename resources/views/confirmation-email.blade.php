@@ -306,7 +306,8 @@
                 While you wait, head over to our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" style="color: #20a27d;">YouTube Channel</a> to learn how to use and access the Olympus Cloud, and read our
                 <a href="{{ secure_url('insights'); }}" style="color: #20a27d;">Insights Blog</a> to take your trading to the next level.
                 <br /><br />
-                You will recieve an email from us when your access has been granted with instructions on how to add the Olympus Cloud to your chart.
+                You will recieve an email from us when your access has been granted with instructions on how to add the Olympus Cloud to your chart. Be sure to check your other email folders, such as promotions or spam
+                just in case our email gets lost in the shuffle.
             </td>
           </tr>
           <tr>
