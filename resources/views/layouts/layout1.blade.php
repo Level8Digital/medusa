@@ -10,7 +10,14 @@
 
     <title>Medusa Money | @yield('title')</title>
     <!-- favicon -->
-    <link rel=icon href=favicon.ico sizes="20x20" type="image/png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('assets/img/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('assets/img/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('assets/img/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url('assets/img/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ url('assets/img/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="{{ url('assets/css/core.min.css') }}">
 
@@ -32,8 +39,8 @@
         <div class="topbar-left">
           <button class="topbar-toggler">&#9776;</button>
           <a class="topbar-brand" href="/">
-            <img id="logo-default" class="logo-default" src="assets/img/logo-02.png" alt="logo">
-            <img id="logo-inverse" class="logo-inverse" src="assets/img/logo-light.png" alt="logo">
+            <img id="logo-default" class="logo-default" src="{{ url('assets/img/logo-02.png') }}" alt="logo">
+            <img id="logo-inverse" class="logo-inverse" src="{{ url('assets/img/logo-light.png') }}" alt="logo">
           </a>
         </div>
 
