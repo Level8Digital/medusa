@@ -25,6 +25,9 @@
     RewriteCond %{HTTP_HOST} ^medusa.frb.io$
     RewriteRule ^$ https://www.medusamoney.com [L,R=301]
 
+    RewriteCond %{HTTP_HOST} ^medusamoney.com$
+    RewriteRule ^$ https://www.medusamoney.com [L,R=301]
+
     RewriteCond %{HTTP_HOST} ^medusamoney.ca$
     RewriteRule ^$ https://www.medusamoney.com [L,R=301]
 
