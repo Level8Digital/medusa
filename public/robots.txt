@@ -1,2 +1,12 @@
 User-agent: *
-Disallow:
+Disallow: /problem
+Disallow: /login
+Disallow: /transaction-complete
+Disallow: /terms
+Disallow: /purchase/
+Disallow: /start-purchase
+Disallow: /view-terms/
+Disallow: /finalize-paypal
+Disallow: /confirm-terms
+
+Sitemap: https://www.medusamoney.com/sitemap.xml

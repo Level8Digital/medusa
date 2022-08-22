@@ -1,6 +1,8 @@
 @extends('layouts.layout2')
 
-@section('title', 'Insights')
+@section('title', 'Insights Trading Blog')
+
+@section('description', "Blog articles designed to teach you core trading concepts and take you're trading to the next level.")
 
 @section('styles')
 
@@ -15,7 +17,7 @@
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2">
 
-        <h1>Insights Blog</h1>
+        <h1>Insights Trading Blog</h1>
         <p class="fs-20 opacity-70">Articles designed to take your trading to the next level.</p>
 
       </div>

@@ -1,6 +1,6 @@
 @extends('layouts.layout2')
 
-@section('title', 'Terms & Disclaimer')
+@section('title', 'Terms of Use & Disclaimer')
 
 @section('styles')
 

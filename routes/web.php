@@ -21,12 +21,6 @@ Route::get('/', function () {
 Route::get('/insights', function () {
     return view('insights');
 });
-Route::get('/videos', function () {
-    return view('videos');
-});
-Route::get('/faq', function () {
-    return view('faq');
-});
 Route::get('/terms-of-use', function () {
     return view('terms');
 });
@@ -72,7 +66,7 @@ Route::get('/view-terms/{order}', [BuyController::class, 'viewTerms'])->name('vi
 Route::post('/finalize-paypal', [BuyController::class, 'FinalizePayPal']);
 
 Route::group(['middleware' => 'prevent-back-history'],function(){
-  Route::post('/confirm-terms', [BuyController::class, 'confirmTerms']);
+    Route::post('/confirm-terms', [BuyController::class, 'confirmTerms']);
 });
 
 // ADMIN DASHBOARD ROUTES

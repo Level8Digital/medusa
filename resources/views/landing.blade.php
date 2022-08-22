@@ -1,6 +1,8 @@
 @extends('layouts.layout1')
 
-@section('title', 'Innovative Trading Systems')
+@section('title', 'Trading Automation | Trading Psychology')
+
+@section('description', "We build trading tools packed with backtest logic so you know exactly what you're getting. No guesswork, no blind trust, only customizable trading indicators with automated backtesting.")
 
 @section('styles')
 
@@ -13,7 +15,7 @@
   <div class="container">
 
     <div class="row h-full">
-      <div class="col-12 col-lg-6 align-self-center text-center text-lg-left">
+      <div class="col-12 col-lg-6 align-self-center text-center text-lg-left landing-block">
 
         <h1 class="display-2">Goodbye Guesswork</h1>
         <br>
