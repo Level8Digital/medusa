@@ -300,10 +300,10 @@
           </tr>
           <tr>
             <td class="free-text">
-              You can now access the Olympus Cloud on TradingView with username '{{ $messageDetails['username'] }}'!
+              You can now access the Olympus Cloud on TradingView with username "{{ $messageDetails['username'] }}"!
               <br /><br />
-              To add the Olympus Cloud to your chart visit this <a href="https://www.tradingview.com/script/soWuOTjz-Olympus-Cloud-v3-0/" style="color: #20a27d;">link</a> and click the 'Add to favorite indicators' button. After you've done this,
-              you can open a chart and click the Indicators button in the top right corner and select the 'Favorites' tab, where you should see the Olympus Cloud.
+              To add the Olympus Cloud to your chart visit this <a href="https://www.tradingview.com/script/soWuOTjz-Olympus-Cloud-v3-0/" style="color: #20a27d;">link</a> and click the "Add to favorite indicators" button. After you've done so,
+              open a chart and click the Indicators button in the top left corner. Next, select the "Favorites" tab where you should see the Olympus Cloud. From there, add it to your chart as you would any other indicator.
               <br /><br />
               If you have not already, head over to our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" style="color: #20a27d;">YouTube Channel</a> to learn how to use the Olympus Cloud and read our
               <a href="{{ secure_url('insights'); }}" style="color: #20a27d;">Insights Blog</a> to take your trading to the next level.

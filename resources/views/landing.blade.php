@@ -1,6 +1,6 @@
 @extends('layouts.layout1')
 
-@section('title', 'Trading Automation | Trading Psychology')
+@section('title', 'Trading Automation | Backtesting | Trading Psychology')
 
 @section('description', "We build trading tools packed with backtest logic so you know exactly what you're getting. No guesswork, no blind trust, only customizable trading indicators with automated backtesting.")
 
@@ -19,7 +19,7 @@
 
         <h1 class="display-2">Goodbye Guesswork</h1>
         <br>
-        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands, and say goodbye to the Underworld forever.</p>
+        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands, and say goodbye to the underworld forever.</p>
 
         <br><br>
 
@@ -54,7 +54,7 @@
         <hr class="dark-hr">
         <p class="lead">
           The secret to trading does not lay in predicting every price oscillation or finding new and exotic markets. The best traders are consistent and in control.
-          The Olympus Cloud allows you to adjust your strategy as market conditions shift and gives you the ability to backtest with click of a button. When you’re
+          The Olympus Cloud allows you to adjust your strategy as market conditions shift and gives you the ability to backtest with a button click. When you’re
           confident in your system, all you need is the mental framework to execute like a pro.
         </p>
       </header>
@@ -71,7 +71,7 @@
                 <p><i class="fa fa-hdd-o fs-50"></i></p>
                 <h4>Embrace Testing</h4>
                 <p>
-                  Beyond a mere indicator, the Olympus Cloud comes with backtest logic, allowing you to verify past results and make decisions based on data, not blind trust.
+                  Beyond a mere indicator, the Olympus Cloud comes with backtest logic, allowing you to view past results and make decisions based on data, not blind trust.
                 </p>
               </div>
             </div>
@@ -378,6 +378,7 @@
             <small class="mb-20">CAD</small>
             <h6 class="plan-name">Three-Month Access</h6>
             <p class="plan-description">Try it out, see for yourself</p>
+            <p class="plan-description"><small>No future updates</small></p>
             <br>
             <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/three-month') }}">Buy Now</a>
           </div>
@@ -390,6 +391,7 @@
             <small class="mb-20">CAD</small>
             <h6 class="plan-name">Lifetime Access</h6>
             <p class="plan-description">Pay once, have fun forever</p>
+            <p class="plan-description"><small>All future updates</small></p>
             <!-- <ul class="price-list">
               <li>
                 <small>Script updates</small>
@@ -410,6 +412,7 @@
             <small class="mb-20">CAD</small>
             <h6 class="plan-name">One-Year Access</h6>
             <p class="plan-description">Give it a good go</p>
+            <p class="plan-description"><small>Updates within subscription period</small></p>
             <br>
             <a class="btn btn-white btn-round btn-outline w-200" href="{{ url('purchase/year') }}">Buy Now</a>
           </div>
