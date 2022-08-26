@@ -32,7 +32,7 @@
     <div class="container">
 
       <div class="text-center mt-8">
-        <h2><em>Trading Insights Part 2:</em> Real Technical Analysis</h2>
+        <h2><em>Trading Insights Part 2:</em> The Truth About Technical Analysis</h2>
         <p>April 24, 2022 in <a href="{{ url('insights') }}">Insights</a></p>
       </div>
 
@@ -98,7 +98,7 @@
             What does all of this mean in real terms? Individual random events have a consistent outcome over a set of events when the odds are tilted in one direction.
           </p>
 
-          <h4 class="mt-20">Real Technical Analysis</h4>
+          <h4 class="mt-20">The Truth About Technical Analysis</h4>
           <p class="lead">
             The intent of technical analysis is to identify behavior patterns in the collective consciousness of the market. In other words, the interaction of all market participants produces patterns you can use in your favor. A pattern is simply a clue that one outcome is slightly more likely than another outcome. Conversely, as many will find surprising, a pattern can indicate that the preferred outcome is equal to or slightly less likely than the undesired outcome, but the positive results of the pattern outweigh the negative results by a fair margin. In other words, the dollar amount from the winning instances is significantly higher than the amount lost on losing trades.
           </p>

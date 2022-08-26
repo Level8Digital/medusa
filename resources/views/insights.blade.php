@@ -68,7 +68,7 @@
           !-->
           <article class="mt-90">
             <header class="text-center mb-40">
-              <h3>Trading Insights #2: Real Technical Analysis</h3>
+              <h3>Trading Insights #2: The Truth About Technical Analysis</h3>
               <div class="link-color-default fs-12">
                 <time>April 24, 2022</time>
               </div>
@@ -79,7 +79,7 @@
             <div class="card-block">
               <p class="text-justify">If you’re an aspiring trader, then you’re probably familiar enough with technical analysis to muster up a definition of some kind. Despite the widespread familiarity with the concept, technical analysis is often misrepresented.</p>
               <p class="text-center mt-40">
-                <a class="btn btn-primary btn-round" href="{{ url('real-technical-analysis') }}">Read more</a>
+                <a class="btn btn-primary btn-round" href="{{ url('the-truth-about-technical-analysis') }}">Read more</a>
               </p>
             </div>
           </article>

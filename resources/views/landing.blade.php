@@ -217,7 +217,7 @@
 
 
       <div class="text-center mb-60">
-        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=yBx5GAtyyiE" data-provide="lightbox"><i class="fa fa-play"></i></a>
+        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=WtzQzeD98Zg" data-provide="lightbox"><i class="fa fa-play"></i></a>
       </div>
 
     </div>
@@ -326,9 +326,9 @@
           <div class="card card-bordered card-hover-shadow">
             <a href="#"><img class="card-img-top" src="{{ url('assets/img/odds-small.jpg') }}" alt="Card image cap"></a>
             <div class="card-block">
-              <h4 class="card-title"><a href="#">Trading Insights #2: Real Technical Analysis</a></h4>
+              <h4 class="card-title"><a href="#">Trading Insights #2: The Truth About Technical Analysis</a></h4>
               <p class="card-text">If you’re an aspiring trader, then you’re probably familiar enough with technical analysis to muster up a definition of some kind. Despite the widespread familiarity with the concept, technical analysis is often misrepresented.</p>
-              <a class="fw-600 fs-12" href="{{ url('tipping-the-odds') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+              <a class="fw-600 fs-12" href="{{ url('the-truth-about-technical-analysis') }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
             </div>
           </div>
         </div>

@@ -42,7 +42,7 @@ Route::get('/problem', function () {
 Route::get('/probability-and-random-distribution', function () {
     return view('insights/probability');
 });
-Route::get('/real-technical-analysis', function () {
+Route::get('/the-truth-about-technical-analysis', function () {
     return view('insights/real-ta');
 });
 Route::get('/mastering-your-mind', function () {
