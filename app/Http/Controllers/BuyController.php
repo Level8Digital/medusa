@@ -60,15 +60,15 @@ class BuyController extends Controller
         // Determine the access period based on user selection
         if($access == 'lifetime'){
             $description = 'Lifetime access';
-            $price = 250;
+            $price = 65;
         }
         elseif($access == 'year'){
             $description = 'One year access';
-            $price = 150;
+            $price = 50;
         }
         elseif($access == 'three-month'){
             $description = 'Three month access';
-            $price = 55;
+            $price = 30;
         }
         elseif($access == 'mdsa-dbg'){
             $description = 'Debug. No access';
@@ -213,13 +213,13 @@ class BuyController extends Controller
 
         // Determine the price
         if($access == 'lifetime'){
-            $price = 250;
+            $price = 65;
         }
         elseif($access == 'year'){
-            $price = 150;
+            $price = 50;
         }
         elseif($access == 'three-month'){
-            $price = 55;
+            $price = 30;
         }
         elseif($access == 'mdsa-dbg'){
             $price = 1;

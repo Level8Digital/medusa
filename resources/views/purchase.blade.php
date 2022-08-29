@@ -168,12 +168,6 @@
                 <p class="fw-600">${{ $total }} <small>CAD</small></p>
               </div>
             </div>
-
-            <div class="flexbox mt-10">
-              <p>
-                <small class="purple-font"><i class="fa fa-info-circle pd-5 "></i> If you're using a referral code or you're a return customer we will apply a discount before you complete your checkout.</small>
-              </p>
-            </div>
           </div>
 
           <div class="row">

@@ -374,7 +374,7 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 55</h2>
+            <h2 class="price"><span class="price-unit">$</span> 30</h2>
             <small class="mb-20">CAD</small>
             <h6 class="plan-name">Three-Month Access</h6>
             <p class="plan-description">Try it out, see for yourself</p>
@@ -387,7 +387,7 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 250</h2>
+            <h2 class="price"><span class="price-unit">$</span> 65</h2>
             <small class="mb-20">CAD</small>
             <h6 class="plan-name">Lifetime Access</h6>
             <p class="plan-description">Pay once, have fun forever</p>
@@ -408,7 +408,7 @@
 
         <div class="col-12 col-lg-4">
           <div class="pricing-2">
-            <h2 class="price"><span class="price-unit">$</span> 150</h2>
+            <h2 class="price"><span class="price-unit">$</span> 50</h2>
             <small class="mb-20">CAD</small>
             <h6 class="plan-name">One-Year Access</h6>
             <p class="plan-description">Give it a good go</p>
@@ -421,7 +421,7 @@
       </div>
 
       <p class="text-center mt-50">
-        <i class="fa fa-info-circle fs-25 pd-5"></i> The Olympus Cloud is only compatible with TradingView charts. Return customers recieve a discount at the point of sale.
+        <i class="fa fa-info-circle fs-25 pd-5"></i> The Olympus Cloud is only compatible with TradingView charts.
       </p>
 
     </div>
