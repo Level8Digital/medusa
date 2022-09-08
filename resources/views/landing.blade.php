@@ -19,7 +19,7 @@
 
         <h1 class="display-2">Goodbye Guesswork</h1>
         <br>
-        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands, and say goodbye to the underworld forever.</p>
+        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus backtest logic in your hands, and say goodbye to the underworld forever.</p>
 
         <br><br>
 
@@ -53,9 +53,8 @@
         <h2>Take Control</h2>
         <hr class="dark-hr">
         <p class="lead">
-          The secret to trading does not lay in predicting every price oscillation or finding new and exotic markets. The best traders are consistent and in control.
-          The Olympus Cloud allows you to adjust your strategy as market conditions shift and gives you the ability to backtest with a button click. When you’re
-          confident in your system, all you need is the mental framework to execute like a pro.
+          The secret to success does not lie in predicting every price oscillation or finding new and exotic markets to trade. The best traders are consistent, in control,
+          and trust that their strategy gives them an edge over a series of trades. When you’re confident in your system, all you need is the mental framework to execute like a pro.
         </p>
       </header>
       <div class="row">
@@ -68,18 +67,18 @@
           <div class="row">
             <div class="row">
               <div class="col-12">
-                <p><i class="fa fa-hdd-o fs-50"></i></p>
-                <h4>Embrace Testing</h4>
+                <p><i class="fa fa-line-chart fs-50"></i></p>
+                <h4>Our System, Your Way</h4>
                 <p>
-                  Beyond a mere indicator, the Olympus Cloud comes with backtest logic, allowing you to view past results and make decisions based on data, not blind trust.
+                  Adjust the Olympus Cloud to suit your style or to adapt to changing market conditions and then backtest your customizations with our automated logic.
                 </p>
               </div>
             </div>
             <div class="col-12">
-              <p><i class="fa fa-check-circle fs-50"></i></p>
-              <h4>Embrace Probability</h4>
+              <p><i class="fa fa-code fs-50"></i></p>
+              <h4>One Script, Five Functions</h4>
               <p>
-                To help you succeed, the Olympus Cloud uses multiple time frames and price action to derive an effective trading system designed around pattern repetition.
+                Far from a one-trick pony, the Olympus Cloud features momentum states, multi-time frame filtering, color-coded swing levels, real-time fractals, and equilibrium detection.
               </p>
             </div>
           </div>
@@ -99,8 +98,8 @@
 
       <blockquote class="blockquote">
         <div class="quote-sign"></div>
-        <p class="text-white">It is better to conquer yourself than to win a thousand battles. Then the victory is yours. It cannot be taken from you, not by angels or by demons, heaven or hell.</p>
-        <footer class="text-white"><cite title="Source Title">Buddha</cite></footer>
+        <p class="text-white">If you asked me to distill trading down to its simplest form, I would say that it is a pattern recognition numbers game. We use market analysis to identify the patterns, define the risk, and determine when to take profits. The trade either works or it doesn’t. In any case, we go on to the next trade.</p>
+        <footer class="text-white">Mark Douglas, <cite title="Source Title">Trading In The Zone</cite></footer>
       </blockquote>
 
     </div>
@@ -118,46 +117,12 @@
         <h2>Master Your Mind</h2>
         <hr class="dark-hr">
         <p class="lead">
-          Trading success is a product of your mindset as well as your approach. As counterintuitive as it sounds, the market does not determine your results,
-          and a few winning trades do not make a successful trader. To conquer your mind and develop the habits of a professional you require a consistent methodology
-          based on the fundamental concepts employed by top traders.
+          Trading success is a product of your mindset as well as your approach. To conquer your mind and develop the habits of a professional you require a consistent methodology
+          based on the fundamental concepts employed by top traders. Our automated backtest logic was designed to get you on the right path.
         </p>
       </header>
 
       <div class="row gap-y suite-features">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="flexbox gap-items-4">
-            <div>
-              <i class="fa fa-code fs-30 pt-0"></i>
-            </div>
-            <div>
-              <h4>Backtest Logic</h4>
-              <p>Ensure you have confidence in your strategy by testing past performance on your favorite stocks.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="flexbox gap-items-4">
-            <div>
-              <i class="fa fa-wrench fs-30 pt-0"></i>
-            </div>
-            <div>
-              <h4>Customization</h4>
-              <p>Tweak strategy components to keep up with changing market conditions and backtest your changes.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="flexbox gap-items-4">
-            <div>
-              <i class="fa fa-shield fs-30 pt-0"></i>
-            </div>
-            <div>
-              <h4>Risk Management</h4>
-              <p>Built-in risk calculations instantly display position size based on a recommended stop-loss price.</p>
-            </div>
-          </div>
-        </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="flexbox gap-items-4">
             <div>
@@ -172,12 +137,23 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="flexbox gap-items-4">
             <div>
+              <i class="fa fa-shield fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h4>Risk Management</h4>
+              <p>Define a standard and consistent risk parameter so you stay on the right side of the numbers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
               <i class="fa fa-crosshairs fs-30 pt-0"></i>
             </div>
 
             <div>
-              <h4>Profit Targets</h4>
-              <p>Pre-calculated targets based on risk per share and position size help you scale out of winning trades.</p>
+              <h4>Profit Management</h4>
+              <p>Find out what profit taking routine works for you with adjustable targets that keep you in control.</p>
             </div>
           </div>
         </div>
@@ -192,12 +168,29 @@
             </div>
           </div>
         </div>
-
-
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-bar-chart fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h4>Multiple Entries</h4>
+              <p>Different entries allow you to choose what works best for the trading style you wish to employ.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="flexbox gap-items-4">
+            <div>
+              <i class="fa fa-wrench fs-30 pt-0"></i>
+            </div>
+            <div>
+              <h4>Customization</h4>
+              <p>Tweak strategy components to keep up with changing market conditions and backtest with ease.</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-
-
     </div>
   </section>
 
@@ -235,37 +228,42 @@
         <small>OVERVIEW</small>
         <h2>Find Clarity</h2>
         <hr class="dark-hr">
-        <p class="lead">The Olympus Cloud is a simple and effective visual guide that helps you find clarity regardless of market conditions. In addition, backtest
-          logic reveals which settings work, and which don't. The automated backtest functionality means you can continually improve your strategy by testing different
-          settings at defined milestones to keep up with market changes. If you find certain settings worked better over your last set of trades, use the new settings going forward.</p>
+        <p class="lead">The Olympus Cloud features simple and effective visual guides that help you find clarity regardless of market conditions. By adding this one script to your
+          chart you instantly gain access to five powerful indicators and a comprehensive backtest suite.</p>
       </header>
 
       <div class="row gap-y align-items-center mt-70 sm-mt-30">
         <div class="col-lg-6 ml-auto">
           <h4>Olympus Cloud</h4>
-          <p>Our unique cloud is based on candle highs and lows and does not use moving average crossovers or crossunders like many other indicators. To top it off, our
-            indicator features a higher time frame filter that helps you measure the longer-term momentum without changing your resolution.
+          <p>Our unique cloud is based on candle highs and lows and does not use moving average crossovers or crossunders like many other indicators. In addition, we provide you with
+            several price action functions to aid your analysis.
           </p>
           <p class="mt-30">
-            <i class="fa fa-check"></i> Built-in backtest suite with customizable risk values, stop-loss locations, profit targets, and leverage settings
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Three long entries and three short entries
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Entries are built on price action not abstracted indicator values
+            <i class="fa fa-check"></i> Cloud zones define current price momentum and act as support and resistance
           </p>
           <p>
             <i class="fa fa-check"></i> A higher time frame filter puts data from multiple resolutions on a single chart
           </p>
           <p>
+            <i class="fa fa-check"></i> Color-coded swing levels help you quickly identify the price action trend
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Real-time fractals are more responsive than other types of fractals
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Equilibrium detection allows you to quickly spot meaningful price restriction
+          </p>
+          <p>
+            <i class="fa fa-check"></i> Built-in backtest suite with customizable risk values, stop-loss locations, profit targets, and leverage settings
+          </p>
+          <p>
             <i class="fa fa-check"></i> Stackable on multiple timeframes to increase confluence and probability
           </p>
           <p>
-            <i class="fa fa-check"></i> A convenient trade table automatically displays position size and profit targets based on your defined dollar risk value
+            <i class="fa fa-check"></i> A trade table that automatically displays the recommended position size, stop-loss price, and profit targets
           </p>
           <p>
-            <i class="fa fa-check"></i> Works for high-frequency traders or those with a long-term outlook
+            <i class="fa fa-check"></i> Works for higher-frequency traders or those with a long-term outlook
           </p>
         </div>
 
