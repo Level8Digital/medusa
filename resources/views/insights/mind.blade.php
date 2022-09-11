@@ -1,6 +1,6 @@
 @extends('../layouts.layout2')
 
-@section('title', 'Shaping The Mind')
+@section('title', 'Mastering Your Mind')
 
 @section('content')
 

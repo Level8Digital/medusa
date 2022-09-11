@@ -1,6 +1,6 @@
 @extends('../layouts.layout2')
 
-@section('title', 'Real Technical Analysis')
+@section('title', 'The Truth About Technical Analysis')
 
 @section('content')
 
@@ -66,7 +66,7 @@
           </p>
 
           <p class="lead">
-            In addition to the direct actions of “whales”, the modern market is heavily influenced by automated bots and trading algorithms. These bots are able to act quicker than humans and are programmed to react to information that big players deem important. Despite the fact bots contribute heavily to price action, these bots are created and used by ‘whales’ and ‘dynamic players’. The code within these bots is not straightforward and is complex and continually updated. The cascading effect of all the ‘whales’ who trade, and the bots they create, is the real force that moves the market in meaningful ways.
+            In addition to the direct actions of “whales”, the modern market is heavily influenced by automated bots and trading algorithms. These bots are able to act quicker than humans and are programmed to react to information that big players deem important. Despite the fact bots contribute heavily to price action, these bots are created and used by "whales" and "dynamic players". The code within these bots is not straightforward and is complex and continually updated. The cascading effect of all the ‘whales’ who trade, and the bots they create, is the real force that moves the market in meaningful ways.
           </p>
 
           <p class="lead">
@@ -82,20 +82,7 @@
           </p>
 
           <p class="lead">
-            When we consider the sheer amount of stocks available to trade and then divide that 38 billion dollars among all popular tickers, we quickly realize how limited retail traders are in their ability to significantly move prices. Every long trade you make is dependent on ‘whales’ willing to buy at a higher price and move the market up. Obviously, in a short trade, it’s the reverse.
-          </p>
-
-          <h4 class="mt-20">Random Distribution</h4>
-          <p class="lead">
-            Once we understand the basics of probability, random distribution is simple to comprehend. If the result of flipping a rigged coin is unrelated to the last flip then the flips that produce tails are randomly distributed throughout a set of flips.
-          </p>
-
-          <p class="lead">
-            For example, a sequence of flips could go: H,H,T,H,T,T,T,H,T,T – there is no discernable pattern in relation to tails turning up. Over a set of flips, however, our rigged coin lands on tails more often than heads. The increased likelihood of the coin landing on tails is reflected over many flips, not on each flip.
-          </p>
-
-          <p class="lead">
-            What does all of this mean in real terms? Individual random events have a consistent outcome over a set of events when the odds are tilted in one direction.
+            When we consider the sheer amount of stocks available to trade and then divide that 38 billion dollars among all popular tickers, we quickly realize how limited retail traders are in their ability to significantly move prices. Every long trade you make is dependent on "whales" willing to buy at a higher price and move the market up. Obviously, in a short trade, it’s the reverse.
           </p>
 
           <h4 class="mt-20">The Truth About Technical Analysis</h4>
@@ -108,7 +95,7 @@
           </p>
 
           <p class="lead">
-            When you end up in a winning trade it is not because your strategy told you what was going to happen next, and it is most certainly not because a few lines crossed on a visual chart. These technical signals will draw in retail traders who try to make money without moving prices, but in order for the market to move substantially, far greater forces are required. Nearly every profitable trade you make is because ‘whales’ came into the market with the conviction, and resources, to move prices in the direction of your trade.
+            When you end up in a winning trade it is not because your strategy told you what was going to happen next, and it is most certainly not because a few lines crossed on a visual chart. These technical signals will draw in retail traders who try to make money without moving prices, but in order for the market to move substantially, far greater forces are required. Nearly every profitable trade you make is because "whales" came into the market with the conviction, and resources, to move prices in the direction of your trade.
           </p>
 
           <p class="lead">
@@ -121,7 +108,7 @@
           </p>
 
           <p class="lead">
-            As already stated, ‘whales’ and ‘dynamic traders’ have the ability to significantly move prices and have their own agendas and intentions. Even amongst these large traders, there are vastly different perspectives and goals. This creates a substantial number of unknown forces acting on each trade you make. If trading was as simple as analyzing economic information and putting on a trade, all economists would be incredibly wealthy, yet they are not. Trading is not black and white. You may make correct predictions from time to time, but it does not mean the reasons behind your predictions were correct.
+            As already stated, "whales" and "dynamic players" have the ability to significantly move prices and have their own agendas and intentions. Even amongst these large traders, there are vastly different perspectives and goals. This creates a substantial number of unknown forces acting on each trade you make. If trading was as simple as analyzing economic information and putting on a trade, all economists would be incredibly wealthy, yet they are not. Trading is not black and white. You may make correct predictions from time to time, but it does not mean the reasons behind your predictions were correct.
           </p>
 
           <p class="lead">

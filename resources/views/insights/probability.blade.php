@@ -47,7 +47,7 @@
 
           <h4 class="mt-20">Debriefing</h4>
           <p class="lead">
-            In this mini-series, we take a look at what it takes to become a successful trader. The Trading Insights series focuses on concepts rather than analysis and will attempt to get you on the proper path to your trading goals. We believe the ideas contained in this series are the proper base to help you become a professional trader.
+            In this mini-series, we look at what it takes to become a successful trader. The Trading Insights series focuses on concepts rather than analysis and will attempt to get you on the proper path to your trading goals. We believe the ideas contained in this series are the proper base to help you become a professional trader.
           </p>
 
           <p class="lead">

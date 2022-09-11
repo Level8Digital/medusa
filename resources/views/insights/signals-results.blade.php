@@ -1,6 +1,6 @@
 @extends('../layouts.layout2')
 
-@section('title', 'Probability & Random Distribution')
+@section('title', 'Signals Versus Results')
 
 @section('content')
 
