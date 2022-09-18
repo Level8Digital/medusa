@@ -49,7 +49,7 @@
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-overview">Overview</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-backtest">Backtest Suite</a></li>
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
             <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insights">Insights</a></li>
             <li class="nav-item"><a class="nav-link"href="#" data-scrollto="section-faq">FAQ</a></li>
@@ -76,7 +76,7 @@
               <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-intro">Intro</a></li>
               <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-overview">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-backtest">Backtest Suite</a></li>
               <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
               <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-insights">Insights</a></li>
               <li class="nav-item"><a class="nav-link"href="#" data-scrollto="section-faq">FAQ</a></li>

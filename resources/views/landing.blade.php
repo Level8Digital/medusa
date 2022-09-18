@@ -19,7 +19,7 @@
 
         <h1 class="display-2">Goodbye Guesswork</h1>
         <br>
-        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus backtest logic in your hands, and say goodbye to the underworld forever.</p>
+        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands, and say goodbye to the underworld forever.</p>
 
         <br><br>
 
@@ -53,8 +53,8 @@
         <h2>Take Control</h2>
         <hr class="dark-hr">
         <p class="lead">
-          The secret to success does not lie in predicting every price oscillation or finding new and exotic markets to trade. The best traders are consistent, in control,
-          and trust that their strategy gives them an edge over a series of trades. When you’re confident in your system, all you need is the mental framework to execute like a pro.
+        The secret to success does not lie in predicting every price oscillation or finding new and exotic markets to trade. The best
+        traders are consistent and in control, while trusting their strategy gives them an edge over many trades.
         </p>
       </header>
       <div class="row">
@@ -67,8 +67,8 @@
           <div class="row">
             <div class="row">
               <div class="col-12">
-                <p><i class="fa fa-line-chart fs-50"></i></p>
-                <h4>Our System, Your Way</h4>
+                <p><i class="fa fa-check-circle fs-50"></i></p>
+                <h4>Our Logic, Your Way</h4>
                 <p>
                   Adjust the Olympus Cloud to suit your style or to adapt to changing market conditions and then backtest your customizations with our automated logic.
                 </p>
@@ -76,9 +76,9 @@
             </div>
             <div class="col-12">
               <p><i class="fa fa-code fs-50"></i></p>
-              <h4>One Script, Five Functions</h4>
+              <h4>One Script, Many Tools</h4>
               <p>
-                Far from a one-trick pony, the Olympus Cloud features momentum states, multi-time frame filtering, color-coded swing levels, real-time fractals, and equilibrium detection.
+                Far from a one-trick pony, the Olympus Cloud is packed with several price-action based indicators that help you make sense of the market at all times.
               </p>
             </div>
           </div>
@@ -98,9 +98,122 @@
 
       <blockquote class="blockquote">
         <div class="quote-sign"></div>
-        <p class="text-white">If you asked me to distill trading down to its simplest form, I would say that it is a pattern recognition numbers game. We use market analysis to identify the patterns, define the risk, and determine when to take profits. The trade either works or it doesn’t. In any case, we go on to the next trade.</p>
+        <p class="text-white">If you asked me to distill trading down to its simplest form, I would say that it is a pattern recognition numbers game. We use market analysis to identify the patterns, define the risk,
+          and determine when to take profits. The trade either works or it doesn’t. In any case, we go on to the next trade.</p>
         <footer class="text-white">Mark Douglas, <cite title="Source Title">Trading In The Zone</cite></footer>
       </blockquote>
+
+    </div>
+  </section>
+
+  <!--
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  | Overview
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+
+  <section class="section overflow-hidden" id="section-features">
+    <div class="container">
+      <header class="section-header">
+        <small>FEATURES</small>
+        <h2>Find Clarity</h2>
+        <hr class="dark-hr">
+        <p class="lead">The Olympus Cloud is beyond a mere indicator and provides you with a total framework from which to view the market. Trading doesn’t have to be complicated, and by adding this
+          one script to your chart, you instantly gain access to five simple yet powerful indicators and a comprehensive backtest suite. Best of all, the Olympus cloud works for high-frequency traders and those
+          with a long-term outlook..</p>
+      </header>
+
+      <div class="row no-gap text-center">
+
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/cloud.png') }}" />
+            </p>
+            <h4 class="mb-5">The Cloud</h4>
+            <p>The Olympus Cloud uses a clever moving average variation to define zones that indicate general price momentum and act as dynamic support and resistance.</p>
+          </div>
+
+
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/swings.png') }}" />
+            </p>
+            <h4 class="mb-5">Coded Swings</h4>
+            <p>Our unique color-coded swing levels help you quickly identify the price action trend and provide you with clear support and resistance levels.</p>
+          </div>
+
+
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/timeframe.png') }}" />
+            </p>
+            <h4 class="mb-5">Smart Timeframes</h4>
+            <p>Intelligent functionality plots additional cloud values by detecting your current resolution and determining the best higher timeframe to pull into the chart.</p>
+          </div>
+
+
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/fractal.png') }}" />
+            </p>
+            <h4 class="mb-5">Real-Time Fractals</h4>
+            <p>Our fractals are formed in near real-time. We let a price action pattern set the fractal and don’t wait for a defined amount of candles to close to plot a label.</p>
+          </div>
+
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/eq.png') }}" />
+            </p>
+            <h4 class="mb-5">Equilibrium Detection</h4>
+            <p>Using the power of our coded swings, equilibrium detection helps you spot meaningful price contraction that can lead to excellent trade opportunities.</p>
+          </div>
+
+
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/backtest.png') }}" />
+            </p>
+            <h4 class="mb-5">Backtest Suite</h4>
+            <p>The Built-in backtest suite goes beyond a static buy or sell model and has customizable risk values, stop-loss locations, profit targets, and leverage settings.</p>
+          </div>
+
+        </div>
+
+      <div class="row mt-70 pt-20 pb-10 pl-20 pr-20 section-inverse bg-teal-grey text-center">
+        <div class="col-lg-12">
+          <p class="lead">
+          <i class="fa fa-info-circle fs-25 pd-5"></i> When you purchase the Olympus Cloud you will receive a PDF with more detailed information on the basic entry signals.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-70">
+        <div class="col-12 text-center">
+          <a class="btn btn-lg btn-primary" href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" target="_blank">View YouTube Channel</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  | INTRO VIDEO
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+
+  <section class="section section-inverse bg-img" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="1">
+    <div class="container">
+      <header class="section-header">
+        <h2>Watch Video</h2>
+        <hr>
+        <p class="lead">Get a feel for the Olympus Cloud with this quick introduction video.</p>
+      </header>
+
+
+      <div class="text-center mb-60">
+        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=uvLXqRIwr9w" data-provide="lightbox"><i class="fa fa-play"></i></a>
+      </div>
 
     </div>
   </section>
@@ -110,15 +223,15 @@
   | Features
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
-  <section class="section overflow-hidden" id="section-features">
+  <section class="section overflow-hidden bg-grey" id="section-backtest">
     <div class="container">
       <header class="section-header">
-        <small>FEATURES</small>
-        <h2>Master Your Mind</h2>
+        <small>BACKTEST SUITE</small>
+        <h2>Backtest Like A Pro</h2>
         <hr class="dark-hr">
         <p class="lead">
-          Trading success is a product of your mindset as well as your approach. To conquer your mind and develop the habits of a professional you require a consistent methodology
-          based on the fundamental concepts employed by top traders. Our automated backtest logic was designed to get you on the right path.
+          Our automated backtest logic reveals the baseline potential of the Olympus Cloud, and by incorporating a few advanced methods, you can achieve even better results.
+          Our backtest suite is fully customizable and follows the fundamental concepts employed by top traders.
         </p>
       </header>
 
@@ -196,102 +309,6 @@
 
   <!--
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  | INTRO VIDEO
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  !-->
-
-  <section class="section section-inverse bg-img" style="background-image: url(assets/img/greek-gods.jpg)" data-overlay="1">
-    <div class="container">
-      <header class="section-header">
-        <h2>Watch Video</h2>
-        <hr>
-        <p class="lead">Get a feel for the Olympus Cloud with this quick introduction video.</p>
-      </header>
-
-
-      <div class="text-center mb-60">
-        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=WtzQzeD98Zg" data-provide="lightbox"><i class="fa fa-play"></i></a>
-      </div>
-
-    </div>
-  </section>
-
-  <!--
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  | Overview
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-  !-->
-
-  <section class="section bg-gray overflow-hidden" id="section-overview">
-    <div class="container">
-      <header class="section-header">
-        <small>OVERVIEW</small>
-        <h2>Find Clarity</h2>
-        <hr class="dark-hr">
-        <p class="lead">The Olympus Cloud features simple and effective visual guides that help you find clarity regardless of market conditions. By adding this one script to your
-          chart you instantly gain access to five powerful indicators and a comprehensive backtest suite.</p>
-      </header>
-
-      <div class="row gap-y align-items-center mt-70 sm-mt-30">
-        <div class="col-lg-6 ml-auto">
-          <h4>Olympus Cloud</h4>
-          <p>Our unique cloud is based on candle highs and lows and does not use moving average crossovers or crossunders like many other indicators. In addition, we provide you with
-            several price action functions to aid your analysis.
-          </p>
-          <p class="mt-30">
-            <i class="fa fa-check"></i> Cloud zones define current price momentum and act as support and resistance
-          </p>
-          <p>
-            <i class="fa fa-check"></i> A higher time frame filter puts data from multiple resolutions on a single chart
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Color-coded swing levels help you quickly identify the price action trend
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Real-time fractals are more responsive than other types of fractals
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Equilibrium detection allows you to quickly spot meaningful price restriction
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Built-in backtest suite with customizable risk values, stop-loss locations, profit targets, and leverage settings
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Stackable on multiple timeframes to increase confluence and probability
-          </p>
-          <p>
-            <i class="fa fa-check"></i> A trade table that automatically displays the recommended position size, stop-loss price, and profit targets
-          </p>
-          <p>
-            <i class="fa fa-check"></i> Works for higher-frequency traders or those with a long-term outlook
-          </p>
-        </div>
-
-        <div class="col-lg-5 order-lg-first">
-          <img class="rounded shadow-2" src="{{ url('assets/img/olympus-cloud.jpg') }}" alt="...">
-          <img class="rounded shadow-2 mt-20" src="{{ url('assets/img/olympus-cloud-backtest-suite.jpg') }}" alt="...">
-        </div>
-      </div>
-
-      <div class="row mt-70 pt-20 pb-10 pl-20 pr-20 section-inverse bg-teal-gray text-center">
-        <div class="col-lg-12">
-          <p class="lead">
-          <i class="fa fa-info-circle fs-25 pd-5"></i> When you purchase the Olympus Cloud you will receive a PDF with more detailed information on entry signals.
-          </p>
-        </div>
-      </div>
-
-      <div class="row mt-70">
-        <div class="col-12 text-center">
-          <a class="btn btn-lg btn-primary" href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" target="_blank">View YouTube Channel</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--
-  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   | Articles / Blog
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
@@ -303,7 +320,8 @@
         <small>LEARNING CENTER</small>
         <h2>Trading Insights</h2>
         <hr class="dark-hr">
-        <p class="lead">Develop your trading skills with articles designed to stimulate your mind.</p>
+        <p class="lead">Trading success is a product of your mindset as well as your approach. Our Insights Blog will teach you the nature of technical trading and help
+          you develop the mental framework to execute like a pro.</p>
       </header>
 
       <div class="row gap-y">
@@ -445,7 +463,7 @@
 
           <div class="accordion accordion-connected accordion-arrow-right" id="accordion-1">
             <div class="card">
-              <h4 class="card-title bg-gray">
+              <h4 class="card-title bg-grey">
                 <a data-toggle="collapse" href="#collapse-1-1">Do you offer a free trial period?</a>
               </h4>
 

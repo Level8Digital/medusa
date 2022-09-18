@@ -32,11 +32,11 @@
   justify-content: normal;
 }
 
-.bg-medium-gray {
+.bg-medium-grey {
   background-color: #f1f1f1;
 }
 
-.bg-teal-gray{
+.bg-teal-grey{
   background-color: #88918d;
 }
 
@@ -46,6 +46,10 @@
 
 .teal-link{
   color: #20a27d !important;
+}
+
+.teal-grey-text{
+  color: #88918d !important;
 }
 
 #landing-lead{
