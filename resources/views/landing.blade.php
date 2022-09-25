@@ -17,9 +17,9 @@
     <div class="row h-full">
       <div class="col-12 col-lg-6 align-self-center text-center text-lg-left landing-block">
 
-        <h1 class="display-2">Goodbye Guesswork</h1>
+        <h1 class="display-2">A Market Framework</h1>
         <br>
-        <p class="lead text-white" id="landing-lead">Stop wondering if you have a profitable trading strategy. Get the power of Olympus in your hands, and say goodbye to the underworld forever.</p>
+        <p class="lead text-white" id="landing-lead">The Olympus Cloud is far more than an indicator and provides you with a total framework from which to view the market.</p>
 
         <br><br>
 
@@ -50,37 +50,37 @@
     <div class="container">
       <header class="section-header">
         <small>INTRODUCTION</small>
-        <h2>Take Control</h2>
+        <h2>A Solid Foundation</h2>
         <hr class="dark-hr">
         <p class="lead">
-        The secret to success does not lie in predicting every price oscillation or finding new and exotic markets to trade. The best
-        traders are consistent and in control, while trusting their strategy gives them an edge over many trades.
+        We lay the groundwork for new and intermediate traders to develop into market artisans by focusing on tried and trusted price action techniques.
         </p>
       </header>
       <div class="row">
         <div class="col-12 col-lg-6 text-center mt-10 sm-mb-20">
           <img class="mr-40" src="{{ url('assets/img/ipad-data.png') }}" alt="..." data-aos="slide-up">
-          <small><em>Real world backtest results of the Olympus Cloud on a single ticker.</em></small>
+          <small><em>Real world results of the Olympus Cloud on a single ticker.</em></small>
         </div>
 
         <div class="col-12 col-lg-6 align-self-center pb-0">
           <div class="row">
             <div class="row">
               <div class="col-12">
-                <p><i class="fa fa-check-circle fs-50"></i></p>
-                <h4>Our Logic, Your Way</h4>
+                <p><i class="fa fa-code fs-50"></i></p>
+                <h4>One Script, Many Tools</h4>
                 <p>
-                  Adjust the Olympus Cloud to suit your style or to adapt to changing market conditions and then backtest your customizations with our automated logic.
+                  Far from a one-trick pony, the Olympus Cloud is packed with several price action based tools that provide you a solid foundation for all of your market analysis.
+                </p>
+              </div>
+              <div class="col-12">
+                <p><i class="fa fa-check-circle fs-50"></i></p>
+                <h4>Price Action Strategies</h4>
+                <p>
+                  The Olympus Cloud includes several of our exclusive price action trading strategies and the ability to create buy and sell alerts so you don’t miss a signal.
                 </p>
               </div>
             </div>
-            <div class="col-12">
-              <p><i class="fa fa-code fs-50"></i></p>
-              <h4>One Script, Many Tools</h4>
-              <p>
-                Far from a one-trick pony, the Olympus Cloud is packed with several price-action based indicators that help you make sense of the market at all times.
-              </p>
-            </div>
+
           </div>
 
         </div>
@@ -118,9 +118,8 @@
         <small>FEATURES</small>
         <h2>Find Clarity</h2>
         <hr class="dark-hr">
-        <p class="lead">The Olympus Cloud is beyond a mere indicator and provides you with a total framework from which to view the market. Trading doesn’t have to be complicated, and by adding this
-          one script to your chart, you instantly gain access to five simple yet powerful indicators and a comprehensive backtest suite. Best of all, the Olympus cloud works for high-frequency traders and those
-          with a long-term outlook..</p>
+        <p class="lead">Trading doesn’t have to be complicated. By adding this one script to your chart you instantly gain access to a plethora of simple yet powerful price action tools that help you make sense of the market
+          in all conditions. With our price action framework in your hands, you have everything you need to chart like a pro.</p>
       </header>
 
       <div class="row no-gap text-center">
@@ -130,9 +129,16 @@
               <img src="{{ url('assets/img/icons/cloud.png') }}" />
             </p>
             <h4 class="mb-5">The Cloud</h4>
-            <p>The Olympus Cloud uses a clever moving average variation to define zones that indicate general price momentum and act as dynamic support and resistance.</p>
+            <p>A clever moving average variation combined with a volatility delimiter defines zones that detect general price momentum and act as dynamic support and resistance.</p>
           </div>
 
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/timeframe.png') }}" />
+            </p>
+            <h4 class="mb-5">Smart Timeframes</h4>
+            <p>Intelligent functionality indicates long-term momentum by detecting your resolution and determining the best higher timeframe to pull into the chart.</p>
+          </div>
 
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
@@ -140,15 +146,6 @@
             </p>
             <h4 class="mb-5">Coded Swings</h4>
             <p>Our unique color-coded swing levels help you quickly identify the price action trend and provide you with clear support and resistance levels.</p>
-          </div>
-
-
-          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
-            <p class="mb-6">
-              <img src="{{ url('assets/img/icons/timeframe.png') }}" />
-            </p>
-            <h4 class="mb-5">Smart Timeframes</h4>
-            <p>Intelligent functionality plots additional cloud values by detecting your current resolution and determining the best higher timeframe to pull into the chart.</p>
           </div>
 
 
@@ -162,19 +159,47 @@
 
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
+              <img src="{{ url('assets/img/icons/volatility.png') }}" />
+            </p>
+            <h4 class="mb-5">Volatility Bands</h4>
+            <p>Easily spot when price is entering euphoria or capitulation and the probability of a temporary reversion to the mean is the most likely scenario.</p>
+          </div>
+
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
               <img src="{{ url('assets/img/icons/eq.png') }}" />
             </p>
             <h4 class="mb-5">Equilibrium Detection</h4>
             <p>Using the power of our coded swings, equilibrium detection helps you spot meaningful price contraction that can lead to excellent trade opportunities.</p>
           </div>
 
-
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/insidebar.png') }}" />
+            </p>
+            <h4 class="mb-5">Inside Bar Painting</h4>
+            <p>While simple and certainly not unique, inside bar painting allows you to quickly notice tightening ranges that often turn into explosive movements.</p>
+          </div>
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/fib.png') }}" />
+            </p>
+            <h4 class="mb-5">Auto Fib Retracment</h4>
+            <p>Our automatic fibonacci tool uses our coded swings to accurately plot fib retracement levels to help streamline your analysis and increase your efficiency.</p>
+          </div>
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/curated.png') }}" />
+            </p>
+            <h4 class="mb-5">Curated Entries</h4>
+            <p>The Olympus Cloud comes with the strategies we use in our own trading plus a list of our best performing tickers and the methods we use on each stock.</p>
+          </div>
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
               <img src="{{ url('assets/img/icons/backtest.png') }}" />
             </p>
             <h4 class="mb-5">Backtest Suite</h4>
-            <p>The Built-in backtest suite goes beyond a static buy or sell model and has customizable risk values, stop-loss locations, profit targets, and leverage settings.</p>
+            <p>For those who like to tinker, our backtest logic goes beyond a static buy or sell model and has customizable risk values, stop-loss locations, profit targets, and leverage settings.</p>
           </div>
 
         </div>
@@ -223,15 +248,16 @@
   | Features
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
-  <section class="section overflow-hidden bg-grey" id="section-backtest">
+  <section class="section overflow-hidden bg-grey" id="section-entries">
     <div class="container">
       <header class="section-header">
-        <small>BACKTEST SUITE</small>
-        <h2>Backtest Like A Pro</h2>
+        <small>TRADE ENTRIES</small>
+        <h2>Trade With An Edge</h2>
         <hr class="dark-hr">
         <p class="lead">
-          Our automated backtest logic reveals the baseline potential of the Olympus Cloud, and by incorporating a few advanced methods, you can achieve even better results.
-          Our backtest suite is fully customizable and follows the fundamental concepts employed by top traders.
+          A trading indicator without a defined strategy is akin to a car without a motor. Fortunately, we have done the dirty work and sifted through dozens of potential systems.
+          The result? The Olympus Cloud comes with multiple curated trading strategies that give you an edge on the market. Best of all, our automated backtest logic reveals the
+          underlying numbers behind each strategy, and our trading methods follow the fundamental concepts employed by top traders.
         </p>
       </header>
 
@@ -243,7 +269,7 @@
             </div>
             <div>
               <h4>Consistent Variables</h4>
-              <p>Detach from emotions and momentary perception with rigid trading rules that guide your behavior.</p>
+              <p>Rigid trading rules help you detach from emotions and momentary perception by guiding your behavior at all times.</p>
             </div>
           </div>
         </div>
@@ -254,7 +280,7 @@
             </div>
             <div>
               <h4>Risk Management</h4>
-              <p>Define a standard and consistent risk parameter so you stay on the right side of the numbers.</p>
+              <p>A standard and consistent risk parameter that controls your position size and helps you stay on the right side of the numbers game.</p>
             </div>
           </div>
         </div>
@@ -266,7 +292,7 @@
 
             <div>
               <h4>Profit Management</h4>
-              <p>Find out what profit taking routine works for you with adjustable targets that keep you in control.</p>
+              <p>A defined profit-taking routine with multiple targets keeps you in control and ensures you always take profit when it’s available.</p>
             </div>
           </div>
         </div>
@@ -277,7 +303,7 @@
             </div>
             <div>
               <h4>Follow The Trend</h4>
-              <p>Leave a portion of your position in the market with a trailing stop loss to capture extended moves.</p>
+              <p>Increase confluence and probability by ensuring you only trade when you have the trend in your favor on multiple timeframes.</p>
             </div>
           </div>
         </div>
@@ -287,8 +313,8 @@
               <i class="fa fa-bar-chart fs-30 pt-0"></i>
             </div>
             <div>
-              <h4>Multiple Entries</h4>
-              <p>Different entries allow you to choose what works best for the trading style you wish to employ.</p>
+              <h4>Price Action Focused</h4>
+              <p>With a focus on simple and elegant price action you can break free from complicated oscillators and unreliable indicators.</p>
             </div>
           </div>
         </div>
@@ -299,7 +325,7 @@
             </div>
             <div>
               <h4>Customization</h4>
-              <p>Tweak strategy components to keep up with changing market conditions and backtest with ease.</p>
+              <p>Those who enjoy experimentation can adjust system variables to their heart’s content and backtest their changes with ease.</p>
             </div>
           </div>
         </div>

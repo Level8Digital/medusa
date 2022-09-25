@@ -47,7 +47,7 @@
             <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-backtest') }}">Backtest Suite</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-entries">Trade Entries</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
@@ -74,7 +74,7 @@
               <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-backtest') }}">Backtest Suite</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-entries">Trade Entries</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
