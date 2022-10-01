@@ -32,7 +32,7 @@
     <div class="container">
 
       <div class="text-center mt-8">
-        <h2><em>Trading Insights Part 2:</em> The Truth About Technical Leverage</h2>
+        <h2><em>Trading Insights Part 3:</em> The Truth About Leverage</h2>
         <p>Sept 1, 2022 in <a href="{{ url('insights') }}">Insights</a></p>
       </div>
 
