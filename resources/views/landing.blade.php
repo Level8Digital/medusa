@@ -232,12 +232,12 @@
       <header class="section-header">
         <h2>Watch Video</h2>
         <hr>
-        <p class="lead">Get a feel for the Olympus Cloud with this quick introduction video.</p>
+        <p class="lead">Get a feel for the Olympus Cloud with this introduction video.</p>
       </header>
 
 
       <div class="text-center mb-60">
-        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=uvLXqRIwr9w" data-provide="lightbox"><i class="fa fa-play"></i></a>
+        <a class="btn btn-lg btn-circular btn-light" href="https://www.youtube.com/watch?v=F9yDxLE5ZN8" data-provide="lightbox"><i class="fa fa-play"></i></a>
       </div>
 
     </div>
