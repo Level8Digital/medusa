@@ -54,8 +54,8 @@ Route::get('/accuracy-and-profitability', function () {
 Route::get('/trading-signals-versus-results', function () {
     return view('insights/signals-results');
 });
-Route::get('/transaction-complete', function () {
-    return view('transaction-complete');
+Route::get('/the-truth-about-leverage', function () {
+    return view('insights/truth-leverage');
 });
 
 // SHOP/PURCHASE/CHECKOUT ROUTES
@@ -64,7 +64,9 @@ Route::post('/start-purchase', [BuyController::class, 'startPurchase']);
 Route::get('/view-terms/{order}', [BuyController::class, 'viewTerms'])->name('view-terms');
 
 Route::post('/finalize-paypal', [BuyController::class, 'FinalizePayPal']);
-
+Route::get('/transaction-complete', function () {
+    return view('transaction-complete');
+});
 Route::group(['middleware' => 'prevent-back-history'],function(){
     Route::post('/confirm-terms', [BuyController::class, 'confirmTerms']);
 });

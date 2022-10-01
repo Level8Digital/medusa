@@ -156,6 +156,29 @@
             </div>
           </article>
 
+          <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Article
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+          <article class="mt-90">
+            <header class="text-center mb-40">
+              <h3>Trading Essentials #3: The Truth About Leverage</h3>
+              <div class="link-color-default fs-12">
+                <time>September 1, 2022</time>
+              </div>
+            </header>
+            <div class="text-center">
+              <img class="rounded" src="{{ url('assets/img/leverage-opt.jpg') }}" alt="...">
+            </div>
+            <div class="card-block">
+              <p class="text-justify">Trading with leverage simply means borrowing money to put on a trade. Leverage is one of the many tools available for traders who seek to generate higher gains on their capital. Brokers have strict rules that govern the use of leverage, but this article is not aimed at teaching you the complexities of borrowing from your broker. </p>
+              <p class="text-center mt-40">
+                <a class="btn btn-primary btn-round" href="{{ url('the-truth-about-leverage') }}">Read more</a>
+              </p>
+            </div>
+          </article>
+
         </div>
       </div>
 
