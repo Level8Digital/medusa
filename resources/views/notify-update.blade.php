@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oxygen Invoice</title>
+  <title>Medusa Money Receipt</title>
 
   <style type="text/css">
     /* Take care of image borders and formatting, client hacks */
@@ -295,20 +295,21 @@
         <table cellspacing="0" cellpadding="0" width="650" class="w320">
           <tr>
             <td class="header-lg">
-              Thank you for your order!
-              <br /><br />
+                Update Available!
+                <br /><br />
             </td>
           </tr>
           <tr>
             <td class="free-text">
-                <br /><br />
-                You will be able to access the Olympus Cloud on TradingView with username "{{ $messageDetails['username'] }}" within 24 hours, but usually sooner.
-                <br /><br />
-                While you wait, head over to our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" style="color: #20a27d;">YouTube Channel</a> to learn how to use the Olympus Cloud, and read our
-                <a href="{{ secure_url('insights'); }}" style="color: #20a27d;">Insights Blog</a> to take your trading to the next level.
-                <br /><br />
-                You will recieve an email from us when your access has been granted with instructions on how to add the Olympus Cloud to your chart. Be sure to check your other email folders, such as promotions or spam,
-                just in case our email gets lost in the shuffle.
+              You can now access an Olympus Cloud update on TradingView with username "{{ $messageDetails['username'] }}".
+              <br /><br />
+              To access the update, remove the current Olympus Cloud from your chart and write down any custom settings you have input.
+              <br /><br />
+              Next, click the Indicators button in the top left corner of your chart,
+              then select the "Favorites" tab where you should see the Olympus Cloud. From there, add it to your chart and the indicator will be updated.
+              <br /><br />
+              If you don't see the Olympus Cloud in your "Favorites" tab, visit this <a href="https://www.tradingview.com/script/soWuOTjz-Olympus-Cloud-v3-0/" style="color: #20a27d;">link</a> and
+              click the "Add to favorite indicators" button.
             </td>
           </tr>
           <tr>
@@ -319,46 +320,6 @@
                   <center style="color:#ffffff;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:regular;">My Account</center>
                 </v:roundrect>
               <![endif]-->
-            </td>
-          </tr>
-          <tr>
-            <td class="w320">
-              <table cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td class="mini-container-left">
-                    <table cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td class="mini-block-padding">
-                          <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate !important;">
-                            <tr>
-                              <td class="mini-block">
-                                <span class="header-sm">Your Order</span><br />
-                                The Olympus Cloud | {{ $messageDetails['access'] }}
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td class="mini-container-right">
-                    <table cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td class="mini-block-padding">
-                          <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate !important;">
-                            <tr>
-                              <td class="mini-block">
-                                <span class="header-sm">Order No.</span> <br />
-                                #{{ $messageDetails['order_number'] }}-{{ rand(1000,9000) }}
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
             </td>
           </tr>
         </table>

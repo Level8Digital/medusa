@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class GrantAccess extends Mailable
+class NotifyUpdate extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -30,10 +30,9 @@ class GrantAccess extends Mailable
      */
     public function build()
     {
-        $this->subject('Access Granted | Olympus Cloud')
+        $this->subject('Update Available | Olympus Cloud')
           ->replyTo(env('MAIL_FROM_ADDRESS'))
-          ->view('access-granted')
-          ->attach($this->messageDetails['file']);
+          ->view('notify-update');
 
          return $this;
     }

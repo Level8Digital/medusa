@@ -21,7 +21,12 @@
           <p>{{ session('error') ?? '' }}</p>
         </div>
       @endif
-
+        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-4 p-4">
+            <a href="{{ url('/notify-update') }}" class="text-indigo-600">
+                <svg class="h-5 w-5 text-indigo-600"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />  <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
+                Notify Of Update
+            </a>
+        </div>
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
           <div class="p-6 bg-white border-b border-gray-200">
             <div class="flex justify-center mx-auto">

@@ -74,5 +74,6 @@ Route::group(['middleware' => 'prevent-back-history'],function(){
 // ADMIN DASHBOARD ROUTES
 Route::get('/dashboard', [DashboardController::class, 'viewDashboard'])->middleware(['auth'])->name('dashboard');
 Route::get('/notify-access/{purchase}', [DashboardController::class, 'notifyAccess'])->middleware(['auth'])->name('notify-access');
+Route::get('/notify-update', [DashboardController::class, 'notifyUpdate'])->middleware(['auth'])->name('notify-update');
 
 require __DIR__.'/auth.php';

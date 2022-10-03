@@ -295,12 +295,15 @@
         <table cellspacing="0" cellpadding="0" width="650" class="w320">
           <tr>
             <td class="header-lg">
-                You Can Now Access The Olympus Cloud!
+                Your Access Was Granted!
+                <br /><br />
             </td>
           </tr>
           <tr>
             <td class="free-text">
-              You can now access the Olympus Cloud on TradingView with username "{{ $messageDetails['username'] }}"!
+              You can now access the Olympus Cloud on TradingView with username "{{ $messageDetails['username'] }}".
+              <br /><br />
+              We have attached a PDF that details the entry rules for the methods included in the backtest suite as well as some additional tips and considerations.
               <br /><br />
               To add the Olympus Cloud to your chart visit this <a href="https://www.tradingview.com/script/soWuOTjz-Olympus-Cloud-v3-0/" style="color: #20a27d;">link</a> and click the "Add to favorite indicators" button. After you've done so,
               open a chart and click the Indicators button in the top left corner. Next, select the "Favorites" tab where you should see the Olympus Cloud. From there, add it to your chart as you would any other indicator.

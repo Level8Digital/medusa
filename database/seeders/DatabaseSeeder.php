@@ -25,22 +25,21 @@ class DatabaseSeeder extends Seeder
 
          ]);
 
-         // DB::table('purchases')->insert([
-         //   'username' => 'Admin',
-         //   'paid_at' => '2022-07-05',
-         //   'username' => 'timmyt',
-         //   'email' => 'timmty@email.com',
-         //   'access' => 'three-month',
-         //   'access_granted' => true,
-         //   'confirm_tv' => true,
-         //   'agree_terms' => true,
-         //   'total' => 57.75,
-         //   'payment_type' => 'PayPal',
-         //   'is_paid' => true,
-         //   'paid_total' => 57.75,
-         //   'paypal_id' => 'sdfs4564gfdgdg',
-         //   'expires_at' => '2022-08-05'
-         // ]);
+         DB::table('purchases')->insert([
+           'paid_at' => now(),
+           'username' => 'mshanks',
+           'email' => 'shanks.matt.10@gmail.com',
+           'access' => 'lifetime',
+           'access_granted' => false,
+           'confirm_tv' => true,
+           'agree_terms' => true,
+           'total' => 68.75,
+           'payment_type' => 'PayPal',
+           'is_paid' => true,
+           'paid_total' => 68.75,
+           'paypal_id' => 'sdfs4564gfdgdg',
+           'expires_at' => '2022-08-05'
+         ]);
          //
          // DB::table('purchases')->insert([
          //   'username' => 'Admin',

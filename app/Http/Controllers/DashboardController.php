@@ -7,6 +7,7 @@ use App\Models\Purchase;
 
 use Mail;
 use App\Mail\GrantAccess;
+use App\Mail\NotifyUpdate;
 
 class DashboardController extends Controller
 {
@@ -59,12 +60,16 @@ class DashboardController extends Controller
             $description = 'Three Month Access';
         }
 
+        // Get the supplement PDF
+        $pdf = public_path('misc/Olympus-Cloud-Supplement.pdf');
+
         // Set up the email properties
         $properties = [
   			'username' => $purchase->username,
             'access' => $description,
   			'total' => $purchase->total,
-            'order_number' => $purchase->id
+            'order_number' => $purchase->id,
+            'file' => $pdf
         ];
 
         // User email address
@@ -75,6 +80,37 @@ class DashboardController extends Controller
 
         // Show the terms view
         return redirect('/dashboard')->with('success', 'Access was granted to the user!');
+
+    }
+
+    /**
+    * Called by the dashboard view's Notify Update icon
+    *
+    * Emails all confirmed users to notify that the Olympus Cloud was updated and they can access new features.
+    */
+    public function notifyUpdate()
+    {
+        // Retrieve all purchases to notify of update
+        $purchases = Purchase::orderByDesc('is_paid')
+                    ->orderBy('paid_at')
+                    ->orderBy('access_granted')
+                    ->get();
+
+        forEach($purchases->toArray() as $purchase){
+            // Set up the email properties
+            $properties = [
+                'username' => $purchase['username']
+            ];
+
+            // User's email address
+            $toAddress = $purchase['email'];
+
+            // Send the email
+            Mail::to($toAddress)->send(new NotifyUpdate($properties));
+        }
+
+        // Show the terms view
+        return redirect('/dashboard')->with('success', 'Users were notified about the update!');
 
     }
 
