@@ -1,8 +1,8 @@
 @extends('layouts.layout1')
 
-@section('title', 'Trading Automation | Backtesting | Trading Psychology')
+@section('title', 'Trading Strategies | Custom Trading Indicators | Backtesting | Trading Psychology | Trading Automation')
 
-@section('description', "We build trading tools packed with backtest logic so you know exactly what you're getting. No guesswork, no blind trust, only customizable trading indicators with automated backtesting.")
+@section('description', "We build custom indicators and elegant price action trading strategies that help you achieve your trading goals.")
 
 @section('styles')
 
