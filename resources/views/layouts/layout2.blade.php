@@ -46,8 +46,8 @@
           <ul class="topbar-nav nav">
             <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-entries">Trade Entries</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-indicator') }}">Indicator</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/#section-entries') }}">Trade Entries</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>
@@ -73,8 +73,8 @@
             <ul id="footer-nav" class="nav nav-primary nav-hero">
               <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-intro') }}">Intro</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-features') }}">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-entries">Trade Entries</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-indicator') }}">Indicator</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/#section-entries') }}">Trade Entries</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-pricing') }}">Pricing</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('insights') }}">Insights</a></li>
               <li class="nav-item"><a class="nav-link" href="{{ url('/#section-faq') }}">FAQ</a></li>

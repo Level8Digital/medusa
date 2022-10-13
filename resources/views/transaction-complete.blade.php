@@ -28,7 +28,7 @@
             The Olympus Cloud will be available to your TradingView account within 24 hours, but usually sooner.
           </p>
           <p class="lead-2">
-            While you wait, head over to our <a class="teal-link" href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA">YouTube Channel</a> to learn how to use the Olympus Cloud,
+            While you wait, head over to our <a class="teal-link" href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" target="_blank">YouTube Channel</a> to learn how to use the Olympus Cloud,
             and check out our <a class="teal-link" href="{{ url('insights') }}">Insights Blog</a> to take your trading to the next level.
           </p>
           <p class="lead-2">

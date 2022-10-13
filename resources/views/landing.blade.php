@@ -19,7 +19,7 @@
 
         <h1 class="display-2">A Market Framework</h1>
         <br>
-        <p class="lead text-white" id="landing-lead">The Olympus Cloud is far more than an indicator and provides you with a total framework from which to view the market.</p>
+        <p class="lead text-white" id="landing-lead">The Olympus Cloud provides you with a total framework from which to view the market.</p>
 
         <br><br>
 
@@ -112,14 +112,14 @@
   |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
   !-->
 
-  <section class="section overflow-hidden" id="section-features">
+  <section class="section overflow-hidden" id="section-indicator">
     <div class="container">
       <header class="section-header">
-        <small>FEATURES</small>
+        <small>INDICATOR</small>
         <h2>Find Clarity</h2>
         <hr class="dark-hr">
         <p class="lead">Trading doesn’t have to be complicated. By adding this one script to your chart you instantly gain access to a plethora of simple yet powerful price action tools that help you make sense of the market
-          in all conditions. With our price action framework in your hands, you have everything you need to chart like a pro.</p>
+          in all conditions.</p>
       </header>
 
       <div class="row no-gap text-center">
@@ -145,7 +145,7 @@
               <img src="{{ url('assets/img/icons/swings.png') }}" />
             </p>
             <h4 class="mb-5">Coded Swings</h4>
-            <p>Our unique color-coded swing levels help you quickly identify the price action trend and provide you with clear support and resistance levels.</p>
+            <p>Our unique color-coded swing levels help you quickly identify the price action trend and provide clear support and resistance levels.</p>
           </div>
 
 
@@ -184,15 +184,15 @@
             <p class="mb-6">
               <img src="{{ url('assets/img/icons/fib.png') }}" />
             </p>
-            <h4 class="mb-5">Auto Fib Retracment</h4>
-            <p>Our automatic fibonacci tool uses our coded swings to accurately plot fib retracement levels to help streamline your analysis and increase your efficiency.</p>
+            <h4 class="mb-5">Auto Fib Retracement</h4>
+            <p>Our automatic Fibonacci tool uses our coded swings to accurately plot fib retracement levels to help streamline your analysis and increase your efficiency.</p>
           </div>
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
               <img src="{{ url('assets/img/icons/curated.png') }}" />
             </p>
             <h4 class="mb-5">Curated Entries</h4>
-            <p>The Olympus Cloud comes with the strategies we use in our own trading plus a list of our best performing tickers and the methods we use on each stock.</p>
+            <p>The Olympus Cloud comes with the strategies we use in our own trading plus our preferred method for trading the NASDAQ.</p>
           </div>
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
@@ -269,7 +269,7 @@
             </div>
             <div>
               <h4>Consistent Variables</h4>
-              <p>Rigid trading rules help you detach from emotions and momentary perception by guiding your behavior at all times.</p>
+              <p>Rigid trading rules help you detach from emotions and momentary perceptions by guiding your behavior at all times.</p>
             </div>
           </div>
         </div>
@@ -310,7 +310,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="flexbox gap-items-4">
             <div>
-              <i class="fa fa-bar-chart fs-30 pt-0"></i>
+              <i class="fa fa-line-chart fs-30 pt-0"></i>
             </div>
             <div>
               <h4>Price Action Focused</h4>
@@ -539,8 +539,10 @@
                     return customers a discount at the point of sale.
                   </p>
                   <p>
-                    Those who purchased a three-month or one-year plan receive a 15% discount on future extensions. These discounts do not stack and are always applied to the posted base price for the selected subscription period. For example,
-                     if you are purchasing your third three-month plan, your discount is 15%, not 30%, and the discount is applied to the posted price for the three-month plan.
+                    The three-month plan is available for a small fee, so if you have doubts, it’s a good place to start. Those who purchase the three-month or
+                    one-year plans get a 10% discount if they wish to upgrade after their subscription has expired. This discount does not stack and is always
+                    applied to the posted price for the selected subscription period. For example, if you are purchasing your third three-month plan, your
+                    discount is 10%, not 20%, and the discount is applied to the posted price for the three-month plan.
                   </p>
                 </div>
               </div>
@@ -625,12 +627,12 @@
               <div id="collapse-1-8" class="collapse" data-parent="#accordion-1">
                 <div class="card-body pd-20">
                   <p>
-                    In our experience, the optimal time frame is different depending on the security and the sector. Generally, the 15m, the 30m, and the 1hr time frames work well on
-                    most securities. If you wish to use a time frame closer than 15m, such as 5m or 3m, you will get the best results by stacking the Olympus Cloud with a higher time frame, like the 1D.
+                  In our experience, the optimal time frame is different depending on the security and the sector. Generally, the 30m and the 1hr time frames work well on most securities.
+                  If you wish to use a time frame closer than 15m, such as 5m or 3m, you must stack the Olympus Cloud with a higher time frame, like the 1D.
                   </p>
                   <p>
-                    For example, if the 1D chart has a bull cloud, you can then zoom into the 5m chart. If the 5m higher time frame filter is positive, you can try to take trades in the bullish direction
-                    when an entry signal occurs. Part 6 in our introductory video series on our <a href="https://www.youtube.com/channel/UC_srdLV6WeXG2FYo8PguxhA" class="teal-link" target="_blank">YouTube channel</a> shows you how this process works.
+                    For example, if the 1D chart has a bull cloud, you can then zoom into the 5m chart. If the 5m higher time frame filter is bullish you can try to take long trades
+                    when an entry signal occurs. Our video on time frame stacking, found on our <a href="https://www.youtube.com/watch?v=-tMhbm3vmwM" class="teal-link" target="_blank">YouTube channel</a> shows you how this process works.
                   </p>
                 </div>
               </div>
@@ -659,7 +661,7 @@
                     consistency, you can trade with any amount of capital, including very large amounts, and produce money over and over again.
                   </p>
                   <p>
-                    A few of our favorite high liquidity large-cap stocks and ETFs include QQQ, SPY, SOXX, TAN, AAPL, AMZN, MSFT, NVDA, TSLA, and AMD.
+                    A few of our favorite high-liquidity large-cap stocks and ETFs include QQQ, TAN, AAPL, AMZN, NVDA, TSLA, and AMD.
                   </p>
                 </div>
               </div>

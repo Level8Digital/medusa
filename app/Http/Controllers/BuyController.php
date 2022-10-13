@@ -75,9 +75,8 @@ class BuyController extends Controller
             $price = 1;
         }
 
-
         // Calculate the tax amount
-        $tax = $price * 0.05;
+        $tax = 0; //$price * 0.05;
 
         // Show view with the required variables
         return view('purchase', ['math_question' => $mathQuestion, 'math_answer' => $mathAnswer, 'access_desc' => $description, 'access' => $access, 'price' => $price,
@@ -232,7 +231,8 @@ class BuyController extends Controller
         }
 
         // Calculate and round final total with GST (tax)
-        $total = round($price * 1.05, 2);
+        //$total = round($price * 1.05, 2);
+        $total = $price;
 
         // Create new purchase
         $purchase = new Purchase;

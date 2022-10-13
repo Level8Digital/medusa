@@ -148,12 +148,12 @@
             <div class="flexbox">
               <div>
                 <p><strong>Subtotal:</strong></p>
-                <p><strong>Sales Tax (GST):</strong></p>
+                <!-- <p><strong>Sales Tax (GST):</strong></p> -->
               </div>
 
               <div style="text-align: right;">
                 <p>${{ $price}} <small>CAD</small></p>
-                <p>${{ $tax }} <small>CAD</small></p>
+                <!-- <p>${{ $tax }} <small>CAD</small></p> -->
               </div>
             </div>
 
