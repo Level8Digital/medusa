@@ -17,9 +17,9 @@
     <div class="row h-full">
       <div class="col-12 col-lg-6 align-self-center text-center text-lg-left landing-block">
 
-        <h1 class="display-2">A Market Framework</h1>
+        <h1 class="display-2">Goodbye Guesswork</h1>
         <br>
-        <p class="lead text-white" id="landing-lead">The Olympus Cloud provides you with a total framework from which to view the market.</p>
+        <p class="lead text-white" id="landing-lead">We deliver tools and strategies that help you become a profitable trader.</p>
 
         <br><br>
 
@@ -50,33 +50,39 @@
     <div class="container">
       <header class="section-header">
         <small>INTRODUCTION</small>
-        <h2>A Solid Foundation</h2>
+        <h2>A Market Framework</h2>
         <hr class="dark-hr">
         <p class="lead">
-        We lay the groundwork for new and intermediate traders to develop into market artisans by focusing on tried and trusted price action techniques.
+        A framework turns chaos into clarity. Instead of relying on multiple abstract oscillators, we give you a price action structure that helps you
+        make sense of the market at all times. Furthermore, we provide you with the strategies to turn your technical analysis into action.
         </p>
       </header>
       <div class="row">
         <div class="col-12 col-lg-6 text-center mt-10 sm-mb-20">
-          <img class="mr-40" src="{{ url('assets/img/ipad-data.png') }}" alt="..." data-aos="slide-up">
-          <small><em>Real world results of the Olympus Cloud on a single ticker.</em></small>
+          <img class="mr-40" src="{{ url('assets/img/ipad-data.jpg') }}" alt="..." data-aos="slide-up">
+          <small><em>Real results of the Olympus Cloud and our long strategies on QQQ.</em></small>
         </div>
 
         <div class="col-12 col-lg-6 align-self-center pb-0">
           <div class="row">
             <div class="row">
               <div class="col-12">
-                <p><i class="fa fa-code fs-50"></i></p>
-                <h4>One Script, Many Tools</h4>
+                <p><i class="fa fa-cube fs-50"></i></p>
+                <h4>Your Trading Foundation</h4>
                 <p>
-                  Far from a one-trick pony, the Olympus Cloud is packed with several price action based tools that provide you a solid foundation for all of your market analysis.
+                  A good trading foundation assists your ability to determine the current general momentum; spot longer-term trends and key price levels;
+                  determine important support and resistance zones; find euphoric price extension or downside despair; deduce the most likely scenario to occur next;
+                  and most importantly, earn profit by acting on your technical edge.
                 </p>
               </div>
+            </div>
+            <div class="row">
               <div class="col-12">
                 <p><i class="fa fa-check-circle fs-50"></i></p>
-                <h4>Price Action Strategies</h4>
+                <h4>Technical Analysis Simplified</h4>
                 <p>
-                  The Olympus Cloud includes several of our exclusive price action trading strategies and the ability to create buy and sell alerts so you don’t miss a signal.
+                  Our signature indicator, the Olympus Cloud, is packed with several price action tools that simplify your technical analysis. In addition, we include
+                  several of our exclusive price action trading strategies and the ability to create buy and sell alerts so you don’t miss a signal.
                 </p>
               </div>
             </div>
@@ -116,10 +122,9 @@
     <div class="container">
       <header class="section-header">
         <small>INDICATOR</small>
-        <h2>Find Clarity</h2>
+        <h2>One Script, Multiple Tools</h2>
         <hr class="dark-hr">
-        <p class="lead">Trading doesn’t have to be complicated. By adding this one script to your chart you instantly gain access to a plethora of simple yet powerful price action tools that help you make sense of the market
-          in all conditions.</p>
+        <p class="lead">Trading doesn’t have to be complicated. By adding this one script to your chart you instantly gain access to several simple yet powerful price action tools.</p>
       </header>
 
       <div class="row no-gap text-center">
@@ -131,7 +136,27 @@
             <h4 class="mb-5">The Cloud</h4>
             <p>A clever moving average variation combined with a volatility delimiter defines zones that detect general price momentum and act as dynamic support and resistance.</p>
           </div>
-
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/swings.png') }}" />
+            </p>
+            <h4 class="mb-5">Actionable Swings</h4>
+            <p>Our unique color-coded swing levels help you quickly identify the price action trend and provide clear support and resistance levels you can act on.</p>
+          </div>
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/fractal.png') }}" />
+            </p>
+            <h4 class="mb-5">Real-Time Fractals</h4>
+            <p>Our fractals are formed in near real-time and are the function of a price action pattern, allowing you to spot micro-trends and key short-term levels.</p>
+          </div>
+          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
+            <p class="mb-6">
+              <img src="{{ url('assets/img/icons/volatility.png') }}" />
+            </p>
+            <h4 class="mb-5">Volatility Bands</h4>
+            <p>Easily spot when price is entering euphoria or capitulation and the probability of a temporary reversion to the mean is the most likely scenario.</p>
+          </div>
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
               <img src="{{ url('assets/img/icons/timeframe.png') }}" />
@@ -142,35 +167,10 @@
 
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
-              <img src="{{ url('assets/img/icons/swings.png') }}" />
-            </p>
-            <h4 class="mb-5">Coded Swings</h4>
-            <p>Our unique color-coded swing levels help you quickly identify the price action trend and provide clear support and resistance levels.</p>
-          </div>
-
-
-          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
-            <p class="mb-6">
-              <img src="{{ url('assets/img/icons/fractal.png') }}" />
-            </p>
-            <h4 class="mb-5">Real-Time Fractals</h4>
-            <p>Our fractals are formed in near real-time. We let a price action pattern set the fractal and don’t wait for a defined amount of candles to close to plot a label.</p>
-          </div>
-
-          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
-            <p class="mb-6">
-              <img src="{{ url('assets/img/icons/volatility.png') }}" />
-            </p>
-            <h4 class="mb-5">Volatility Bands</h4>
-            <p>Easily spot when price is entering euphoria or capitulation and the probability of a temporary reversion to the mean is the most likely scenario.</p>
-          </div>
-
-          <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
-            <p class="mb-6">
               <img src="{{ url('assets/img/icons/eq.png') }}" />
             </p>
             <h4 class="mb-5">Equilibrium Detection</h4>
-            <p>Using the power of our coded swings, equilibrium detection helps you spot meaningful price contraction that can lead to excellent trade opportunities.</p>
+            <p>Using the power of our actionable swings, equilibrium detection helps you spot meaningful price contraction that can lead to excellent trade opportunities.</p>
           </div>
 
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
@@ -185,7 +185,7 @@
               <img src="{{ url('assets/img/icons/fib.png') }}" />
             </p>
             <h4 class="mb-5">Auto Fib Retracement</h4>
-            <p>Our automatic Fibonacci tool uses our coded swings to accurately plot fib retracement levels to help streamline your analysis and increase your efficiency.</p>
+            <p>Our automatic Fibonacci tool uses our actionable swings to accurately plot fib retracement levels to help streamline your analysis and increase your efficiency.</p>
           </div>
           <div class="col-md-6 px-5 py-6 p-md-8 mb-20">
             <p class="mb-6">
