@@ -1,3 +1,29 @@
+.vertical-container {
+  min-height: 100vh !important;
+  min-width: 100%;
+  position: relative;
+}
+
+.vertical-center {
+  width: 100%;
+  margin-left: 0%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#cs-logo{
+  width: 15%;
+}
+
+@media (max-width: 1100px) {
+  #cs-logo{
+    width: 35%;
+  }
+
+}
+
 .block-number {
   text-align: center;
   font-weight: bold;
